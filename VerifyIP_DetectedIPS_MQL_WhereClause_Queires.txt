@@ -1,0 +1,21 @@
+print bus 25664.47740.49620.51868 select to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].from.id;
+
+print bus 25664.47740.49620.51868 select from[IMP_IPBranch].from.to[IMP_IPBranchRelease].to.to[IMP_IP_Watermark].to.name;
+
+rom[IMP_VerifyRunDetectedIPs].to.from[IMP_IPVerificationStatusForSoC].to.id;
+
+print bus 25664.47740.49620.51868 select to[IMP_VerifyRunForSoC].from.from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].from.name;
+
+to[IMP_VerifyRunForSoC].from.from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].from.name = amxs02_ip02p_max3_ns_pll_va1-001
+
+print bus 25664.47740.50042.10060 select from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.from[IMP_VerifyRunForSoC].to.name;
+
+temp query bus IMP_IPProduct * * where "from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.from[IMP_VerifyRunForSoC].to.name == 'rheo_m3p'"; 
+
+
+temp query bus IMP_IPProduct * * where "from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.name == 'IMPVerify-28463' && from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.from[IMP_VerifyRunForSoC].to.name == 'rheo_m3p'" select from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].id; 
+
+
+temp query bus IMP_IPProduct * * where "from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.name == 'IMPVerify-28463'" select name  
+
+print bus 25664.47740.53099.53169 select from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id;

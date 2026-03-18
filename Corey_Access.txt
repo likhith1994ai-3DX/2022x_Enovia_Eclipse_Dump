@@ -1,0 +1,21 @@
+----------------Assign Roles----------------------
+
+
+mod person lk075732 assign group IMP_DTreeGroup;
+mod person lk075732 assign role ctx::VPLMProjectLeader.APD.IMP_IPSpace;
+mod person lk075732 remove assign role "Basic User";
+mod person lk075732 remove assign role "Employee";
+
+mod person lk075732 assign role ctx::Basic User.GTO.GLOBAL;
+mod person lk075732 assign role ctx::Basic User.Broadcom Ltd.GLOBAL;
+mod person lk075732 assign role ctx::VPLMProjectLeader.Broadcom Ltd.Default;
+
+----------------Strip Roles-----------------------
+
+mod person lk075732 remove assign group IMP_DTreeGroup;
+mod person lk075732 remove assign role ctx::VPLMProjectLeader.APD.IMP_IPSpace;
+mod person lk075732 assign role "Basic User";
+mod person lk075732 assign role "Employee";
+
+
+

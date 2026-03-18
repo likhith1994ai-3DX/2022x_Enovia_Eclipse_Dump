@@ -1,0 +1,140 @@
+login as: lk075732
+lk075732@accvda5490.acc.broadcom.net's password:
+******************************************************************************
+*                               WARNING NOTICE                               *
+*                                                                            *
+* This system is restricted solely to BROADCOM authorized users              *
+* for legitimate business purposes only.  The actual or attempted            *
+* unauthorized access, use or modification of this system is strictly        *
+* prohibited by BROADCOM.  Unauthorized users are subject to company         *
+* disciplinary proceedings and/or criminal and civil penalties under state,  *
+* federal or other applicable domestic and foreign laws.  The use of this    *
+* system may be monitored and recorded for administrative and security       *
+* reasons.  Anyone accessing this system expressly consents to such          *
+* monitoring and is advised that if such monitoring reveals possible         *
+* evidence of criminal activity, BROADCOM may provide the evidence           *
+* of such activity to law enforcement officials.  All users must comply      *
+* with BROADCOM Corporate Instructions regarding the protection of           *
+* BROADCOM information assets.                                               *
+*                                                                            *
+******************************************************************************
+
+    For assistance, use Broadcom 1.Support portal or 1.Bot in Google Chat
+
+Last login: Tue Sep 16 06:44:45 2025 from 10.230.227.74
+******************************************************************************
+*                               WARNING NOTICE                               *
+*                                                                            *
+* This system is restricted solely to BROADCOM authorized users              *
+* for legitimate business purposes only.  The actual or attempted            *
+* unauthorized access, use or modification of this system is strictly        *
+* prohibited by BROADCOM.  Unauthorized users are subject to company         *
+* disciplinary proceedings and/or criminal and civil penalties under state,  *
+* federal or other applicable domestic and foreign laws.  The use of this    *
+* system may be monitored and recorded for administrative and security       *
+* reasons.  Anyone accessing this system expressly consents to such          *
+* monitoring and is advised that if such monitoring reveals possible         *
+* evidence of criminal activity, BROADCOM may provide the evidence           *
+* of such activity to law enforcement officials.  All users must comply      *
+* with BROADCOM Corporate Instructions regarding the protection of           *
+* BROADCOM information assets.                                               *
+*                                                                            *
+******************************************************************************
+
+    For assistance, use Broadcom 1.Support portal or 1.Bot in Google Chat
+
+[lk075732@accvda5490 ~]$ /tools/imp/prod/bin/imp prepare-sa -h
+[ERROR] IMP CLI is unavailable to connect to the application server - please try again later, and if the error persists, please contact the IMP team at imp-team.pdl@broadcom.com
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /tools/imp/prod/bin/imp prepare-sa -h
+[INFO ] imp prepare-sa [ -h | --help ] [ -o | --ofile output-file ] [ -v | --verbose v-level ] [--branch branch-name ] [ -D | --dry-run ] [ -I | --ip-dir ipdir ] [ -i | --ip-id ipid ]
+
+Create and populate, or update, the DesignSync staging area for the IP producers for publishing IP
+into IMP - this is NOT the local DM being used by IP producers.
+
+Usually issued at the top level directory of the staging area. Can only be issued by the IP
+publisher. Design data is updated into the staging area as-is from the vault, without any
+modifications.
+
+Any unmanaged files that may exist at the time of issuing this command when updating a staging
+area will remain untouched.
+
+If the staging area doesn't already exist:
+   The command will create a staging area named ipid, or the name specified
+   using -I, and populate it with the latest revision of the main branch, Trunk.
+
+Otherwise, if the staging area already exists:
+   If an ipid is specified, make sure that it matches the ipid the staging area is linked to in
+   the design sync metadata.
+
+   The command will update the staging area to the latest tag of the branch the staging area
+   points to.
+
+The staging area specified via -I (--ip-dir) must point to the top (root) directory of the IP's
+staging area.
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+--branch branch-name Prepare the staging area for publishing into the specified branch.
+-D | --dry-run  Do everything that prepare-sa would do, but not actually make or populate the staging area.
+-I | --ip-dir ipdir  The directory to create the staging area in. Defaults to the current woring directory (CWD).
+-i | --ip-id ipid    IP's ID in IMP - generated at IP create time. Required when the staging area
+                does not already exist.
+
+EXAMPLES:
+   If no staging area currently exists:
+
+      Create and populate the staging area in the current working directory to publish
+      into Trunk:
+
+         imp prepare-sa -i ipid
+
+      This will create a directory with the name that's the specified ipid and that
+      contains the staging area of the specified ipid
+
+      Create and populate the staging area in a specific directory to publish into Trunk:
+
+         imp prepare-sa -i ipid -I ipdir
+
+      This will create a directory with the specified name that contains the staging
+      area of the specified ipid
+
+      Create and populate the staging area in the current working directory to publish
+      into a specified branch:
+
+         imp prepare-sa -i ipid --branch B1
+
+      This will create a directory with the name that's the specified ipid and that
+      contains the staging area of the specified ipid
+
+      Create and populate the staging area in a specific directory to publish into a
+      specified branch:
+
+         imp prepare-sa -i ipid -I ipdir --branch B1
+
+      This will create a directory with the specified name that contains the staging
+      area of the specified ipid
+
+   Update the specified staging area with the latest revision in IMP:
+
+      imp prepare-sa -I ipdir
+
+   When issued from within a staging area without specifying an ipid or a tag, update
+   the staging area with the latest revision in IMP:
+
+      imp prepare-sa
+
+   When issued from within a staging area without specifying a tag and for a specified ipid,
+   make sure the specified ipid matches the ipid of the staging area and update the staging
+   area with the latest revision in IMP:
+
+      imp prepare-sa -i ipid
+
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$

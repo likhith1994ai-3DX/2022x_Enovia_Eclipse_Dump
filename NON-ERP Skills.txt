@@ -1,0 +1,38 @@
+Angular
+Apttus CLM
+AuthHub
+BrightCove & Strigo
+CI/CD
+Cloudflare
+Core java
+Cornerstone
+CrushFTP/Middleware
+Enovia
+Flutter
+Go Lang
+Google Dailogue flow
+Hive
+Java Springboot
+Jenkins
+Kafka
+Kubernetes
+LifeRay
+Metal JS
+Mongo DB
+Next JS
+Node JS
+Oracle
+Oracle DBA
+Oracle SQL / PLSQL
+PERL
+Postgres DB
+Python
+Python DJango
+QA
+React JS
+Shell Script
+Spark
+Teraform
+Trino
+vSphere
+ZOOM Info

@@ -1,0 +1,30 @@
+Last login: Tue Oct 28 05:39:41 2025 from 135.156.131.134
+[svcprodimp01@lpdvipps51 ~]$ ps aux | grep 4136730
+svcprod+  303947  0.0  0.0   6408  4264 pts/0    S+   23:04   0:00 grep --color=auto 4136730
+svcprod+ 4136730  0.3  0.2 8393684 134892 ?      Ssl  11:42   2:15 /opt/app/3DSpaceBase/3DSpace//linux_a64/code/bin/mql -c set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;
+[svcprodimp01@lpdvipps51 ~]$ kill 4136730
+[svcprodimp01@lpdvipps51 ~]$ ps aux | grep 4136730
+svcprod+  304098  0.0  0.0   6408  4264 pts/0    S+   23:04   0:00 grep --color=auto 4136730
+svcprod+ 4136730  0.3  0.2 8393684 134892 ?      Ssl  11:42   2:15 /opt/app/3DSpaceBase/3DSpace//linux_a64/code/bin/mql -c set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$ ps -ef | grep searchindex
+svcprod+  304924  303340  0 23:06 pts/0    00:00:00 grep --color=auto searchindex
+svcprod+ 4136730 4136726  0 11:42 ?        00:02:16 /opt/app/3DSpaceBase/3DSpace//linux_a64/code/bin/mql -c set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;
+[svcprodimp01@lpdvipps51 ~]$ kill -9 4136730
+[svcprodimp01@lpdvipps51 ~]$ ps -ef | grep searchindex
+svcprod+  305041  305036  0 23:07 ?        00:00:00 /bin/bash -c sleep 30; /opt/app/3DSpaceBase/3DSpace/scripts/mql_cron -c "set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;"
+svcprod+  305140  303340  0 23:07 pts/0    00:00:00 grep --color=auto searchindex
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$
+[svcprodimp01@lpdvipps51 ~]$ ps -ef | grep searchindex
+svcprod+  305348  305343 99 23:08 ?        00:00:09 /opt/app/3DSpaceBase/3DSpace//linux_a64/code/bin/mql -c set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;
+svcprod+  305351  305342  0 23:08 ?        00:00:00 /bin/bash -c sleep 30; /opt/app/3DSpaceBase/3DSpace/scripts/mql_cron -c "set context user creator pass 'Avag0Pr0d1#'; start searchindex mode partial vault *;quit;"
+svcprod+  305497  303340  0 23:08 pts/0    00:00:00 grep --color=auto searchindex
+[svcprodimp01@lpdvipps51 ~]$

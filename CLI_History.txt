@@ -1,0 +1,1001 @@
+[lk075732@accvda5490 ~/DOWNLOAD_DOC]$ history
+    28  0:40    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node 65G' -i Mamba_vulcan_a0-001 --tech-sub-process 65G
+    29  0:42    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node 65G' -i Mamba_vulcan_a0-001 --tech-sub-process 65lp
+    30  0:43    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node 65G' -i Mamba_vulcan_a0-001 --tech-sub-process CoWoS
+    31  0:44    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node CoWoS' -i Mamba_vulcan_a0-001 --tech-sub-process CoWoS
+    32  0:47    /tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'testing uniquifying prefix/suffix to the ip' --uniquify
+    33  0:48    /tools/imp/dev2025x/bin/imp download -i zzzTahoe-001 --for-project Vistara-FE --comment 'testing uniquifying prefix/suffix to the ip' --uniquify
+    34  1:01    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing for downloading with the specified Foundary:IBM' -i Apollo_Crypto_Ext-001 --foundary IBM
+    35  1:05    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing force new prefix' -i Apollo_Crypto_Ext-001 --force-new-prefix
+    36  1:07    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing force new prefix' --uniquify --tag r0p4-00rel2 -i Apollo_Crypto_Ext-001 --force-new-prefix
+    37  1:10    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing force new prefix' --uniquify --tag RTL_2009_MAY_19 -i Mamba_vulcan_a0-001 --force-new-prefix
+    38  1:14    /tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing Including derived views of watermark cells' -i Mamba_vulcan_a0-001 --include-derived-watermarks
+    39  10:39   /tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Mamba_vulcan_a0-001.log
+    40  2:42    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing for downloading with the specified Foundary:IBM' -i Apollo_Crypto_Ext-001 --foundary IBM
+    41  2:44    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing without watermark cells' -i Mamba_vulcan_a0-001 --no-watermark-cells
+    42  2:50    /tools/imp/prod/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Mamba_vulcan_a0-001.log
+    43  2:52    /tools/imp/prod/bin/imp download -i zzzTahoe-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Mamba_vulcan_a0-001.log
+    44  3:12    /tools/imp/prod/bin/imp download -i Test_3PIP_Notifications-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Mamba_vulcan_a0-001.log
+    45  3:14    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing DryRun' -i Mamba_vulcan_a0-001 --dry-run
+    46  3:17    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node 65lp' -i Mamba_vulcan_a0-001 --tech-sub-process 65lp
+    47  3:21    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified tech subprocess node 20soc' -i Test_3PIP_Notifications-001 --tech-sub-process 20soc
+    48  10:20   /tools/imp/dev/bin/imp verify-ip -i Testing_HIP_25x-001 --tag ML1.1.4
+    49  10:29   /tools/imp/dev/bin/imp verify-ip -i HIP_testing_7th_Nov-001 --tag ML5.5.6
+    50  3:03    /tools/imp/dev2025x/bin/imp verify-ip -i Apollo_Crypto_Ext-001 --tag Apollo_Crypto_wmkm
+    51  3:03    /tools/imp/dev2025x/bin/imp verify-ip -i Apollo_Crypto_Ext-001 --tag r0p4-00rel2-1_wmkn
+    52  7:08    /tools/imp/qa/bin/imp verify-ip -i Apollo_Crypto_Ext-001 --tag r0p4-00rel2-1_wmkn
+    53  7:09    /tools/imp/dev2025x/bin/imp verify-ip -i IBM_90nm_CLID_Test_01-001 --tag ML1.1.0
+    54  7:11    /tools/imp/dev2025x/bin/imp verify-ip -i hx5_ddrctrl_cadence-001 --tag v.20170412_wmkn
+    55  7:19    /tools/imp/dev2025x/bin/imp prepare-sa -i FTS_Testing01-001
+    56  7:22    cd /home/lk075732/FTS_Testing01-001/
+    57  7:27    /tools/imp/dev2025x/bin/imp publish --comment 'Publishing for testing HIP in dev25x' --tag ML1.1.0 --force
+    58  8:49    /tools/imp/qa/bin/imp verify-ip -i Testing_HIP_25x-001 --tag ML1.1.4
+    59  8:52    /tools/imp/qa/bin/imp verify-ip -i Test_3PIP_CadenceVendor-001 --tag ML1.1.0
+    60  8:54    /tools/imp/qa/bin/imp verify-ip -i Test_FTC_IP-001 --tag ML0.5.5
+    61  8:59    cd /home/lk075732/HIP_Test_00-001/
+    62  8:59    /tools/imp/qa/bin/imp publish --comment 'Publishing for testing HIP in qa' --tag ML1.1.0 --force
+    63  9:41    /tools/imp/dev/bin/imp verify-ip -i Test-834-001 --tag ML1.1.8
+    64  9:43    /tools/imp/dev/bin/imp verify-ip -i DevTest_834_02-001 --tag ML5.5.1
+    65  7:12    /tools/imp/qa/bin/imp verify-ip -i HIP_Test_00-001 --tag ML1.1.0
+    66  7:18    /tools/imp/dev/bin/imp verify-ip -i HIP_testing_7th_Nov-001 --tag ML5.5.5
+    67  7:28    /tools/imp/dev2025x/bin/imp download -i FTS_Testing01-001 --for-project TEST_30_4_2025 --comment 'Public Res'
+    68  7:33    /tools/imp/dev2025x/bin/imp verify-ip -i FTS_Testing01-001
+    69  2:48    ip addr show
+    70  4:02    /tools/imp/dev2025x/bin/imp prepare-sa -i Test-834-001
+    71  4:02    /tools/imp/qa/bin/imp prepare-sa -i Test-834-001
+    72  4:03    /tools/imp/qa2025x/bin/imp prepare-sa -i Test-834-001
+    73  4:15    telnet lnpvipds25.sgn.broadcom.net 8070
+    74  6:25    telnet lnpvipqs01.sgn.broadcom.net 8070
+    75  6:26    telnet lnpvipds01.sgn.broadcom.net 8070
+    76  6:26    /tools/imp/qa/bin/imp prepare-sa -i FTS_Testing01-001
+    77  6:27    /tools/imp/qa2025x/bin/imp verify-ip -i FTS_Testing01-001
+    78  6:28    /tools/imp/qa2025x/bin/imp prepare-sa -i FTS_Testing01-001
+    79  0:06    /tools/imp/dev2025x/bin/imp verify-ip -i FTS_Testing01-001 --tag ML1.1.0
+    80  0:12    /tools/imp/dev2025x/bin/imp verify-ip -i Testing_HIP_25x-001 --tag ML1.1.4
+    81  0:12    /tools/imp/dev2025x/bin/imp query --ip-info --ip-id Testing_HIP_25x-001
+    82  4:57    hostname -I
+    83  3:34    nc -zv lnpvipqs51.sgn.broadcom.net 8070
+    84  3:35    telnet lnpvipqs51.sgn.broadcom.net 8070
+    85  5:56    /tools/imp/qa2025x/bin/imp download -i zzzGLfortcollins-001 --for-project TEST_MULTINODE1 --comment 'Public IP'
+    86  6:11    /tools/imp/qa2025x/bin/imp download -i mxs_adcsar_va1-001 --for-project TEST_MULTINODE1 --comment 'Public IP'
+    87  8:25    nc -zv imp-vault-qa-1.broadcom.net 45784
+    88  8:32    ls /tools/syncinc/imp/.config/qa/user/config/
+    89  8:33    ls /tools/syncinc/imp/.config/qa2025x/user/config/
+    90  8:34    ls /tools/syncinc/imp/.config/dev/user/config/
+    91  8:34    ls /tools/syncinc/imp/.config/qa/user/config/UserRegistry.reg
+    92  8:50    /tools/syncinc/imp/.config/qa/user/config/UserRegistry.reg
+    93  8:51    /tools/syncinc/imp/.config/dev/user/config/UserRegistry.reg
+    94  8:52    cd /tools/syncinc/imp/
+    95  8:52    cd .config
+    96  8:52    ll -
+    97  8:53    cd dev
+    98  8:53    cd user
+    99  8:53    cd config
+   100  8:54    UserRegistry.reg
+   101  9:09    ./UserRegistry.reg
+   102  0:20    nc -zv imp-vault-qa-4.broadcom.net 45784
+   103  4:14    /tools/imp/qa2025x/bin/imp prepare-sa -i Test_IP_25xCLI-001
+   104  7:01    curl -v lnpvipqs51.sgn.broadcom.net
+   105  7:01    ping lnpvipqs51.sgn.broadcom.net
+   106  7:03    ip address show
+   107  9:53    sftp hy070947@svcprodimp01@lpdvipps51.sgn.broadcom.net@psmpsgn.pam.broadcom.net
+   108  9:54    sftp svcprodimp01@lpdvipps51.sgn.broadcom.net
+   109  10:07   sftp lk075732@svcqaimpadm00@lnpvipqs51.sgn.broadcom.net@psmpsgn.pam.broadcom.net
+   110  10:29   sftp svcqaimpadm00@lnpvipqs51.sgn.broadcom.net
+   111  1:39    /tools/imp/dev2025x/bin/imp prepare-sa -i Test-01-001
+   112  1:42    /tools/imp/dev2025x/bin/imp publish --comment 'Publishing for testing Test-01-001' --tag ML1.1.0 --force
+   113  2:35    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.0 --force
+   114  2:37    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.1 --force
+   115  3:01    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.2 --force
+   116  3:51    /tools/imp/qa2025x/bin/imp prepare-sa -i IMPIPTest10-001
+   117  3:52    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.3 --force
+   118  4:18    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.4 --force
+   119  4:22    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.6 --force
+   120  4:38    /tools/imp/dev2025x/bin/imp publish --comment 'Publishing for testing Test-01-001' --tag ML1.1.1 --force
+   121  5:35    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.7 --force
+   122  5:36    Inside checkAllUsers::::::::::::::::::::::::::::Line 4033
+   123  5:36    13-Jun-2025 01:38:37.812 INFO [http-nio-8070-exec-21] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Event:publish
+   124  5:36    13-Jun-2025 01:38:37.812 INFO [http-nio-8070-exec-21] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject IPName:Test-01-001
+   125  5:36    13-Jun-2025 01:38:37.812 INFO [http-nio-8070-exec-21] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject UserName:lk075732
+   126  5:36    13-Jun-2025 01:38:37.812 INFO [http-nio-8070-exec-21] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Getting All Release Tags...
+   127  5:36    13-Jun-2025 01:38:38.226 INFO [http-nio-8070-exec-11] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.getIPPublishLock Getting Lock with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net | ML1.1.1 | 2025-06-13 08:38:38 AM UTC, force=false, IPName=Test-01-001}
+   128  5:36    called by GetDeprecatedBy..
+   129  5:36    Inside::::IMPRESTfulServiceImpl.java::method:::::::getAttributesForQAFailures:::::::::::::line 811
+   130  5:36    Inside::::IMPRESTfulServiceImpl.java::method:::::::getAttributesForQAFailures::::::::retunMapList:::::line 818
+   131  5:36    [{RevisionExists=false, AnyRevisionPublishedforBranch=true, Inactive_Rev=, IMP_Topcell=, ReleaseObjectName=, IMP_IsPrefixed=, MissingProgenyInstanceWarn=, IMP_IPRevisionWatermark=100n601nsslO1kE0T0s1, originated=6/12/2025 10:43:31 PM, IMP_ReasonForDeactivation=, IMP_ProductType=Component IP, current=Active, IMP_IPTag=ML1.1.0, AllRevisionsInactive=false, IMP_IPQAStatus=, BranchExists=true, IMP_Alert=, UnknownWMWarn=, sIPIDWMSeed=Test01NEC150nmUnknownGTOlk075732ATest01001, BranchName=Trunk, IMP_IPQASummary=}]
+   132  5:36    13-Jun-2025 01:38:43.267 INFO [http-nio-8070-exec-20] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Event:export-bom
+   133  5:36    13-Jun-2025 01:38:43.267 INFO [http-nio-8070-exec-20] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject IPName:Test-01-001
+   134  5:36    13-Jun-2025 01:38:43.267 INFO [http-nio-8070-exec-20] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject UserName:lk075732
+   135  5:36    -- START -- PUBLIC DOCUMENTS CHECKIN --
+   136  5:36    -- PUBLIC DOCUMENTS PUBLISHER --: lk075732
+   137  5:36    -- FTP WORKING DIR --: /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/
+   138  5:36    -- IPID --: 25664.47740.49055.7926
+   139  5:36    -- GETTING PRODUCT SPEC --:
+   140  5:36    -- PRODUCT SPEC EXISTS--:
+   141  5:36    -- SPEC ID --: 25664.47740.32711.34805
+   142  5:36    -- DOC LIST --: [{revision=1, type=Design Specification, relationship=Latest Version, level=1, attribute[Title]=Test-01-001_release_notes.txt, id=25664.47740.32711.34933}, {revision=1, type=Design Specification, relationship=Latest Version, level=1, attribute[Title]=p1.txt, id=25664.47740.32711.35077}]
+   143  5:36    -- /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/ FILE EXISTS--: true
+   144  5:36    -- /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/ IS A DIRECTORY --: true
+   145  5:36    -- NUMBER OF FILES IN /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/ --: 2
+   146  5:36    -- FILENAME --: Test-01-001_release_notes.txt
+   147  5:36    -- COMMAND --: checkin businessobject 25664.47740.32711.34805 append /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/Test-01-001_release_notes.txt ;
+   148  5:36    -- FILENAME --: p1.txt
+   149  5:36    -- COMMAND --: checkin businessobject 25664.47740.32711.34805 append /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299/p1.txt ;
+   150  5:36    -- COMMAND EXECUTED SUCCESSFULLY --:
+   151  5:36    -- DOC OBJ ID --: 25664.47740.32711.34933
+   152  5:36    -- DOC OBJ TITLE --: Test-01-001_release_notes.txt
+   153  5:36    -- DOC OBJ NOT UPDATE/REVISED --:
+   154  5:36    -- CREATE NEW DOC OBJECT? --: false
+   155  5:36    -- DOC OBJ ID --: 25664.47740.32711.35077
+   156  5:36    -- DOC OBJ TITLE --: p1.txt
+   157  5:36    -- DOC OLD OBJ REVISION --: 1
+   158  5:36    -- START DOC OBJ UPDATE/REVISE --:
+   159  5:36    -- DOC OBJ NEW REVISION --: 2
+   160  5:36    -- DOC OBJ UPDATED/REVISED --:
+   161  5:36    -- END -- PUBLIC DOCUMENTS CHECKIN --
+   162  5:36    --- Begin Publish Event { ---
+   163  5:36    impversion: 20250515.0152-dev2025x
+   164  5:36    commandline: imp publish --comment Publishing for testing Test-01-001 --tag ML1.1.1 --force
+   165  5:36    User: lk075732@accvda5490.acc.broadcom.net
+   166  5:36    CWD: /home/lk075732/Test-01-001
+   167  5:36    IPName: Test-01-001
+   168  5:36    Date & Time: 13/06/2025 01:39:30
+   169  5:36    Email To List : [lk075732, itimplog]
+   170  5:36    Email sent successfully
+   171  5:36    --- End Publish Event } ---
+   172  5:36    13-Jun-2025 01:39:32.968 INFO [http-nio-8070-exec-30] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.postProcessPublish Deleting temp dir: /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299
+   173  5:36    13-Jun-2025 01:39:32.998 INFO [http-nio-8070-exec-30] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.postProcessPublish Deleted temp dir: /projects/imp/tmp/fileChckin/Public/Test-01-00117116362057437299
+   174  5:36    13-Jun-2025 01:39:33.321 INFO [http-nio-8070-exec-9] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.releaseIPPublishLock Releasing Lock with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net | ML1.1.1 | 2025-06-13 08:38:38 AM UTC, IPName=Test-01-001}
+   175  5:36    13-Jun-2025 01:39:33.345 INFO [http-nio-8070-exec-9] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.releaseIPPublishLock Lock released with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net | ML1.1.1 | 2025-06-13 08:38:38 AM UTC, IPName=Test-01-001}
+   176  5:45    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.8 --force
+   177  5:50    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.9 --force
+   178  6:45    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.2.0 --force
+   179  8:01    cat /home/lk075732/.imp/log/publish-20250613064555293.log
+   180  8:01    cat /home/lk075732/.imp/log/publish-20250613064555293.log | less
+   181  8:24    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.11 --force
+   182  11:33   /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.12 --force
+   183  2:28    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing IMPTestIP02-001' --tag ML1.1.13 --force
+   184  3:14    /tools/imp/qa2025x/bin/imp prepare-sa -i Testing_Prepare_SA_IP-001
+   185  3:23    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing Testing_Prepare_SA_IP-001' --tag ML1.1.0 --force
+   186  5:26    /tools/imp/qa2025x/bin/imp diff
+   187  0:41    /tools/imp/qa2025x/bin/imp --help
+   188  0:42    /tools/imp/qa2025x/bin/imp query -h
+   189  0:43    /tools/imp/qa2025x/bin/imp download -h
+   190  0:43    /tools/imp/qa2025x/bin/imp publish -h
+   191  0:44    /tools/imp/qa2025x/bin/imp preparesa -h
+   192  3:37    /tools/imp/qa2025x/bin/imp verify-ip -h
+   193  4:10    /tools/imp/qa2025x/bin/imp verify-ip -P QA_SoC_Test --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   194  4:15    /tools/imp/dev/bin/imp verify-ip -P new_imp_query_test4 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   195  4:55    /tools/imp/dev/bin/imp verify-ip -P zzzSoC_March21_2020_1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   196  4:55    /tools/imp/dev/bin/imp verify-ip -P zzzTestSoC --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   197  4:57    /tools/imp/qa2025x/bin/imp verify-ip -P new_imp_query_test4 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   198  4:58    /tools/imp/qa2025x/bin/imp verify-ip -P zzzSoC_March21_2020_1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   199  4:59    /tools/imp/qa2025x/bin/imp verify-ip -P Test1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   200  6:31    /tools/imp/qa2025x/bin/imp verify-ip -P zzzTestSoCForTesting --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   201  6:37    /tools/imp/dev2025x/bin/imp verify-ip -P GTO_CLI_Dowload_Test01 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   202  6:46    /tools/imp/qa/bin/imp verify-ip -P new_imp_query_00 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   203  9:06    /tools/imp/qa2025x/bin/imp verify-ip -P Clone_IP_Publish_Site-001 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   204  9:07    /tools/imp/qa2025x/bin/imp verify-ip -P 83860_Deleted --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   205  9:18    /tools/imp/dev/bin/imp verify-ip -P Test_SoC_837_1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   206  10:55   /tools/imp/qa/bin/imp verify-ip -P Clone_IP_Publish_Site-001 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   207  4:07    /tools/imp/qa2025x/bin/imp prepare-sa -h
+   208  4:25    /tools/imp/qa2025x/bin/imp prepare-sa -i IMPTestIP02-001
+   209  4:30    cd /home/lk075732/zzzC2-001
+   210  4:30    /tools/imp/qa2025x/bin/imp prepare-sa -i zzzC2-001
+   211  5:32    /tools/imp/qa2025x/bin/imp prepare-sa -v 3
+   212  5:57    /tools/imp/dev/bin/imp verify-ip -P Test01_837 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   213  3:35    /tools/imp/qa2025x/bin/imp verify-ip -P VerifyIPQA25X_EmailTest --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   214  3:25    /tools/imp/qa/bin/imp verify-ip -P VerifyIPQA22X_EmailTest --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   215  2:51    /tools/imp/dev2025x/bin/imp verify-ip -P VerifyIPTestSoC_1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   216  8:19    /tools/imp/dev2025x/bin/imp dtree-spec --co --file /projects/imp/lk075732/person1.txt --spec-name APD_CLASSIC
+   217  9:02    /tools/imp/dev2025x/bin/imp dtree-spec --co --file /projects/imp/lk075732/Likhith/Test-834-001.yaml --spec-name APD_CLASSIC
+   218  9:05    /tools/imp/dev2025x/bin/imp dtree-spec --co --file /projects/imp/lk075732/Dtree/Dtree/DCD16/5.6/DCD16.yaml --spec-name DCD16
+   219  12:45   /tools/imp/dev2025x/bin/imp verify-ip -P VerifyIPDEV25X_EmailTest --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   220  6:13    /tools/imp/dev2025x/bin/imp -v 3
+   221  10:22   /tools/imp/dev2025x/bin/imp prepare-sa -v 3
+   222  6:57    /home/lk075732/CLI/bin/imp prepare-sa -v 3 -i IPTest-01-001
+   223  9:45    /tools/imp/dev2025x/bin/imp publish --comment test --tag ML5.5.15 --force
+   224  9:49    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.0 --force
+   225  10:06   /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing Testing_Prepare_SA_IP-001' --tag ML1.1.1 --force
+   226  10:20   ping 172.30.3.211
+   227  10:24   cd /home/lk075732/IMPTestIP02-001/
+   228  10:24   /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.1 --force
+   229  10:28   /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.2 --force
+   230  10:35   /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.3 --force
+   231  3:31    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.4 --force
+   232  3:32    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.5 --force
+   233  3:32    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.6 -force
+   234  4:05    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.7 --force
+   235  4:13    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.8 --force
+   236  4:18    /tools/imp/qa2025x/bin/imp publish --comment testingQA25x --tag ML1.1.10 --force
+   237  4:32    /tools/imp/qa2025x/bin/imp prepare-sa -i zzz_Soft_Internal_HIP-001
+   238  4:53    /tools/imp/qa2025x/bin/imp publish --comment testingQA25x --tag ML1.1.1 --force
+   239  6:31    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.6 --force
+   240  6:31    /tools/imp/dev2025x/bin/imp publish --comment testingdev25x --tag ML1.1.10 --force
+   241  8:20    cd /home/lk075732/Testing_Prepare_SA_IP-001/
+   242  8:20    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing Testing_Prepare_SA_IP-001' --tag ML1.1.9 --force
+   243  8:59    /tools/imp/dev2025x/bin/imp prepare-sa -i zzz_IMPIP_DEV25x-001
+   244  9:22    cd /home/lk075732/Clone_IP_Publish_Site-001/
+   245  9:23    /tools/imp/qa2025x/bin/imp publish --comment 'Publishing for testing Clone_IP_Publish_Site-001' --tag ML1.1.10 --force
+   246  3:00    /tools/imp/prod2025x/bin/imp prepare-sa -i zzz_IMPIPTest01-001
+   247  3:21    /tools/imp/prod2025x/bin/imp prepare-sa -i zzz_IMP072025-001
+   248  4:29    /tools/imp/prod2025x/bin/imp prepare-sa -v 3
+   249  4:32    /tools/imp/prod2025x/bin/imp prepare-sa -h
+   250  7:20    cd /home/lk075732/Test0110-001
+   251  8:26    /tools/imp/prod2025x/bin/imp prepare-sa -i zzz_Test_FC_IP-001
+   252  8:27    /tools/imp/prod2025x/bin/imp prepare-sa -i zzz_Soft_Internal_HIP-001
+   253  8:29    /tools/imp/prod2025x/bin/imp prepare-sa -i zzz_IMPIPTest50-001
+   254  8:45    /tools/imp/prod2025x/bin/imp publish -h
+   255  8:49    /tools/imp/prod2025x/bin/imp dtree-spec -h
+   256  8:54    /tools/imp/prod2025x/bin/imp dtree-spec --validate --file C:\Users\klikhith\Documents\Prabhjot\July_2nd\SPEC_1724162952883415\IPX.yaml
+   257  8:55    /tools/imp/prod2025x/bin/imp dtree-spec --validate --file /home/lk075732/SPEC_1724162952883415/IPX.yaml
+   258  9:00    cd /home/lk075732/zzz_IMPIPTest50-001/
+   259  9:00    /tools/imp/prod2025x/bin/imp check-bom --spec-file /home/lk075732/SPEC_1724162952883415/IPX.yaml
+   260  10:45   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.0 --force
+   261  11:14   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.2 --force
+   262  1:58    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 --branch ML1.1.1 --dry-run
+   263  1:58    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 --branch ML1.1.0 --dry-run
+   264  8:37    /tools/imp/qa2025x/bin/imp prepare-sa -i Test-002
+   265  1:47    /home/lk075732/CLI/bin/imp prepare-sa -i zzz_IMPIP_DEV25x-001
+   266  1:48    cd /home/lk075732/zzz_IMPIP_DEV25x-001/
+   267  3:59    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 --branch ML1.1.2 --dry-run
+   268  4:00    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 --branch ML1.1.1
+   269  4:04    /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.1 --force
+   270  4:04    /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.3 --force
+   271  4:08    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 --branch ML1.1.3 --dry-run
+   272  8:18    /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001 -I /home/lk075732/PrepareSA_Prod25X/
+   273  9:31    /tools/imp/prod2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'Public IP'
+   274  9:35    /tools/imp/prod2025x/bin/imp download -i Test0110-001 --for-project Vistara-FE --comment 'Public IP'
+   275  9:37    /tools/imp/prod2025x/bin/imp download -i Test0110-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Test0110-001.log
+   276  9:39    /tools/imp/prod2025x/bin/imp download -i Test0110-001 --for-project Vistara-FE --comment 'verbosity testing' --verbose 3
+   277  9:40    /tools/imp/prod2025x/bin/imp download -i Test0110-001 --for-project Vistara-FE --comment 'Adding comments for download testing'
+   278  9:40    /tools/imp/prod2025x/bin/imp download --for-project Vistara-FE --branch Trunk/ --comment 'testing latest revision of the branch RTL_2009_MAY_04' -i Test0110-001
+   279  11:02   /tools/imp/prod2025x/bin/imp verify-ip -P Test0110-001 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   280  11:02   /tools/imp/prod2025x/bin/imp verify-ip -P Test-01-SoC --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   281  8:48    /tools/imp/prod2025x/bin/imp prepare-sa -i zzzH1-001
+   282  9:08    /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.4 --force
+   283  9:19    /tools/imp/prod2025x/bin/imp export-bom --ofile /home/lk075732/yaml/Test0110-001_bom.yaml --ip-id Test0110-001 --verbose 2
+   284  9:35    /tools/imp/prod2025x/bin/imp export-bom --ofile /home/lk075732/yaml/zzzH1-001_bom.yaml --ip-id zzzH1-001 --verbose 2
+   285  9:41    /tools/imp/prod2025x/bin/imp export-bom --ofile /home/lk075732/yaml/zzzH1-001_bom.yaml --ip-id zzzH1-001 -t A2025.07.08_-_16.05.28
+   286  12:04   /tools/imp/prod2025x/bin/imp prepare-sa -i Test0110-001
+   287  12:06   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.5 --force
+   288  12:09   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.6 --force
+   289  12:33   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.7 --force
+   290  12:41   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.8 --force
+   291  12:53   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.9 --force
+   292  13:02   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.10 --force
+   293  13:07   /tools/imp/prod2025x/bin/imp publish --comment 'PreProd testing' --tag ML1.1.11 --force
+   294  13:18   cd /home/lk075732/IMPTestIP02-001
+   295  13:19   /tools/imp/qa2025x/bin/imp publish --comment 'QA25X testing' --tag ML1.1.14 --force
+   296  13:29   cd /home/lk075732/Test0110-001/
+   297  5:28    /tools/imp/dev2025x/bin/imp publish --comment dev testing --tag ML1.1.12 --force
+   298  5:28    tools/imp/dev2025x/bin/imp publish --comment dev testing --tag ML1.1.12 --force
+   299  5:29    /tools/imp/dev2025x/bin/imp publish --comment devtesting --tag ML1.1.12 --force
+   300  6:18    -r zip CLI.zip CLI
+   301  6:18    zip CLI.zip CLI
+   302  1:20    /tools/imp/qa2025x/bin/imp prepare-sa -i Clone_IP_Publish_Site-001
+   303  3:21    /tools/imp/dev2025x/bin/imp prepare-sa -i Fort_01-001
+   304  3:22    /home/lk075732/CLI/bin/imp prepare-sa -i Fort_01-001
+   305  3:28    /tools/imp/dev/bin/imp prepare-sa -i Test-834-001
+   306  3:35    cd /home/lk075732/HIP_testing_7th_Nov-001/
+   307  3:38    /tools/imp/dev/bin/imp prepare-sa -i HIP_testing_7th_Nov-001
+   308  3:39    cd /home/lk075732/HIP_testing_7th_Nov-001
+   309  3:39    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML5.5.6 --force
+   310  9:07    /home/lk075732/IPTest-01-001/
+   311  9:16    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML1.1.12 --force
+   312  9:16    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML1.1.13 --force
+   313  9:16    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML1.1.14 --force
+   314  9:17    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML1.1.16 --force
+   315  9:37    /home/lk075732/CLI/bin/imp publish --comment devtesting --tag ML1.1.18 --force
+   316  5:32    cd /home/lk075732/Test0123123_D25X-001
+   317  5:32    /home/lk075732/CLI/bin/imp publish --comment dev25xtesting --tag ML1.0.0 --force
+   318  7:26    cd /home/lk075732 zip -r CLI.zip CLI
+   319  7:26    cd /home/lk075732 -r CLI.zip CLI
+   320  7:26    zip -r CLI.zip CLI
+   321  7:46    /tools/imp/dev2025x/bin/imp query -v 3 --ip-info --ip-id IPTest-01-001
+   322  7:49    /tools/imp/dev2025x/bin/imp -h
+   323  7:01    /tools/imp/dev2025x/bin/imp prepare-sa -i IMPDEV25x_Test01-001
+   324  7:32    00:00:05:012 [INFO ] Execution Successful
+   325  7:32    00:00:01:003 [INFO ] CWD: /home/lk075732
+   326  7:32    00:00:01:003 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+   327  7:32    00:00:01:003 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250717071652851.log
+   328  7:32    00:00:01:002 [INFO ] starttime: 2025-07-17 07:16:52 AM
+   329  7:32    00:00:01:002 [INFO ] impversion: 20250717.1629-dev2025x
+   330  7:32    [lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IMPDEV25x_Test01-001
+   331  7:32    [lk075732@accvda5490 ~]$
+   332  7:36    /home/lk075732/CLI/bin/imp prepare-sa -i IMPDEV25x_Test01-001
+   333  2:43    /home/lk075732/CLI/bin/imp prepare-sa -i IMP2025x_CLI_QA22X-001
+   334  2:46    /tools/imp/qa/bin/imp prepare-sa -i IMP2025x_CLI_QA22X-001
+   335  2:49    /tools/imp/qa/bin/imp prepare-sa -i Test_Jan_16th-001
+   336  2:57    /tools/imp/prod/bin/imp prepare-sa -i zzz_TestIP-001
+   337  2:54    /home/lk075732/CLI/bin/imp publish --comment dev25x_Testing --tag ML1.1.17 --force
+   338  2:54    /home/lk075732/CLI/bin/imp publish --comment dev25x_Testing --tag ML1.1.18 --force
+   339  3:11    rm -rf IMP2025x_CLI-001
+   340  3:11    ll -a
+   341  0:35    /tools/imp/qa2025x/bin/imp prepare-sa -i zzz_Test01-001
+   342  0:38    /tools/imp/dev2025x/bin/imp prepare-sa -i IPTest-01-001
+   343  1:00    /tools/imp/prod2025x/bin/imp prepare-sa -i IPTest-01-001
+   344  1:10    cd /home/lk075732/IMP2025x_CLI-001
+   345  1:10    ll -s
+   346  1:12    ll -f
+   347  2:59    /home/lk075732/CLI/bin/imp prepare-sa -i IP Test_Ashburn_IP-001
+   348  3:01    /home/lk075732/CLI/bin/imp publish --comment dev25x_Testing --tag ML1.5.7 --force
+   349  3:33    /tools/imp/dev2025x/bin/imp prepare-sa -i Test_prepareSaBugFix-001
+   350  5:53    cd /home/lk075732/IMP2025x_CLI-001/
+   351  7:48    /home/lk075732/CLI/bin/imp publish --comment dev25xtesting --tag ML1.1.20 --force
+   352  6:13    /tools/imp/prod/bin/imp prepare-sa -i zzz_CIP_25x_Node2_Ban-001
+   353  6:24    cd /home/lk075732/zzz_CIP_25x_Node2_Ban-002
+   354  6:29    /tools/imp/prod/bin/imp publish --comment zzz_CIP_25x_Node2_Ban-001 --tag ML1.0.0 --force
+   355  6:30    /tools/imp/prod/bin/imp publish --comment zzz_CIP_25x_Node2_Ban-001 --tag ML1.0.1 --force
+   356  6:30    /tools/imp/prod/bin/imp publish --comment zzz_CIP_25x_Node2_Ban-001 --tag ML1.0.0 --force-unlock
+   357  6:31    /tools/imp/prod/bin/imp publish --comment zzz_CIP_25x_Node2_Ban-001 --tag ML1.0.1 --force-unlock
+   358  6:36    /tools/imp/prod/bin/imp publish --comment zzz_CIP_25x_Node2_Ban-002 --tag ML1.0.1 --force
+   359  4:01    cd /home/lk075732/zzz_CIP_25x_Node2_Ban-002/
+   360  4:02    /tools/imp/prod/bin/imp prepare-sa -v 3
+   361  8:44    cd /home/lk075732/Test_Ashburn_IP-001/
+   362  9:05    cd /home/lk075732/IPTest-00-001/
+   363  9:06    rm -rf .SYNC
+   364  9:57    /home/lk075732/CLI/bin/imp prepare-sa -v 4
+   365  9:58    cd /home/lk075732/IPTest-00-001/IPTest-00-001
+   366  12:04   mkdir dev2025xTesting
+   367  12:06   cd /home/lk075732/
+   368  12:08   free -h
+   369  12:08   df -h
+   370  12:13   cd dev2025xTesting
+   371  12:14   mkdir -p CLI/TestCases
+   372  12:15   cd CLI
+   373  12:15   cd TestCases
+   374  12:20   mkdir SWIMP-827
+   375  12:21   cp *.csv SWIMP-827
+   376  12:22   rm *.csv
+   377  12:25   find -type f -name "*.extension"
+   378  12:26   file *
+   379  12:27   find -type f -name "*.ASCII*"
+   380  12:27   find -type f -name "*.ASCII text"
+   381  12:27   ls -lh
+   382  13:52   rm IPTest-01-001
+   383  13:55   cd /home/lk075732/IPTest-01-001/
+   384  14:37   rm -rf accvda5490.acc.broadcom.net
+   385  15:08   cd `
+   386  1:36    ls -l IPTest-01-001
+   387  1:40    ls -a IPTest-01-001 | while read file ; do realpath "IPTest-01-001/$file" ; done
+   388  1:48    sed -i '/devtest\./d' p1.txt
+   389  1:51    -mindepth 1 -maxdepth 1
+   390  1:51    find -mindepth 1 -maxdepth 1
+   391  1:51    find pwd -mindepth 1 -maxdepth 1
+   392  1:54    echo "dev25x" /home/lk075732/IPTest-01-001/p1.txt
+   393  2:02    cp p1.txt /home/lk075732/Test/p1.txt
+   394  2:02    echo "dev123" >> p1.txt
+   395  4:44    ls -l /home/lk075732/IPTest-00-001
+   396  4:45    cd /home/lk075732/IPTest-00-001/.SYNC
+   397  4:45    ls -l
+   398  5:29    /home/lk075732/CLI/bin/imp prepare-sa -i IMP2025x_CLI-001
+   399  5:32    cd IPTest-00-001
+   400  5:38    -mindepth1 maxdepth1
+   401  5:38    find /home/lk075732/IPTest-01-001 -mindepth1 -maxdepth1
+   402  5:40    echo "dev2025x" >> /home/lk075732/IPTest-01-001/p1.txt
+   403  5:40    mkdir Test
+   404  5:42    cp /home/lk075732/IPTest-01-001/p1.txt /home/lk075732/Test/p1.txt
+   405  5:42    echo "dev25x" >> /home/lk075732/IPTest-01-001/p1.txt
+   406  5:43    mv /home/lk075732/Test/p1.txt /home/lk075732/IPTest-01-001/p1.txt
+   407  6:38    mkdir download
+   408  6:40    cd download
+   409  6:40    /home/lk075732/CLI/bin/imp download -i IPTest-01-001
+   410  6:44    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i IPTest-01-001
+   411  6:47    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i Test_Ashburn_IP-001 --uniquify
+   412  6:53    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i HIP_testing_7th_Nov-001 --uniquify
+   413  6:54    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i Test_prepareSaBugFix-001 --uniquify
+   414  6:56    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i FTS_Testing01-001 --uniquify
+   415  7:07    /tools/imp/prod/bin/imp download --for-project Test-01-SoC --comment 'TESTING' -i zzz_CIP_25x_Node2_Ban-002 --uniquify
+   416  7:07    /tools/imp/prod/bin/imp download --for-project Test01 --comment 'TESTING' -i zzz_CIP_25x_Node2_Ban-002 --uniquify
+   417  7:10    /home/lk075732/CLI/bin/imp download --for-project VerifyIPTestSoC_1 --comment 'TESTING' -i IPTest-01-001 --uniquify
+   418  7:13    /home/lk075732/CLI/bin/imp download --for-project Vistara-FE --comment 'TESTING' -i IPTest-01-001 --uniquify
+   419  2:55    rm -rf IPTest-00-001
+   420  2:55    mkdir IPTest-00-001
+   421  2:56    ls -a /home/lk075732/IPTest-00-001/
+   422  2:56    ls -a /home/lk075732/IPTest-00-001
+   423  7:41    mkdir Download_Aug5_Dump
+   424  7:42    cd Download_Aug5_Dump
+   425  7:42    mkdir Test00
+   426  7:42    cd Test00
+   427  7:58    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01-001 --comment 'download testing' -i IPTest-01-001 --include-derived-watermarks
+   428  8:00    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01 --comment 'download testing' -i IPTest-01-001 --include-derived-watermarks
+   429  8:01    mkdir Test01
+   430  8:01    cd Test01
+   431  8:04    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01 --comment 'download testing' -i IPTest-01-001 --force-new-prefix
+   432  8:05    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01 --comment 'download testing' -i IPTest-01-001 --force-new-prefix --uniquify
+   433  9:02    /home/lk075732/CLI/bin/imp download --for-project FTS-01-Testing --recommended --comment 'download testing' -i IPTest-01-001
+   434  9:05    /home/lk075732/CLI/bin/imp download --for-project FTS-01-Testing --branch ML1.1.22 --recommended --comment 'download testing' -i IPTest-01-001
+   435  9:07    /home/lk075732/CLI/bin/imp download --for-project FTS-01-Testing --branch Trunk/ --recommended --comment 'download testing' -i IPTest-01-001
+   436  9:16    /home/lk075732/CLI/bin/imp verify-ip -P CLIDownload_01 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   437  9:17    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01 --recommended --comment 'download testing' -i IPTest-01-001
+   438  9:20    /home/lk075732/CLI/bin/imp publish --comment dev25x_Testing --tag ML1.1.24 --default
+   439  9:24    dm -df /home/lk075732/IPTest-01-001
+   440  9:25    dm -df IPTest-01-001
+   442  4:42    ls -a IPTest-01-001
+   443  4:43    find IPTest-01-001 mindepth1 maxdepth1
+   444  4:45    find IPTest-01-001 mindepth 1 maxdepth 1
+   445  4:45    find mindepth 1 maxdepth 1
+   446  4:46    find /home/lk075732/IPTest-01-001 -mindepth 1 -maxdepth 1
+   447  4:46    echo "devtest" | tee -a /home/lk075732/IPTest-01-001/p1.txt
+   448  4:46    cat /home/lk075732/IPTest-01-001/p1.txt
+   449  4:47    /home/lk075732/CLI/bin/imp prepare-sa -i v 1
+   450  4:48    /home/lk075732/CLI/bin/imp prepare-sa -i -v 1
+   451  11:31   cd /home/lk075732/IPTest-00-001
+   452  13:28   /tools/imp/dev/bin/imp prepare-sa -i IPTest-00-001
+   453  20:49   mkdir download_dump
+   454  20:49   cd download_dump
+   455  2:28    cd /home/lk075732/download_dump/
+   456  7:54    /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-00-001
+   457  23:15   cd /home/lk075732/prepare-sa_dump/IPTest-01-001
+   458  23:51   prepare-sa -h
+   459  23:52   /tools/imp/dev2025x/bin/imp prepare-sa -h
+   460  1:20    cd /home/lk075732/download_dump
+   461  1:20    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'Public IP'
+   462  1:24    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'Private IP'
+   463  1:26    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'Protected IP'
+   464  1:32    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'Protected IP without Owner/CoOwner' Access ;
+   465  1:36    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'Private IP without Owner/CoOwner' Access ;
+   466  1:40    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'IP Subscription'
+   467  1:42    /tools/imp/dev/bin/imp download -h
+   468  1:43    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'test' -o /home/lk075732
+   469  1:44    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'test' -o /home/lk075732/IPTest-01-001_cfg.yaml
+   470  1:47    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'verbose test' --verbose
+   471  1:47    /tools/imp/dev/bin/imp download -i IPTest-01-001 --for-project Vistara-FE --comment 'verbose test' -v 3
+   472  1:53    rm -rf IPTest-01-001
+   473  7:17    /tools/imp/qa/bin/imp publish --comment 'Publishing for testing Clone_IP_Publish_Site-001' --tag ML1.1.3 --force
+   474  7:28    /tools/imp/dev/bin/imp publish --comment 'Publishing for testing IPTest-01-001' --tag ML1.1.24 --force
+   475  3:15    /tools/imp/prod/bin/imp download -h
+   476  3:20    rm -rf zzz_CIP_25x_Node2_Ban-002
+   477  3:24    /tools/imp/qa/bin/imp prepare-sa -i HIP_Test_00-001
+   478  3:28    CD /home/lk075732/TestIP-01-001
+   479  3:28    cd /home/lk075732/TestIP-01-001
+   480  3:33    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.11 --force
+   481  3:57    cd /home/lk075732/prepare-sa_dump
+   482  4:01    /tools/imp/qa/bin/imp prepare-sa -i IPTest-01-001
+   483  4:03    cd /home/lk075732/Dev_CLI_Dump
+   484  4:03    /home/lk075732/CLI/bin/imp prepare-sa -i Test-834-001
+   485  10:04   /home/lk075732/CLI/bin/imp publish --comment 'dev testing' --tag ML1.1.1 --force
+   486  10:08   /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+   487  10:09   cd /home/lk075732/IPTest-01-001
+   488  0:34    /home/lk075732/CLI/bin/imp download --for-project CLIDownload_01 --comment 'download testing' -i Test-01-001
+   489  10:19   cd /home/lk075732/Test-01-001
+   490  10:23   rm -rf TestIP-01-001
+   491  10:32   mv IMPIP_Publish_Test-001 /home/lk075732/QA
+   492  10:34   cd /home/lk075732/IMPIP_Publish_Test-001
+   493  10:54   cd /home/lk075732/QA/IMPIP_Publish_Test-001
+   494  10:55   /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.1 --force
+   495  12:01   cd /home/lk075732/QA
+   496  5:35    /tools/imp/qa/bin/imp prepare-sa -i TestIP-01-001
+   497  6:10    less /home/lk075732/.imp/log/prepare-sa-20250912060639052.log
+   498  6:22    rm -rf Test-01-001
+   499  6:22    /home/lk075732/CLI/bin/imp prepare-sa -i Test-01-001
+   500  2:40    mkdir DEVTest
+   501  2:41    mv /home/lk075732/Test1234-001 /home/lk075732/DEVTest
+   502  3:22    mkdir QATest
+   503  3:24    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.10 --force
+   504  3:25    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.11 --force
+   505  3:39    cd /home/lk075732/QATest/Clone_IP_Publish_Site-001
+   506  3:39    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.12 --force
+   507  3:45    mv /home/lk075732/Clone_IP_Publish_Site-001 /home/lk075732/QATest/Dump
+   508  3:50    /home/lk075732/CLI/bin/imp -i zzzTest100-001
+   509  3:51    cd /home/lk075732/zzzTest100-001
+   510  9:15    dos2unix /home/lk075732/CLI/lib/imp.stcl
+   511  9:18    sed -n 'l' "/home/lk075732/New folder/imp.stcl"
+   512  9:18    grep -nP '\xC2\xA0' "/home/lk075732/New folder/imp.stcl"
+   513  9:20    perl -CS -pe 's/\xC2\xA0/ /g' "/home/lk075732/New folder/imp.stcl"
+   514  9:20    dos2unix "/home/lk075732/New folder/imp.stcl"
+   515  9:37    tclsh "/home/lk075732/New folder/imp.stcl"
+   516  9:38    cd /home/lk075732/New folder
+   517  9:38    cd /home/lk075732/New
+   518  9:39    tclsh imp.stcl
+   519  6:45    /tools/imp/dev/bin/imp prepare-sa Test1234-001
+   520  7:10    /tools/imp/dev/bin/imp prepare-sa -i zzzTest100-001
+   521  8:37    cd /home/lk075732/IMPTest_20-001
+   522  8:38    /home/lk075732/CLI/bin/imp prepare-sa -i IMPTest_20-001
+   523  9:59    cd /home/lk075732/Test1234-001
+   524  13:14   /tools/imp/dev/bin/imp prepare-sa -I Test1234-001
+   525  13:16   mkdir DEV25XTest
+   526  13:17   /tools/imp/dev/bin/imp prepare-sa -I /home/lk075732/DEV25XTest/Test1234-001
+   527  13:17   home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/DEV25XTest/Test1234-001
+   528  13:18   /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/DEV25XTest/Test1234-001
+   529  13:18   mkdir Test1234-001
+   530  13:21   help prepare-sa
+   531  13:21   prepare-sa
+   532  2:34    cd /home/lk075732/QATest
+   533  2:35    /tools/imp/qa/bin/imp prepare-sa -I /home/lk075732/QATest/Clone_IP_Publish_Site-001
+   534  3:36    /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/Test1234-001
+   535  3:47    /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/DEVTest/Test1234-001
+   536  6:44    /home/lk075732/CLI/bin/imp prepare-sa -h
+   537  7:06    rm-rf Test1234-001
+   538  8:17    /home/lk075732/CLI/bin/imp query --soc-fabrication-report --from-date "2025/01/08" --to-date "2025/02/09" --ofile IMP_QUERY_TEST
+   539  8:17    /tools/imp/dev/bin/imp query --soc-fabrication-report --from-date "2025/01/08" --to-date "2025/02/09" --ofile IMP_QUERY_TEST
+   540  3:05    /home/lk075732/CLI/bin/imp prepare-sa -i Test1234-001 -I /home/lk075732/QATest/Dump/Test1234-001
+   541  3:06    /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/QATest/Dump/Test1234-001
+   542  3:10    cd /home/lk075732/QATest/Dump/Test1234-001
+   543  3:11    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.2 --force
+   544  3:12    /tools/imp/dev/bin/imp publish --comment 'DEV testing' --tag ML1.1.2 --force
+   545  0:56    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.13 --force
+   546  1:00    mv Clone_IP_Publish_Site-001 /home/lk075732/QATest
+   547  1:00    mv Clone_IP_Publish_Site-001 /home/lk075732/QATest/
+   548  1:00    mv /home/lk075732/Clone_IP_Publish_Site-001 /home/lk075732/QATest
+   549  1:02    mkdir QABackup
+   550  1:03    mv /home/lk075732/Clone_IP_Publish_Site-001 /home/lk075732/QABackup
+   551  1:04    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.14 --force
+   552  1:08    /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/QABackup/Clone_IP_Publish_Site-001
+   553  1:13    /home/lk075732/CLI/bin/imp prepare-sa -i /home/lk075732/QABackup/Clone_IP_Publish_Site-001
+   554  1:14    cd /home/lk075732/QABackup/
+   555  1:24    mkdir QAPublish
+   556  1:25    mv /home/lk075732/Clone_IP_Publish_Site-001 /home/lk075732/QAPublish
+   557  2:48    cd /home/lk075732/QAPublish
+   558  2:59    cd /home/lk075732/QAPublish/Clone_IP_Publish_Site-001
+   559  2:59    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.16 --force
+   560  4:50    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.17 --force
+   561  5:03    ls Clone_IP_Publish_Site-001
+   562  5:31    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.19 --force
+   563  5:36    cd /home/lk075732/QABackup
+   564  5:39    cd /home/lk075732/QABackup/Clone_IP_Publish_Site-001
+   565  5:41    mkdir QAClone
+   566  5:42    cd /home/lk075732/QAClone
+   567  5:43    cd /home/lk075732/QAClone/Clone_IP_Publish_Site-001
+   568  5:44    mkdir QADownload
+   569  5:44    cd /home/lk075732/QADownload
+   570  5:45    /home/lk075732/CLI/bin/imp download --for-project zzz_ToscaSOC_01 --comment 'download testing' -i Clone_IP_Publish_Site-001
+   571  5:46    /tools/imp/qa/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test' -i Clone_IP_Publish_Site-001
+   572  5:47    /home/lk075732/CLI/bin/imp download --for-project BCM4369A0 --comment 'download testing' -i Clone_IP_Publish_Site-001
+   573  5:50    /home/lk075732/CLI/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test' -i hx5_ddrctrl_cadence-001
+   574  5:51    /home/lk075732/CLI/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test for INC2465138' --tag ML1.1.0 -i Test_3PIP_CadenceVendor-001
+   575  5:52    /home/lk075732/CLI/bin/imp download --for-project BCM4369A0 --comment 'download testing' -i Testing_Prepare_SA_IP-001
+   576  5:53    rm -rf Testing_Prepare_SA_IP-001
+   577  5:55    cd /home/lk075732/QADownload/zzzC2-001
+   578  7:33    mkdir QA2025X
+   579  7:50    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.20 --force
+   580  7:53    CD /home/lk075732/QA2025X/Clone_IP_Publish_Site-001
+   581  7:53    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.21 --force
+   582  8:00    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.22 --force
+   583  9:04    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML0.5.3 --force
+   584  9:21    /tools/imp/qa/bin/imp prepare-sa -I Test_IPForCLI_FC-001
+   585  1:32    cd /home/lk075732/QA2025X/
+   586  5:19    /home/lk075732/CLI/bin/imp prepare-sa --verbose
+   587  7:11    /home/lk075732/CLI/bin/imp prepare-sa --verbose 1
+   588  7:11    /home/lk075732/CLI/bin/imp prepare-sa --verbose 2
+   589  7:11    /home/lk075732/CLI/bin/imp prepare-sa --verbose 3
+   590  8:41    rm rf Clone_IP_Publish_Site-001
+   591  5:31    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing without watermark cells' -i zzz_Test_FC_IP-001 --no-watermark-cells
+   592  5:31    /tools/imp/prod/bin/imp download --for-project Vistara-FE --comment 'testing without watermark cells' -i zzz_Test_FC_IP-001
+   593  5:32    cd PROD25X
+   594  5:33    /tools/imp/prod/bin/imp prepare-sa -i zzz_Test_FC_IP-001
+   595  5:35    /tools/imp/prod/bin/imp publish --comment 'OS Patch testing' --tag ML0.5.5 --force
+   596  3:14    cd`
+   597  5:54    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.23 --force
+   598  5:56    .
+   599  5:56    ..
+   600  6:26    rm -rf Clone_IP_Publish_Site-001.bak
+   601  13:33   ls /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump
+   602  13:33   ls -a /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump
+   603  15:18   /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump
+   604  16:17   /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/Clone_IP_Publish_Site-001
+   605  22:46   /home/lk075732/CLI/bin/imp prepare-sa -I Clone_IP_Publish_Site-001
+   606  23:20   /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.24 --force
+   607  2:53    /home/lk075732/CLI/bin/imp prepare-sa -I zzzC2-001
+   608  2:55    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.0 --force
+   609  5:14    /tools/imp/qa/bin/imp prepare-sa -I Clone_IP_Publish_Site-001
+   610  5:20    rm -rf Test_IPForCLI_FC-001
+   611  5:22    CD Test_IPForCLI_FC-001
+   612  7:18    CD ~
+   613  7:48    /tools/imp/qa/bin/imp prepare-sa -i Test_IPForCLI_FC-001
+   614  7:48    cd Test_IPForCLI_FC-001
+   615  2:22    cd /home/lk075732/QA2025X/Test_IPForCLI_FC-001
+   616  3:00    rm -rf CLI
+   617  9:39    /home/lk075732/CLI/bin/imp prepare-sa -i Test-002
+   618  9:40    /home/lk075732/CLI/bin/imp prepare-sa -i zzz_Soft_Internal_HIP-001
+   619  7:49    cat /home/lk075732/.imp/log/prepare-sa-20250924061412889.log
+   620  8:04    less /home/lk075732/.imp/log/prepare-sa-20250924080420577.log
+   621  8:12    /home/lk075732/CLI/bin/imp -v 1
+   622  10:45   /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML0.5.6 --force
+   623  10:57   /home/lk075732/CLI/bin/imp prepare-sa -v 1
+   624  10:57   /home/lk075732/CLI/bin/imp prepare-sa -v 2
+   625  10:57   /home/lk075732/CLI/bin/imp prepare-sa -v 3
+   626  10:57   /home/lk075732/CLI/bin/imp prepare-sa -i zzzTest100-001
+   627  0:17    /home/lk075732/CLI/bin/imp prepare-sa -i zzz_Test_FC_IP-001
+   628  0:26    cd zzz_Test_FC_IP-001
+   629  0:27    /home/lk75732/CLI/bin/imp publish --comment 'prod testing' --tag ML1.1.26 --force
+   630  0:29    /home/lk075732/CLI/bin/imp prepare-sa -i zzz_CIP_25x_Node2_Ban-002
+   631  0:41    cd zzz_CIP_25x_Node2_Ban-002
+   632  0:42    /home/lk075732/CLI/bin/imp publish --comment 'prod testing' --tag ML1.1.26 --force
+   633  1:19    cd /home/lk075732/DEVTest
+   634  3:42    cd /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/
+   635  3:54    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.26 --force
+   636  3:56    `cd ~
+   637  3:57    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.27 --force
+   638  3:44    /tools/imp/qa/bin/imp prepare-sa -i zzz_Test_FC_IP-001
+   639  3:47    ls zzzTest100-001
+   640  5:00    /tools/imp/dev/bin/imp prepare-sa -i Test1234-001
+   641  6:54    ls -a zzzTest100-001
+   642  7:00    /tools/imp/qa/bin/imp prepare-sa -v 1
+   643  7:02    /tools/imp/qa/bin/imp prepare-sa -v 2
+   644  7:18    cat p1.txt
+   645  7:20    lss p1.txt
+   646  7:34    cp /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/p1.txt /home/lk075732/QA2025X/
+   647  7:37    echo "ML1.1.28" | tee -a /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/p1.txt
+   648  7:40    cp /home/lk075732/QA2025X
+   649  7:48    /tools/imp/qa/bin/imp prepare-sa -v 3
+   650  7:56    cp /home/lk075732/QA2025X/p1.txt /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/
+   651  8:13    echo "ML1.1.4" | tee -a /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/Clone_IP_Publish_Site-001/p1.txt
+   652  8:28    cd /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump
+   653  8:43    echo "ML1.1.28" | tee -a /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/Clone_IP_Publish_Site-001/p1.txt
+   654  8:44    less p1.txt
+   655  5:28    cd /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/Clone_IP_Publish_Site-001
+   656  5:28    less
+   657  5:29    less ipinfo.log
+   658  11:04   less /home/lk075732/.imp/log/prepare-sa-20250929042458260.log
+   659  3:06    mkdir PROD25X
+   660  3:08    /tools/imp/dev/bin/imp prepare-sa -h
+   661  3:10    cd /home/lk075732/DEV25X
+   662  3:15    rm -rf DEV25X
+   663  3:15    /tools/imp/dev/bin/imp prepare-sa -i IPTest-01-001
+   664  3:16    cd IPTest-01-001
+   665  3:20    /tools/imp/dev/bin/imp publish --comment 'DEV testing' --tag ML1.1.25 --force
+   666  3:23    DEV25X_DOWNLOAD
+   667  3:23    mkdir DEV25X_DOWNLOAD
+   668  3:23    cd DEV25X_DOWNLOAD
+   669  3:24    /tools/imp/dev/bin/imp download --for-project Vistara-FE --comment 'download testing' -i IPTest-01-001
+   670  3:26    mkdir DEV25X_VerifyIP
+   671  3:27    /tools/imp/dev/bin/imp verify-ip -P Vistara-FE --gds-file /home/lk075732/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/ANA_TMON_TS16FFP_S0.cdl
+   672  3:27    /tools/imp/dev/bin/imp verify-ip -P Vistara-FE --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   673  3:35    rm -rf zzz_Test_FC_IP-001
+   674  3:41    ls -slRa /home/lk075732/PROD25X/Test_3PIP_Notifications-001 | grep .SYNC
+   675  3:49    ll /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002
+   676  3:49    ls -a /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002
+   677  3:53    rsync --exclude=.SYNC --exclude=imp --prune-empty-dirs -a --stats --verbose --checksum --delete /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/* /home/lk075732/PROD25X/Test_3PIP_Notifications-001/
+   678  3:54    cd /home/lk075732/PROD25X/Test_3PIP_Notifications-001
+   679  3:58    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/* /home/lk075732/PROD25X/Test_3PIP_Notifications-001/
+   680  4:01    /tools/imp/prod/bin/imp publish --comment 'PROD testing' --tag ML1.1.0 --force
+   681  4:03    cd /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002
+   682  4:04    /tools/imp/prod/bin/imp publish --comment 'PROD testing' --tag ML1.0.9 --force
+   683  4:10    /tools/imp/prod/bin/imp prepare-sa -i zzz_CIP_25x_Node2_Ban-002
+   684  4:18    cd /home/lk075732/PROD25X
+   685  4:19    rm -rf Test_3PIP_Notifications-001
+   686  4:19    /tools/imp/prod/bin/imp prepare-sa -i Test_3PIP_Notifications-001
+   687  4:19    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/doc /home/lk075732/PROD25X/Test_3PIP_Notifications-001/
+   688  4:19    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/oasis /home/lk075732/PROD25X/Test_3PIP_Notifications-001/
+   689  4:20    cd Test_3PIP_Notifications-001
+   690  4:21    vim Test_3PIP_Notifications-001_cfg.yaml
+   691  4:23    /tools/imp/prod/bin/imp publish --comment 'PROD testing' --tag ML1.1.1 --force
+   692  8:50    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/ /home/lk075732/QA2025X/zzzTest100-001/
+   693  8:57    rm -rf zzzTest100-001
+   694  8:59    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/* /home/lk075732/QA2025X/zzzTest100-001/
+   695  9:01    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.0 --force
+   696  9:03    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/doc /home/lk075732/QA2025X/zzzTest100-001/
+   697  9:04    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis /home/lk075732/QA2025X/zzzTest100-001/
+   698  9:04    cd zzzTest100-001
+   699  9:10    vim zzzTest100-001_cfg.yaml
+   700  9:14    /tools/imp/qa/bin/imp prepare-sa -i Test_3PIP_Notifications-001
+   701  9:14    /tools/imp/qa/bin/imp prepare-sa -i Test-002
+   702  9:20    rsync --exclude=.SYNC --prune-empty-dirs -a --stats --verbose --checksum --delete /home/lk075732/QA2025X/zzz_Test01-001 /home/lk075732/QA2025X/Clone_IP_Publish_Site-001
+   703  9:21    rsync --exclude=.SYNC --prune-empty-dirs -a --stats --verbose --checksum --delete /home/lk075732/QA2025X/zzz_Test01-001/ /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/
+   704  9:23    rsync --exclude=.SYNC --prune-empty-dirs -a --stats --verbose --checksum --delete /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/ /home/lk075732/QA2025X/zzz_Test01-001/
+   705  9:24    cd zzz_Test01-001
+   706  9:24    ls -slRa /home/lk075732/QA2025X/zzz_Test01-001 | grep .SYNC
+   707  1:57    /tools/imp/qa/bin/imp -h
+   708  1:57    /tools/imp/qa/bin/imp -info
+   709  2:21    export SYNCVER=V6R2025x.HF1
+   710  2:22    export /tools/syncinc/V6R2025x.HF1
+   711  2:23    export SYNCVER=/tools/syncinc/V6R2025x.HF1
+   712  2:23    SYNCVER=/tools/syncinc/V6R2025x.HF1
+   713  2:23    dssc export SYNCVER=/tools/syncinc/V6R2025x.HF1
+   714  2:34    echo $SYNCVER
+   715  2:34    echo $SYNC_DIR
+   716  2:34    echo $path
+   717  2:38    modinfo e1000
+   718  3:42    dssc modinfo /home/lk075732/QA2025X/zzzTest100-001
+   719  3:42    dssc /home/lk075732/QA2025X/zzzTest100-001
+   720  3:47    dssc ls -rec -fullpath sync://imp-vault-qa-1.broadcom.net:45784/Modules/2025/09/zzzTest100-001 | grep '\.ko$'
+   721  3:58    dssc modinfo sync://imp-vault-qa-1.broadcom.net:45784/Modules/2025/09/zzzTest100-001 ; Trunk:Latest
+   722  4:00    modinfo /home/lk075732/QA2025X/zzzTest100-001
+   723  4:01    -help
+   724  4:08    dssc /tools/syncinc/V6R2025x.HF1/bin/dssc showmods -format list /home/lk075732/QA2025X/zzzTest100-001
+   725  4:10    dssc setselector Trunk:Latest
+   726  4:10    dssc setselector Trunk:Latest zzzTest100-001
+   727  4:11    cd /home/lk075732/QA2025X/zzzTest100-001
+   728  12:36   ls -slRa /home/lk075732/QA2025X/Clone_IP_Publish_Site-001 | grep .SYNC
+   729  12:38   /tools/imp/qa/bin/imp prepare-sa -i zzzTest100-001
+   730  9:32    ls -a /home/lk075732/QA2025X/zzzTest1001-001
+   731  9:32    cd zzzTest1001-001
+   732  9:33    cd /home/lk075732/QA2025X/Clone_IP_Publish_Site-001
+   733  9:33    ls -a Clone_IP_Publish_Site-001
+   734  9:34    cd oasis
+   735  9:35    cp /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis /home/lk075732/QA2025X/zzzTest1001-001/
+   736  9:35    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis /home/lk075732/QA2025X/zzzTest1001-001/
+   737  9:35    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp /home/lk075732/QA2025X/zzzTest1001-001/
+   738  9:35    cp -r /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/doc /home/lk075732/QA2025X/zzzTest1001-001/
+   739  9:35    /tools/imp/qa/bin/imp prepare-sa -i zzzTest1001-001
+   740  9:37    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/imp /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/
+   741  9:37    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/doc /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/
+   742  9:38    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/oasis /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/
+   743  9:40    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/imp/.SYNC /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp/
+   744  9:40    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/doc/.SYNC /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/doc/
+   745  9:41    cp -r /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/oasis/.SYNC /home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/
+   746  9:41    cd /home/lk075732/QA2025X
+   747  9:41    cd cd /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/imp
+   748  9:42    cd /home/lk075732/PROD25X/zzz_CIP_25x_Node2_Ban-002/imp
+   749  9:42    cd .SYNC
+   750  9:42    cd Contents
+   751  2:43    /tools/imp/prod/bin/imp prepare-sa -h
+   752  8:17    mkdir DEV25X_VERIFYIP_DUMP
+   753  22:44   /tools/imp/dev/bin/imp verify-ip -P VerifyIPTestSoC_1 --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   754  23:32   cd DEV25X_VERIFYIP_DUMP
+   755  23:38   mkdir DEV25X_PUBLISH
+   756  23:38   cd DEV25X_PUBLISH
+   757  23:39   cd /home/lk075732/DEV25X_PUBLISH/Test_prepareSaBugFix-001
+   758  23:40   /home/lk075732/CLI/bin/imp publish --comment dev25x_Testing --tag ML5.5.7 --force
+   759  23:24   cd /home/lk075732/phy02p_m21_hbm4_ew_top_3-001
+   760  23:26   /tools/imp/prod/bin/imp publish --quality-class ML1.0 --comment "ML1.0.0.0:Initial Release. Prelimiinary LEF, RTL, ETMs.  Gates translated from previous version" --is-uniquified --tag ML1.0.0.1
+   761  9:47    /tools/imp/qa/bin/imp prepare-sa -i Clone_IP_Publish_Site-001
+   762  6:52    /tools/imp/qa/bin/imp verify-ip -P VerifyIPQA25X_EmailTest --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   763  6:53    /tools/imp/qa/bin/imp verify-ip -P QA_SoC_Test --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+   764  8:25    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'TESTING' -i Clone_IP_Publish_Site-001 --uniquify
+   765  8:26    /home/lk075732/CLI/bin/imp download --for-project BCM4369A0 --comment 'download testing' -i zzzC2-001
+   766  8:27    /tools/imp/qa/bin/imp download --for-project BCM4369A0 --comment 'download testing' -i zzzC2-001
+   767  8:28    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'download testing' -i zzzC2-001
+   768  8:34    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 /home/lk075732/QA25X_CLI_Partial_Downloads /home/lk075732/QABackup
+   769  8:36    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 home/lk075732/QA25X_CLI_Partial_Downloads home/lk075732/QABackup
+   770  8:41    rm -rf
+   771  8:44    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --recommended --comment 'downloading Files' --tag R1 -i zzzC2-001 zzzC2-001/imp
+   772  8:44    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --recommended --comment 'downloading Files' -i zzzC2-001 zzzC2-001/imp
+   773  1:59    mkdir SWIMP-850
+   774  1:59    cd SWIMP-850
+   775  1:59    mkdir DEV25X
+   776  1:59    cd DEV25X
+   777  2:03    /home/lk075732/CLI/bin/imp prepare-sa -i IMP_IPEmail_01-001
+   778  2:22    cd~
+   779  2:22    cd home/lk075732/QA25X_CLI_Partial_Downloads
+   780  2:22    cd /home/lk075732/QA25X_CLI_Partial_Downloads/
+   781  2:22    mkdir zzzC2-001
+   782  1:59    /tools/imp/qa/bin/imp prepare-sa -i zzzC2-001 -I /home/lk075732/QA25X/zzzC2-001
+   783  2:03    /tools/imp/qa/bin/imp prepare-sa -h
+   784  7:51    /home/lk075732/CLI/bin/imp prepare-sa -i
+   785  3:43    history ;
+   786  3:44    cd /home/lk075732/PROD25X/zzz_Test_FC_IP-001
+   787  3:44    cd /home/lk075732/PROD25X/
+   788  3:44    ls
+   789  2:25    help download
+   790  2:25    /tools/imp/qa/bin/imp download -h
+   791  2:53    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 /home/lk075732/zzzC2-001/imp
+   792  5:28    cd home/lk075732/zzzC2-001/imp
+   793  5:28    cd cd home/lk075732/zzzC2-001/imp/
+   794  5:29    cd home/lk075732/zzzC2-001/imp/
+   795  5:30    rm rf zzzC2-001
+   796  5:31    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 zzzC2-001/imp
+   797  0:25    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 home/lk075732/zzzC2-001/imp
+   798  6:15    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 home/lk075732/zzzC2-001/imp home/lk075732/zzzC2-001/p1.txt
+   799  6:18    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 imp p1.txt
+   800  6:19    mkdir zzzC2-001_full
+   801  6:19    cd zzzC2-001_full
+   802  6:20    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'test' -i zzzC2-001
+   803  6:22    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 imp file1.txt file2.txt
+   804  6:23    mkdir zzzC2-001_R1
+   805  6:23    cd zzzC2-001_R1
+   806  6:24    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001
+   807  6:24    cd >>
+   808  8:27    /tools/imp/qa/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 imp doc
+   809  8:27    /home/lk075732/CLI/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' --tag R1 -i zzzC2-001 imp doc
+   810  14:43   /home/lk075732/CLI/bin/imp download --for-project VerifyIPQA25X_EmailTest --comment 'downloading Files' -i zzzC2-001 file2.txt
+   811  23:32   /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 imp
+   812  23:52   /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 imp doc file2.txt
+   813  2:30    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 doc file2.txt
+   814  2:32    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 /home/lk075732/zzzC2-001/doc /home/lk075732/zzzC2-001/file2.txt
+   815  5:07    mkdir prepare-sa
+   816  5:08    cd prepare-sa
+   817  5:10    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 imp doc
+   818  7:51    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.1 --force
+   819  7:09    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 imp doc oasis file1.txt
+   820  7:10    cd /home/lk075732/QA25X/zzzC2-001
+   821  7:33    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.2 --force
+   822  7:43    /tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML1.1.2 --force
+   823  23:22   /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 imp doc file1.txt
+   824  23:47   /tools/imp/qa/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.3 --force
+   825  23:56   /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.3 --force
+   826  0:01    cd /home/lk075732/QA25X/prepare-sa/zzzC2-001
+   827  0:01    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.3 --force
+   828  0:03    rm -rf *
+   829  0:05    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.4 --force
+   830  0:19    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.5 --force
+   831  0:20    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.5 --force
+   832  0:45    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.6 --force
+   833  2:22    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001 doc file1.txt
+   834  2:23    cd zzzC2-001
+   835  2:27    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.7 --force
+   836  2:28    rm -rf zzzC2-001
+   837  2:28    /home/lk075732/CLI/bin/imp prepare-sa -i zzzC2-001
+   838  3:35    mkdir lw
+   839  3:35    cd lw
+   840  3:38    cd /home/lk075732/QA25X/lw/Clone_IP_Publish_Site-001
+   841  3:38    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.29 --force
+   842  3:40    cd /home/lk075732/QA25X/
+   843  3:40    mkdir lw2
+   844  3:41    cd /home/lk075732/QA25X/zzzC2-001/lw2
+   845  3:42    cd /home/lk075732/QA25X/lw2
+   846  2:21    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 doc imp p1.txt
+   847  2:22    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.30 --force
+   848  2:43    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 doc imp oasis p1.txt
+   849  2:45    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.31 --force
+   850  3:01    /home/lk075732/CLI/bin/imp prepare-sa -I /home/lk075732/QA25X/lw3 -i Clone_IP_Publish_Site-001 doc imp p1.txt
+   851  5:45    cd..
+   853  5:56    rm -rf lw3
+   854  5:57    mkdir prepareSA
+   855  6:00    cd QA25X
+   856  6:06    cd dco
+   858  6:11    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.32 --force
+   859  6:30    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.33 --force
+   860  7:04    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.34 --force
+   861  7:18    /home/lk075732/CLI/bin/imp publish -lw --comment 'QA testing' --tag ML1.1.35 --force
+   862  7:26    vm p1.txt
+   864  8:03    cd /home/lk075732/QA25X
+   865  8:03    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 /home/lk075732/QA25X/Clone_IP_Publish_Site-001/imp
+   866  8:33    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 doc
+   867  9:11    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 doc p1.txt
+   868  4:44    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001 p1.txt
+   869  4:44    cd Clone_IP_Publish_Site-001
+   870  4:45    cd /home/lk075732/Clone_IP_Publish_Site-001
+   871  4:56    /home/lk075732/CLI/bin/imp publish --comment 'QA testing' --tag ML1.1.37 --force
+   872  5:01    rm -rf Clone_IP_Publish_Site-001
+   873  5:02    /home/lk075732/CLI/bin/imp prepare-sa -i Clone_IP_Publish_Site-001
+   874  5:11    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML5.5.9 --force
+   875  5:17    /home/lk075732/CLI/bin/imp prepare-sa -i Test_prepareSaBugFix-001
+   876  5:33    cd /home/lk075732/Test_prepareSaBugFix-001
+   877  5:47    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML5.5.10 --force
+   878  5:48    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML5.5.11 --force
+   879  5:52    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML5.5.12 --force
+   880  5:56    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R3 --force
+   881  6:49    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R4 --force
+   882  7:07    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R5 --force
+   883  7:20    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R6 --force
+   885  1:43    mkdir ReadOnly
+   886  1:44    chmod a=r /home/lk075732/ReadOnly
+   887  1:46    chmod a=rx /home/lk075732/ReadOnly
+   888  1:47    cd ReadOnly
+   889  1:49    mkdir Partial
+   890  1:49    cd Partial
+   891  1:49    /home/lk075732/CLI/bin/imp prepare-sa -i zzzH1-001 doc oasis file2.txt file1.txt
+   892  1:51    /home/lk075732/CLI/bin/imp prepare-sa -i zzzH1-001 home/lk075732/zzzH1-001/doc home/lk075732/zzzH1-001/file2.txt home/lk075732/zzzH1-001/file1.txt
+   893  1:53    cd zzH1-001
+   894  1:53    cd ZzzH1-001
+   895  2:03    mkdir FULL
+   896  2:03    CD full
+   898  2:03    /home/lk075732/CLI/bin/imp prepare-sa -i zzzH1-001
+   899  2:04    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R8 --force
+   900  2:12    cd /home/lk075732/zzzH1-001
+   901  2:13    /home/lk075732/CLI/bin/imp prepare-sa -i zzzH1-001 doc file2.txt file1.txt
+   902  2:14    cd zzzH1-001
+   903  2:14    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R9 --force
+   904  4:18    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag R10 --force
+   905  4:21    rm -rf Test_prepareSaBugFix-001
+   906  4:21    /home/lk075732/CLI/bin/imp prepare-sa -i Test_prepareSaBugFix-001 doc
+   907  4:22    cd Test_prepareSaBugFix-001
+   908  4:23    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML5.5.13 --force
+   909  4:28    /home/lk075732/CLI/bin/imp prepare-sa -i zzzTest2025-001
+   910  4:30    cd /home/lk075732/Partial
+   911  4:30    /home/lk075732/CLI/bin/imp prepare-sa -i Test1234-001 p1.txt
+   912  4:31    cd /home/lk075732/Partial/Test1234-001
+   913  4:31    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.27 --force
+   914  4:42    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.28 --lightweight
+   915  4:44    rm -rf Test1234-001
+   916  4:44    /home/lk075732/CLI/bin/imp prepare-sa -i Test1234-001
+   918  4:45    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.28 -lw
+   919  4:52    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.28
+   920  6:11    cd /home/lk075732/Test_Ashburn_IP-001
+   921  6:11    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.4
+   922  6:14    rm -rf mxs_ddrdll_vc1-001
+   923  6:15    /home/lk075732/CLI/bin/imp prepare-sa -i mxs_ddrdll_vc1-001
+   924  6:16    rm -rf PL401-001
+   925  6:16    /home/lk075732/CLI/bin/imp prepare-sa -i PL401-001
+   926  6:16    rm -rf Mamba_vulcan_a0-001
+   927  6:16    /home/lk075732/CLI/bin/imp prepare-sa -i Mamba_vulcan_a0-001
+   928  1:33    /home/lk075732/CLI/bin/imp publish -h
+   929  1:39    rm -rf zzzH1-001
+   930  1:54    mkdir PARTIAL
+   931  1:55    cd PARTIAL
+   932  2:22    cd /home/lk075732/PARTIAL/IBM_90nm_CLID_Test_01-001
+   933  2:37    cd /home/lk075732/FULL/IBM_90nm_CLID_Test_01-001
+   934  2:38    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.5 --force
+   935  3:12    /home/lk075732/CLI/bin/imp prepare-sa -i Test_Ashburn_IP-001
+   936  3:13    cd /home/lk075732/FULL/Test_Ashburn_IP-001
+   938  3:17    /home/lk075732/CLI/bin/imp prepare-sa -i zzz_TestClone-001
+   939  3:19    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML0.5.4 --force
+   942  7:59    /home/lk075732/CLI/bin/imp prepare-sa -i IBM_90nm_CLID_Test_01-001 doc p1.txt
+   943  8:00    /home/lk075732/CLI/bin/imp prepare-sa -i IBM_90nm_CLID_Test_01-001 p1.txt
+   944  9:23    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML2.5.4 --force
+   945  9:24    cd /home/lk075732/PARTIAL
+   946  9:26    cd /home/lk075732/PARTIAL/Test_Ashburn_IP-001
+   947  9:29    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML2.5.5 --force
+   948  9:31    mkdir PARTIAL_DOC
+   949  9:53    /home/lk075732/CLI/bin/imp prepare-sa -i Test_Ashburn_IP-001 doc p1.txt
+   950  7:32    cd /home/lk075732/PARTIAL_DOC/Test_Ashburn_IP-001
+   951  7:32    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.6 --force
+   952  7:32    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.7 --force
+   953  7:53    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.8 --force
+   954  7:27    ls-a
+   955  7:27    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML2.5.9 --force
+   956  8:32    rm -rf .requires_lightweight_publish.log
+   957  0:40    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.4 --force
+   958  0:44    /home/lk075732/CLI/bin/imp prepare-sa -i Test_Ashburn_IP-001 doc
+   959  0:44    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.9 --force
+   960  1:10    cd /home/lk075732/PARTIAL_P1/Test_Ashburn_IP-001
+   961  1:16    rm -rf Test_Ashburn_IP-001
+   962  1:16    /home/lk075732/CLI/bin/imp prepare-sa -i Test_Ashburn_IP-001 p1.txt
+   963  1:17    cd Test_Ashburn_IP-001
+   964  1:17    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML2.5.10 --force
+   966  1:23    cd /home/lk075732/PARTIAL_DOC/IBM_90nm_CLID_Test_01-001
+   967  1:32    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.0 --force
+   968  2:22    cd /home/lk075732/PARTIAL_P1
+   969  2:22    /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 p1.txt
+   970  2:29    cd /home/lk075732/PARTIAL_P1/TestPartial_01-001
+   971  2:56    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.1 --force
+   972  3:02    mkdir PARTIAL_P2
+   974  3:03    /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 p2.txt
+   975  3:04    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.2 --force
+   976  3:04    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.3 --force
+   977  3:10    mkdir PARTIAL_OASIS
+   979  3:11    /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 oasis doc
+   980  3:11    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.4 --force
+   981  3:18    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.4 --force
+   982  3:18    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.5 --force
+   984  3:27    cd
+   986  3:29    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.6 --force
+   987  9:35    cd /home/lk075732
+   995  11:28   cd /home/lk075732/TestPartial_01-001
+   996  11:30   /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.9 --force
+  1001  11:45   cd /home/lk075732/IBM_90nm_CLID_Test_01-001
+  1002  11:45   /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.6 --force
+  1008  22:49   cd PARTIAL_P1
+  1014  22:50   cd PARTIAL_OASIS
+  1021  22:51   /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 doc
+  1030  23:03   /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.9 --force
+  1031  23:03   /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.10 --force
+  1032  23:09   cd doc
+  1033  23:09   vi TestPartial_01-001_release_notes.txt
+  1037  23:23   cd PARTIAL_P2
+  1038  23:23   /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 doc p1.txt p2.txt
+  1046  23:29   vi p2.txt
+  1047  23:31   /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.11 --force
+  1049  23:41   cd /home/lk075732/FULL
+  1074  0:25    cd .
+  1101  0:42    cd PARTAIL_DOC
+  1104  0:43    /home/lk075732/CLI/bin/imp prepare-sa -i IBM_90nm_CLID_Test_01-001 doc
+  1112  0:46    cd FULL
+  1115  0:48    /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001
+  1116  0:48    cd TestPartial_01-001
+  1120  0:48    rm -rf .requires_lightweight_publish
+  1126  0:50    cd ,,
+  1128  0:51    rm -rf IBM_90nm_CLID_Test_01-001
+  1129  0:51    /home/lk075732/CLI/bin/imp prepare-sa -i IBM_90nm_CLID_Test_01-001
+  1130  0:52    cd IBM_90nm_CLID_Test_01-001
+  1132  0:52    cd imp
+  1133  0:52    ls -a
+  1134  0:53    CD ..
+  1138  0:53    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.12 --force
+  1141  1:56    cd /home/lk075732/FULL/TestPartial_01-001
+  1142  1:57    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.13 --force
+  1143  1:58    vi p1.txt
+  1144  2:00    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.13 --force
+  1145  3:14    pwd
+  1148  3:14    cd ..
+  1150  3:14    ll
+  1151  3:14    rm -rf TestPartial_01-001
+  1152  3:15    /home/lk075732/CLI/bin/imp prepare-sa -i TestPartial_01-001 doc p1.txt
+  1153  4:20    cd /home/lk075732/PARTIAL_DOC
+  1155  4:25    cd /home/lk075732/PARTIAL_DOC/TestPartial_01-001
+  1158  5:44    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.0.14 --force
+  1162  6:38    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.0.14 --force
+  1164  6:48    cd PARTIAL_DOC
+  1165  6:48    /home/lk075732/CLI/bin/imp prepare-sa -i Test1234-001 doc p1.txt
+  1166  6:49    cd Test1234-001
+  1167  6:50    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.28 --force
+  1169  7:00    /home/lk075732/CLI/bin/imp publish -lw --comment 'DEV testing' --tag ML1.1.29 --force
+  1170  7:00    /home/lk075732/CLI/bin/imp publish --comment 'DEV testing' --tag ML1.1.29 --force
+  1171  7:04    cd ~
+  1172  7:04    mkdir DOWNLOAD_DOC
+  1173  7:05    cd DOWNLOAD_DOC
+  1174  7:05    /home/lk075732/CLI/bin/imp download -h
+  1175  7:10    history

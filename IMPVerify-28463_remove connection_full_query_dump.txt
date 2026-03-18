@@ -1,0 +1,143 @@
+MQL<225>print bus 25664.47740.49620.51868 select to[IMP_VerifyRunForSoC].from.id;
+    to[IMP_VerifyRunForSoC].from.id = 25664.47740.34301.33392
+    to[IMP_VerifyRunForSoC].from.id = 25664.47740.34301.39912
+    to[IMP_VerifyRunForSoC].from.id = 25664.47740.24577.16025
+    to[IMP_VerifyRunForSoC].from.id = 25664.47740.53099.53169
+	
+MQL<227>print bus 25664.47740.53099.53169 select name;
+business object  IMP_VerifyRun IMPVerify-28463 -
+    name = IMPVerify-28463
+	
+MQL<227>temp query bus IMP_IPProduct * * where "from[IMP_IPBranch].to.from[IMP_IPBranchRelease].to.from[IMP_IP_Watermark].to.to[IMP_VerifyRunDetectedIPs].from.name == 'IMPVerify-28463'" select name dump;
+
+IMP_IPProduct,Cortex-M0-Plus-001,A,Cortex-M0-Plus-001
+IMP_IPProduct,apb2sbuscore_nbr-001,A,apb2sbuscore_nbr-001
+IMP_IPProduct,ECC_IP-001,A,ECC_IP-001
+IMP_IPProduct,ds02_efuse_controller_01-001,A,ds02_efuse_controller_01-001
+IMP_IPProduct,ds02_sbus2vtmon_01-001,A,ds02_sbus2vtmon_01-001
+IMP_IPProduct,ds02_tap_controller_01-001,A,ds02_tap_controller_01-001
+IMP_IPProduct,BCM2GAAXD12DFT_D1212V_TAP-001,A,BCM2GAAXD12DFT_D1212V_TAP-001
+IMP_IPProduct,ds02_sbus2apb_01-001,A,ds02_sbus2apb_01-001
+IMP_IPProduct,ds02_tessent_occ_01-001,A,ds02_tessent_occ_01-001
+IMP_IPProduct,sd02sbus_master_01-001,A,sd02sbus_master_01-001
+IMP_IPProduct,LIB_VTMON_ANALOG_TS2GAA_S0-001,A,LIB_VTMON_ANALOG_TS2GAA_S0-001
+IMP_IPProduct,ds02_pmro_01-001,A,ds02_pmro_01-001
+IMP_IPProduct,LIB_PM_TS2GAA_S0_V1-001,A,LIB_PM_TS2GAA_S0_V1-001
+IMP_IPProduct,BCM2GAAXD12DFT_D1212V_RST-001,A,BCM2GAAXD12DFT_D1212V_RST-001
+IMP_IPProduct,BCM2GAAXD12DFT_D12XV_POR-001,A,BCM2GAAXD12DFT_D12XV_POR-001
+IMP_IPProduct,BCM2GAAXHCSL_D08NH_CLKOBS-001,A,BCM2GAAXHCSL_D08NH_CLKOBS-001
+IMP_IPProduct,ds02_LIB_PM_TS2GAA_S0_V1-001,A,ds02_LIB_PM_TS2GAA_S0_V1-001
+IMP_IPProduct,BCM2GAAXD12DFT_D1212V_TRAN-001,A,BCM2GAAXD12DFT_D1212V_TRAN-001
+IMP_IPProduct,BCM2GAAXD12DFT_D1212V_ODTRAN-001,A,BCM2GAAXD12DFT_D1212V_ODTRAN-001
+IMP_IPProduct,BCM2GAAXD12DFT_DPNV_VDDO_DECAP-001,A,BCM2GAAXD12DFT_DPNV_VDDO_DECAP-001
+IMP_IPProduct,BCM2GAAXD12DFT_D12XV_VBIAS-001,A,BCM2GAAXD12DFT_D12XV_VBIAS-001
+IMP_IPProduct,BCM2GAAXD12DFT_DPNV_VDDO-001,A,BCM2GAAXD12DFT_DPNV_VDDO-001
+IMP_IPProduct,ds02_sbus_rx_cntl32_01-001,A,ds02_sbus_rx_cntl32_01-001
+IMP_IPProduct,BCM2GAAXD12DFT_DECV_VDDC-001,A,BCM2GAAXD12DFT_DECV_VDDC-001
+IMP_IPProduct,BCM2GAAXD12DFT_DPEV_VSSC-001,A,BCM2GAAXD12DFT_DPEV_VSSC-001
+IMP_IPProduct,ds02Cortexm0p_sbus_memory_64kx39_wrapper_01-001,A,ds02Cortexm0p_sbus_memory_64kx39_wrapper_01-001
+IMP_IPProduct,amxs02_ip02p_dlglobal_va1-001,A,amxs02_ip02p_dlglobal_va1-001
+IMP_IPProduct,ds02_maxahb_bridge_1x4_bm_02-001,A,ds02_maxahb_bridge_1x4_bm_02-001
+IMP_IPProduct,amxs02_ip02p_max3_ns_pll_va1-001,A,amxs02_ip02p_max3_ns_pll_va1-001
+IMP_IPProduct,amxs02_ip02p_max3_ns_dqrx_va1-001,A,amxs02_ip02p_max3_ns_dqrx_va1-001
+IMP_IPProduct,amxs02_ip02p_max3_ns_dqtx_va1-001,A,amxs02_ip02p_max3_ns_dqtx_va1-001
+IMP_IPProduct,ds02_memmaster_02-001,A,ds02_memmaster_02-001
+IMP_IPProduct,ds02p_edm_1-001,A,ds02p_edm_1-001
+IMP_IPProduct,ds02p_edm_0_res-001,A,ds02p_edm_0_res-001
+IMP_IPProduct,ds02p_edm_0-001,A,ds02p_edm_0-001
+IMP_IPProduct,ds02p_edm_2-001,A,ds02p_edm_2-001
+IMP_IPProduct,ds02p_edm_corner-001,A,ds02p_edm_corner-001
+IMP_IPProduct,phy02p_max3_ns_hb_top_2-001,A,phy02p_max3_ns_hb_top_2-001
+IMP_IPProduct,cpll02_pllall02_top_01-001,A,cpll02_pllall02_top_01-001
+IMP_IPProduct,ds02p_edm_esd_diode__ns-003,A,ds02p_edm_esd_diode__ns-003
+IMP_IPProduct,phy02p_max3_he_ew_dummy-001,A,phy02p_max3_he_ew_dummy-001
+
+print bus 25664.47740.53099.53169 select from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id;
+
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.1874.45085
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.54029.39711
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.38556.61923
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.24534
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.21952.12965
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.26801
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.21797.17478
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.61308.27078
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.38556.56195
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.27978
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.46481.53093
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.1874.48073
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47151.62610
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47151.63724
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.36072.28068
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.30059
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.33123
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47152.39
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.18998.58930
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.21653.45233
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.36443.34321
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.46481.45486
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47151.64623
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.6645
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.46481.49879
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.32113
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.483.46796
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.3584.13896
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47152.30901
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.65358.44782
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.2490.11190
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.45003.37339
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.25687
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.47151.61501
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.29012
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.25935.31104
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.61308.36282
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.36072.63600
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.13151.57803
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.36072.64661
+from[IMP_VerifyRunDetectedIPs].to.to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].id = 25664.47740.50042.10391
+
+
+delete connection 25664.47740.1874.45085;
+delete connection 25664.47740.54029.39711;
+delete connection 25664.47740.38556.61923;
+delete connection 25664.47740.25935.24534;
+delete connection 25664.47740.21952.12965;
+delete connection 25664.47740.25935.26801;
+delete connection 25664.47740.21797.17478;
+delete connection 25664.47740.61308.27078;
+delete connection 25664.47740.38556.56195;
+delete connection 25664.47740.25935.27978;
+delete connection 25664.47740.46481.53093;
+delete connection 25664.47740.1874.48073;
+delete connection 25664.47740.47151.62610;
+delete connection 25664.47740.47151.63724;
+delete connection 25664.47740.36072.28068;
+delete connection 25664.47740.25935.30059;
+delete connection 25664.47740.25935.33123;
+delete connection 25664.47740.47152.39;
+delete connection 25664.47740.18998.58930;
+delete connection 25664.47740.21653.45233;
+delete connection 25664.47740.36443.34321;	
+delete connection 25664.47740.46481.45486;
+delete connection 25664.47740.47151.64623;
+delete connection 25664.47740.25935.6645;
+delete connection 25664.47740.46481.49879;
+delete connection 25664.47740.25935.32113;
+delete connection 25664.47740.483.46796;
+delete connection 25664.47740.3584.13896;
+delete connection 25664.47740.47152.30901;
+delete connection 25664.47740.65358.44782;
+delete connection 25664.47740.2490.11190;
+delete connection 25664.47740.45003.37339;
+delete connection 25664.47740.25935.25687;
+delete connection 25664.47740.47151.61501;
+delete connection 25664.47740.25935.29012;
+delete connection 25664.47740.25935.31104;
+delete connection 25664.47740.61308.36282;
+delete connection 25664.47740.36072.63600;
+delete connection 25664.47740.13151.57803;
+delete connection 25664.47740.36072.64661;
+delete connection 25664.47740.50042.10391;
+
+
+delete bus 25664.47740.53099.53169;

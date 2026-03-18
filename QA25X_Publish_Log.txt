@@ -1,0 +1,65 @@
+13-Jun-2025 01:22:21.787 SEVERE [Default JMS Resource Adapter-worker- - 1] org.apache.activemq.ra.ActiveMQEndpointWorker$1.pause Endpoint will try to reconnect to the JMS broker in 30 seconds
+13-Jun-2025 01:22:22.078 WARNING [Catalina-utility-2] org.apache.webbeans.web.context.WebContextsService.lazyStartSessionContext Could NOT lazily initialize session context because NO active request context
+13-Jun-2025 01:22:22.328 INFO [http-nio-8070-exec-17] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Event:publish
+13-Jun-2025 01:22:22.328 INFO [http-nio-8070-exec-17] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject IPName:IMPTestIP02-001
+13-Jun-2025 01:22:22.328 INFO [http-nio-8070-exec-17] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject UserName:lk075732
+13-Jun-2025 01:22:22.328 INFO [http-nio-8070-exec-17] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Getting All Release Tags...
+13-Jun-2025 01:22:22.751 INFO [http-nio-8070-exec-13] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.getIPPublishLock Getting Lock with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net|ML1.1.6|2025-06-13 08:22:22 AM UTC, force=false, IPName=IMPTestIP02-001}
+Inside::::IMPRESTfulServiceImpl.java::method:::::::getAttributesForQAFailures:::::::::::::line 811
+Inside::::IMPRESTfulServiceImpl.java::method:::::::getAttributesForQAFailures::::::::retunMapList:::::line 818
+[{RevisionExists=false, AnyRevisionPublishedforBranch=true, Inactive_Rev=, IMP_Topcell=, ReleaseObjectName=, IMP_IsPrefixed=, MissingProgenyInstanceWarn=, IMP_IPRevisionWatermark=P0iI201P30m63eI03e1M, originated=6/13/2025 12:03:15 AM, IMP_ReasonForDeactivation=, IMP_ProductType=Component IP, current=Active, IMP_IPTag=ML1.1.2, AllRevisionsInactive=false, IMP_IPQAStatus=, BranchExists=true, IMP_Alert=, UnknownWMWarn=, sIPIDWMSeed=IMPTestIP02bcadminAIMPTestIP02001, BranchName=Trunk, IMP_IPQASummary=}]
+13-Jun-2025 01:22:29.234 INFO [http-nio-8070-exec-16] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject Event:export-bom
+13-Jun-2025 01:22:29.234 INFO [http-nio-8070-exec-16] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject IPName:IMPTestIP02-001
+13-Jun-2025 01:22:29.234 INFO [http-nio-8070-exec-16] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.hasAccessToEnoviaObject UserName:lk075732
+13-Jun-2025 01:23:11.788 SEVERE [Default JMS Resource Adapter-worker- - 1] org.apache.activemq.ra.ActiveMQEndpointWorker$1.pause Failed to connect to broker [vm://localhost?waitForStart=20000&async=true&create=false]: Could not create Transport. Reason: jakarta.jms.JMSException: Could not create Transport. Reason: java.io.IOException: Broker named 'localhost' does not exist.
+jakarta.jms.JMSException: Could not create Transport. Reason: jakarta.jms.JMSException: Could not create Transport. Reason: java.io.IOException: Broker named 'localhost' does not exist.
+        at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:49)
+        at org.apache.activemq.ActiveMQSslConnectionFactory.createTransport(ActiveMQSslConnectionFactory.java:122)
+        at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:391)
+        at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:253)
+        at org.apache.activemq.ra.ActiveMQResourceAdapter.makeConnection(ActiveMQResourceAdapter.java:147)
+        at org.apache.openejb.resource.activemq.ActiveMQResourceAdapter.makeConnection(ActiveMQResourceAdapter.java:294)
+        at org.apache.activemq.ra.ActiveMQEndpointWorker$1.run(ActiveMQEndpointWorker.java:109)
+        at org.apache.geronimo.connector.work.WorkerContext.run(WorkerContext.java:366)
+        at org.apache.geronimo.connector.work.pool.NamedRunnable.run(NamedRunnable.java:32)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base/java.lang.Thread.run(Thread.java:1595)
+Caused by: jakarta.jms.JMSException: Could not create Transport. Reason: java.io.IOException: Broker named 'localhost' does not exist.
+        at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:49)
+        at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:378)
+        at org.apache.activemq.ActiveMQSslConnectionFactory.createTransport(ActiveMQSslConnectionFactory.java:120)
+        ... 10 more
+Caused by: java.io.IOException: Broker named 'localhost' does not exist.
+        at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:119)
+        at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56)
+        at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:65)
+        at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:376)
+        ... 11 more
+13-Jun-2025 01:23:11.789 SEVERE [Default JMS Resource Adapter-worker- - 1] org.apache.activemq.ra.ActiveMQEndpointWorker$1.pause Endpoint will try to reconnect to the JMS broker in 30 seconds
+-- START -- PUBLIC DOCUMENTS CHECKIN --
+-- PUBLIC DOCUMENTS PUBLISHER --: lk075732
+-- FTP WORKING DIR --: /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928/
+-- IPID --: 25664.47740.63977.51702
+-- GETTING PRODUCT SPEC --:
+-- PRODUCT SPEC EXISTS--:
+-- SPEC ID --: 25664.47740.538.3954
+-- DOC LIST --: []
+-- /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928/ FILE EXISTS--: true
+-- /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928/ IS A DIRECTORY --: true
+-- /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928/ Does not exist---false
+-- END -- PUBLIC DOCUMENTS CHECKIN --
+--- Begin Publish Event { ---
+impversion: 20250611.2352-qa2025x
+commandline: imp publish --comment Publishing for testing IMPTestIP02-001 --tag ML1.1.6 --force
+User: lk075732@accvda5490.acc.broadcom.net
+CWD: /home/lk075732/IMPTestIP02-001
+IPName: IMPTestIP02-001
+Date & Time: 13/06/2025 01:23:21
+Email To List : [TOSCA_TESTING, bcadmin, vkalra, itimplog]
+Email sent successfully
+ --- End Publish Event } ---
+13-Jun-2025 01:23:21.684 INFO [http-nio-8070-exec-13] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.postProcessPublish Deleting temp dir: /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928
+13-Jun-2025 01:23:21.708 INFO [http-nio-8070-exec-13] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.postProcessPublish Deleted temp dir: /projects/imp/tmp/fileChckin/Public/IMPTestIP02-00117115393947528928
+13-Jun-2025 01:23:22.045 INFO [http-nio-8070-exec-14] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.releaseIPPublishLock Releasing Lock with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net|ML1.1.6|2025-06-13 08:22:22 AM UTC, IPName=IMPTestIP02-001}
+13-Jun-2025 01:23:22.067 INFO [http-nio-8070-exec-14] com.broadcom.imp.platform.rest.IMPRESTfulServiceImpl.releaseIPPublishLock Lock released with data: {PUBLISH_LOCK_STRING=lk075732@accvda5490.acc.broadcom.net|ML1.1.6|2025-06-13 08:22:22 AM UTC, IPName=IMPTestIP02-001}

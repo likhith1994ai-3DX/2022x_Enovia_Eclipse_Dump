@@ -1,0 +1,1180 @@
+Jira-827 Updates:
+
+1.Added below options for new imp query in CLI Jar:
+  --soc_fabrication_report with alias -sfr  (To generate the Files in User Directory)
+  --person (To undergo access control mechanism for this person)
+  --fromDate (To fetch results in database from this period)
+  --ToDate (To fetch results in database to this period)
+
+Generates two csv files with prefix as input filename provided to '-ofile' example: 1).output-file-no-verify-ip-runs.csv, 2).output-file-missing-ip-approvals.csv where output-file is ofile in the input command
+ 
+Example New Imp Query Usage:
+imp query --soc_fabrication_report --from-date 2024/01/01 --to-date 12/31/2024 --ofile sample
+
+Use Date Libraries
+ 
+Output Results owned by lk075732: 
+sample-no-verify-ip-runs.csv
+sample-missing-ip-approvals.csv
+ 
+2.Implemented new Method in IMP_SoC_mxJPO : getSoCDetailsforNewIMPQuery
+  Added Function to generate two CSV Files for the new imp query requirement.
+  
+  
+--from-yyyymmdd--to-yyyymmdd
+
+--from-beginning--to-end
+
+--from-date
+
+--to-date
+ 
+ person shouldn't have access to ip which are in private. 
+ files to save with fromdate and todate.
+ 
+ 
+verify-ip- command :
+
+/tools/imp/dev/bin/imp verify-ip -P new_imp_query_test4 --gds-file /home/lk075732/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/ANA_TMON_TS16FFP_S0.cdl
+
+
+IP Approval Status
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_APPROVED = "Approved";
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_DRY_RUN = "Dry-Run";
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_PRE_APPROVED = "Pre-Approved";
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_NOT_APPROVED = "Not Approved";
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_PENDING = "Pending";
+	public static final String ATTRIBUTE_IMP_IP_APPROVAL_STATUS_RANGE_REJECTED = "Rejected";
+	
+	
+	+Submitted by
+	+Date Formats
+	+Validations for private ips
+	+
+
+[ss045552@accvda6559 ~]$ /tools/imp/qa/bin/imp query -h
+ 
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+ 
+imp query <options>
+ 
+Query IMP for information.
+ 
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+ 
+One of the following must be used:
+--consumed-ips          list the IP with revisions used (declared and detected) in a project
+--consumer-projects     list the projects (SoCs and HIPs) that have declared the use of the specified
+                        IP, or that have the IP detected to be in use using verify-ip
+--id                    list the IP's unique id in IMP for use with imp
+--ip-info               print information about the specified IP
+--ip-revision           list the IP revision identified by the specified watermark
+--get-ip-revisions      list the published revisions of an IP
+--list-dtree-specs      list all directory tree specifications in the system
+--list-tech-stacks      list all possible tech stack values in the system
+--qa-status             list the qa status for a version of an IP
+--pre-approved-projects list the revisions with the SoCs/Hierarchical IPs they are pre-approved for
+--project-info          print information about the specified project
+--unique-prefix         list the unique prefix for the IP
+--watermark-string      print the watermark string for a revision of an IP
+ 
+options for --id:
+Use one or more these to get more specific results:
+--ip-name            IP name
+--ip-source          IP source: one of 3pip, internal, or all, defaulting to all
+--bu                 Business Unit. Only valid when --ip-source is internal or all.
+--foundry            Foundry (eg. TSMC, GF)
+--metal-stack        Metal stack
+--vendor             IP Vendor. Only valid when --ip-source is 3pip or all.
+                     Use '//' as separator to specify multiple vendors.
+--tech-node          Technology process node (eg. 20nm, 16nm, etc.)
+--tech-sub-process   Technology sub proceess (eg. low-power, high-power, graphics)
+ 
+options for --ip-revision:
+--watermark          The watermark string for the revision to be detected
+ 
+options for --unique-prefix, --consumer-projects, --get-ip-revisions, --ip-info, --qa-status, --pre-approved-projects,
+and --watermark-string:
+-i | --ip-id ipid   IP's ID in IMP - generated at IP create time. Optional, if executed from the staging
+                    area of an IP.
+ 
+options for --watermark-string:
+-t | --tag tag  The revision tag to get the watermarking string for. Required.
+ 
+options for --project-info:
+-P | --project-name project-name  Project's name. Required.
+ 
+options for --consumed-ips
+-P | --project-name as explained above
+or
+-i | --ip-id ipid (for HIPs) as explained above, AND, optionally, -t | --tag tag, also explained
+                    above. When a tag is specified for an HIP's ipid, the keyword Latest can be
+                    used to specify the latest tag in Trunk.
+ 
+EXAMPLES:
+   Get the revisions of an IP in the system:
+ 
+      imp query --get-ip-revisions --ip-id ipid
+ 
+   Get the revisions of an IP in the system in YAML:
+ 
+      imp query --get-ip-revisions --ip-id ipid -o ip-revisions.yaml
+ 
+   Get an IP's id in IMP for the specified IP Name, BU, foundry, tech node, sub process and metal stack:
+ 
+      imp query --id --tech-node 16nm --foundry TSMC --bu DCD --ip-name SuperDuperIP --tech-sub-process low-power --metal-stack 12M_1x2xa2xy2y2yy1z1r
+ 
+   Get the IP IDs of all the IP's in a BU:
+ 
+      imp query --id --bu DCD
+ 
+   Get the IP IDs of all the IP's with the specified IP Name:
+ 
+      imp query --id --ip-name SuperDuperIP
+ 
+   Get the IP IDs of all the IP's in a BU for the specified foundry:
+ 
+      imp query --id --foundry TSMC --bu DCD
+ 
+   Print information about the specified ipid:
+ 
+      imp query --ip-info --ip-id ipid
+ 
+   Print information about the specified ipid and save it in the specified output file:
+ 
+      imp query --ip-info --ip-id ipid -o ipid-info.yaml
+ 
+   Get information about the ip ids that match the specified values:
+ 
+      imp query --ip-info --tech-node 16nm --foundry TSMC --bu DCD --ip-name SuperDuperIP --tech-sub-process low-power --metal-stack 12M_1x2xa2xy2y2yy1z1r
+ 
+   Get information about all the IP's in a BU:
+ 
+      imp query --ip-info --bu DCD
+ 
+   Get information about all the IP's with the specified IP Name:
+ 
+      imp query --ip-info --ip-name SuperDuperIP
+ 
+   Get information about all the IP's in a BU for the specified foundry:
+ 
+      imp query --ip-info --foundry TSMC --bu DCD
+ 
+   Get the list of pre-approved SoCs/Hierarchical IPs for an IP in the system:
+ 
+      imp query --pre-approved-projects --ip-id ipid
+ 
+   Print information about the project zzzSoC:
+ 
+      imp query --project-info --project-name zzzSoC
+ 
+   Print information about the project zzzSoC and save it in the specified output file:
+ 
+      imp query --project-info --project-name zzzSoC -o zzzSoC-info.yaml
+ 
+   Get the list of IPs consumed by a project:
+ 
+      imp query --consumed-ips --project-name project-name
+      imp query --consumed-ips -i hip-id
+      imp query --consumed-ips -i hip-id -t Latest
+      imp query --consumed-ips -i hip-id -t R-1.0.0.1
+ 
+   Get the list of SoCs using an IP:
+ 
+      imp query --consumer-projects --ip-id ipid
+ 
+   Get the QA status of the specified tag of an IP:
+ 
+      imp query --qa-status --ip-id ipid --tag published-ip-tag
+ 
+   Get the unique prefix for an IP:
+ 
+      imp query --unique-prefix --ip-id ipid
+ 
+   Get the watermarking string for a revision of an IP:
+ 
+      imp query --watermark-string --ip-id ipid --tag tag
+ 
+   Get the list of all tech stacks in IMP:
+ 
+      imp query --list-tech-stacks
+ 
+   Get the list of all tech stacks in IMPin YAML format:
+ 
+      imp query --list-tech-stacks -o imp-tech-stacks.yaml
+ 
+   Get the list of all directory tree specifications in IMP:
+ 
+      imp query --list-dtree-specs
+ 
+   Get the IP revision with the watermark 90b70b61afbbbda70916
+ 
+      imp query --ip-revision --watermark 90b70b61afbbbda70916
+ 
+   For IPX watermarks, the specified watermark consistes of multiple words; for example, for the
+   IPX watermark
+ 
+      "$Created: @(#) IPX_WATERMARK avs_remote_roscs_16ff tsmc16ff_M1_2Mxa_1Mxd_3Mxe_2My_1Mz_1Mr_1UTRDL A5_patch2 asalem,ashok,rajbh 05/02/2016 16:53:03 PDT dNuZW5 BCM _BLOCK iraj $"
+ 
+   the imp query is
+ 
+      imp query --ip-revision --watermark "avs_remote_roscs_16ff tsmc16ff_M1_2Mxa_1Mxd_3Mxe_2My_1Mz_1Mr_1UTRDL A5_patch2"
+	  
+----------------------------------------------------------------------------------------------------------------------------------------
+imp query --consumed-ips -i hip-id -t R-1.0.0.1
+imp query --consumed-ips --project-name project-name
+ 
+Pick an SoC that has non-dry-run verify-ip runs with at least two Ips detected.
+Make one of the detected IPs Private
+Make you you don't have access to this Private IP
+run the --consumed-ips query for this SoC
+Look at the jnl file and then analyze the code
+Also look at the IP Verifications tab of this SoC for this veri-ip request Id and see how the Private IP is handled
+	  
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+New imp query for SoCs in Fabrication state
+
+
+accvda5487.acc.broadcom.net
+
+gradlew clean -Penv=dev installDist
+
+/tools/imp/dev/bin/imp query --consumed-ips --project-name new_imp_query_test0
+/home/lk075732/CLI/bin/imp query --consumed-ips --project-name new_imp_query_test0
+
+
+/opt/app/3DSpaceBase/tomee_NoCAS/webapps/internal/WEB-INF/lib/
+
+ENOVIA_BASE_URL+"/resources/IMP/";
+
+getRelatedIPofSoC
+
+-----Verify IP-----
+
+/home/lk075732/CLI/bin/imp verify-ip -P sfr04_Test --gds-file /home/lk075732/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/ANA_TMON_TS16FFP_S0.cdl
+
+/tools/imp/dev/bin/imp query --consumed-ips --project-name new_imp_query_test4
+
+/home/lk075732/CLI/bin/imp query --consumed-ips --project-name new_imp_query_test4
+
+/home/lk075732/CLI/bin/imp query --consumer-projects --ip-id new_imp_query_ip_public_test5
+
+/tools/imp/dev/bin/imp query --consumer-projects -i Practice_Test01_IP-001
+
+----
+
+/tools/imp/qa/bin/imp query --sfr --from-date 2024/12/31 --to-date 2025/02/12 --ofile sample09
+
+/home/lk075732/CLI/bin/imp query soc-fabrication-report --soc-fabrication-report --from-date 2024/12/31 --to-date 2025/02/17 --ofile sample33
+
+
+nohup /opt/app/3DSpaceBase/3DSpace/scripts/./mql_cron -c "set context user creator pass 'Enovia@22x';compile prog * force update;" > compile_dev_Jan31.out 2>&1 &
+
+SELECT_BRANCH_RELEASE_FROM_WATERMARK+DOT+SELECT_IP_PRODUCT_FROM_BRANCH_RELEASE+DOT+DomainConstants.SELECT_NAME;
+to[IMP_IP_Watermark].from.to[IMP_IPBranchRelease].from.to[IMP_IPBranch].from.attribute[IMP_AccessControl_Protection]; 
+
+SELECT_BRANCH_FROM_BRANCH_RELEASE+DOT+SELECT_IP_PRODUCT_FROM_BRANCH;
+REL_TO+SQUARE_OPEN+RELATIONSHIP_IMP_IP_BRANCH_RELEASE+SQUARE_CLOSE+DOT+REL_FROM;  - 
+
+REL_TO+SQUARE_OPEN+RELATIONSHIP_IMP_IP_BRANCH+SQUARE_CLOSE+DOT+REL_FROM; - to[IMP_IPBranch].from
+
+
+System.getProperty("user.dir")+"/"+sOutputFileName+"_"+soCReport1+"_"+sFromDate+"_to_"+sToDate+".csv"
+
+
+nohup /opt/app/3DSpaceBase/3DSpace/scripts/./mql_cron -c "set context user creator pass 'Enovia@22x';compile prog * force update;" > compile_dev_Feb27_2025.out 2>&1 &
+
+nohup /opt/app/3DSpaceBase/3DSpace/scripts/./mql_cron -c "set context user creator pass 'Broadcom@123';compile prog * force update;" >
+compile_dev_Feb27_2025.out 2>&1 &
+
+
+Step 1: Run Prepare sa :
+/tools/imp/qa/bin/imp prepare-sa -i new_imp_query_ip_public_test5-001
+
+/home/lk075732/CLI/bin/imp prepare-sa -i new_imp_query_ip_public_test5-001
+ 
+Step 2: CD to Testin_ip_feb_2025-001 
+cd /home/lk075732/Testin_ip_feb_2025-001
+ 
+Step 3: Check and Modify p1.txt File
+[lk075732@accvda5487 ~/Testin_ip_feb_2025-001]$ ll
+total 152
+drwxrwsr-x 3 lk075732 lk075732  77 Feb 13 00:41 doc
+drwxrwsr-x 4 lk075732 lk075732 228 Feb 13 01:48 imp
+drwxrwsr-x 3 lk075732 lk075732 310 Feb 13 01:48 ipicarun
+drwxrwsr-x 4 lk075732 lk075732  48 Feb 13 00:41 oasis
+-rw-r--r-- 1 lk075732 lk075732  98 Feb 13 01:47 p1.txt
+ 
+Step 4: Run Publish: 
+[lk075732@accvda5487 ~/Testin_ip_feb_2025-001]$ tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML5.5.5 --force
+
+
+/tools/imp/qa/bin/imp prepare-sa -i Testin_ip_feb_2025-001
+/tools/imp/qa/bin/imp publish --comment 'QA testing' --tag ML5.5.5 --force
+/tools/imp/qa/bin/imp publish --comment 'QA testing 13-2-25' --tag ML5.5.5 -q ML5.5
+
+
+/home/lk075732/CLI/bin/imp prepare-sa -h
+
+/home/lk075732/CLI/bin/imp prepare-sa -i TestIP_J834_01-001
+
+cd /home/lk075732/new_imp_query_ip_public_test4-001 
+
+/home/lk075732/CLI/bin/imp publish --comment 'SWIMP-834_Dev_Testing_1' --tag ML5.5.9 --force
+
+
+
+
+/home/lk075732/CLI/bin/imp query --sfr --from-date  --to-date  --ofile 
+
+/tools/imp/qa/bin/imp query --soc-fabrication-report --from-date 2022/01/01 --to-date 2025/02/27 --ofile sampleqa01
+
+
+
+
+1.user pipe separator
+2.remove comma from the last value
+3.if no value for a field then don't use space. for e.g. it should be ,, but currently its , ,
+4.Remove the images from your document and add text
+
+
+/tools/imp/dev2025x/bin/imp prepare-sa -i Test-834-001
+
+/home/lk075732/CLI/bin/imp prepare-sa -i DevTestingIP_834_01-001
+
+/home/lk075732/CLI/bin/imp publish --comment 'TESTING 2' --tag ML5.5.6 --force
+
+/home/lk075732/CLI/bin/imp download --for-project sfr_newimpquery_by_bcadmin  --comment 'TESTING' --tag ML5.5.0 -i DevTestingIP_834_01-001 --uniquify
+
+/home/lk075732/CLI/bin/imp publish --comment 'SWIMP-834_Dev_Testing_2' --tag ML5.5.7 --force
+
+
+/home/lk075732/CLI/bin/imp download --for-project sfr_newimpquery_by_bcadmin  --comment 'TESTING' --tag ML5.5.5  -i HIP_testing_7th_Nov-001 --uniquify
+
+
+/home/lk075732/CLI/bin/imp prepare-sa -i hx5_ddrctrl_cadence-001
+
+/home/lk075732/CLI/bin/imp publish --comment 'Testing New MQL Query for ' --tag ML1.1.0 --force
+
+/tools/imp/qa/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test' --tag vDS4_wmkn -i hx5_ddrctrl_cadence-001 --uniquify
+
+
+/tools/bin/imp download -i ipid -I ipid-download-1.1.3
+/tools/bin/imp download -i ipid --tag 1.1.1 -I ipid-download-1.1.1
+mv ipid ipid-preapre-sa-1.1.1
+/tools/bin/imp prepare-sa -i ipid -I ipid-prepare-sa-1.1.3
+
+
+
+0.current staging area for 1.3 already exists.
+1.download 1.3
+2. prepare-sa in a different directory
+3. modify a file and publish 1.4
+4. download 1.4 in a different directory
+
+mv Test_3PIP_CadenceVendor-001.txt Test_3PIP_CadenceVendor-001_release_notes.txt
+
+/tools/imp/dev/bin/imp query -h
+
+/tools/imp/qa/bin/imp
+
+/tools/imp/qa/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test for INC2465138' --tag v.20170412_wmkn -i hx5_ddrctrl_cadence-001 --uniquify
+/tools/imp/qa/bin/imp prepare-sa -i Test_3PIP_CadenceVendor-001
+/tools/imp/qa/bin/imp publish --comment 'MQL Query Test for INC2465138' --tag ML1.1.0 --force
+/tools/imp/qa/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test for INC2465138' --tag ML1.1.0 -i Test_3PIP_CadenceVendor-001
+
+/tools/imp/qa/bin/imp verify-ip -P Test_APD_3PIP_CadenceVendor --gds-file /home/lk075732/WM_Files/ddrphy_ca9_lp4_9SHR.oas --cdl-file /home/lk075732/WM_Files/ANA_TMON_TS16FFP_S0.cdl
+
+
+------------------------------------------------------May 14th------------------------------------------------------------
+
+IBM_90nm_CLID_Test_01-001 
+IP Download Testing - lk075732 
+
+GTO_CLI_Dowload_Test01
+
+/tools/imp/dev2025x/bin/imp -h
+
+/tools/imp/dev2025x/bin/imp download -h
+
+/tools/imp/dev2025x/bin/imp query -h
+
+
+
+[lk075732@accvda5490 ~]$ /tools/imp/dev2025x/bin/imp download -h
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp download [ -h | --help ] [ -o | --ofile output-file ] [ -v | --verbose v-level ]
+   [ --branch branch-name ] [ --comment download-comment ] [ -D | --dry-run ]
+   [ --force-new-prefix ] [ --force-watermark-cells ] [ --foundry foundry ]
+   [ --include-derived-watermarks ] [ -I | --ip-dir ipdir ] [ --recommended ]
+   [ --skip-ip-subscription ] [ --subscription-user user-list ] [ -t | --tag tag ]
+   [ --tech-node tech-node ] [ --tech-sub-process ] [ --uniquify ] --for-project project-name
+   --ip-id ipid [ file-list ]
+
+Download the IP from IMP for consumption in a project. All IP downloaded by the command will be
+guaranteed to contain the appropriate watermarks. The contents of the download directory at
+the end of the command will match the contents of the IP in the system, except
+for any watermark and uniquification modifications. For complete downloads, any additional files
+that previously existed in the download will be deleted.
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+--comment comment-string Comment associated with this download.
+--branch branch-name Used with the --recommended option, this option specifies the branch for the
+                recommended revision that should be downloaded. If --recommended is not specified, the
+                latest revision of the specified branch is downloaded.
+-D | --dry-run  Do everything that download would do, but not actually download the IP from the
+                system. Because no data is downloaded, this option makes imp skip the watermarking step;
+                furthermore, such a download command is not logged for audit purposes.
+--force-new-prefix Force the use of a new unique prefix/suffix to support the use of multiple
+                revisions of the same IP in the design. When specified, this newly generated
+                prefix/suffix will be registered in the system and added to the pool of previously
+                used strings to prevent it from being used again.
+--force-watermark-cells Force the generation of watermark cells.
+--for-project project-name The project-name (SoC or Hierarchical IP) the download is for. Required.
+--foundry foundry Foundry (eg. TSMC, GF). Optional, to be used when download soft IP. When specified,
+                it overrides the tech stack for the project the IP is being downloaded for. Defaults to
+                'all' if --tech-node or --tech-sub-process is specified.
+-I | --ip-dir ipdir  The directory to download the IP into. Defaults to the current working directory (CWD).
+-i | --ip-id ipid    IP's ID in IMP - generated at IP create time
+--include-derived-watermarks Include derived views of watermark cells (eg. Milkyway). By default,
+                these are not generated.
+--recommended   Download the recommended revision of the specified branch, or Trunk, if no branch is
+                specified. If no recommended revision exists for the branch, an error is issued.
+--skip-ip-subscription Do not add IP subscriptions for this download. By default, a subscription to the
+                IP is added to the SoC this IP is being downloaded for, along with an entry to the
+                My Notifications tab for the user issuing the command, as well as for any additional
+                users specified via --subscription-user.
+--subscription-user <user-list> A comma-separated list of users who should have notifications added to
+                their IMP account for the IP being downloaded.
+-t | --tag tag  The revision of the IP to download. The latest revision in Trunk is downloaded if this
+                option is not used. A special value of 'Latest' can be used to specify the latest
+                revision tag of the IPID, irrespective of the branch. Cannot be used with --branch or
+                --recommended.
+--tech-node tech-node Technology process node (eg. 20nm, 16nm, etc.). Optional, to be used when
+                download soft IP. When specified, it overrides the tech stack for the project
+                the IP is being downloaded for.  Defaults to 'all' if --foundry or --tech-sub-process
+                is specified.
+--tech-sub-process tech-sub-process Technology sub proceess (eg. low-power, high-power, graphics).
+                Optional, to be used when download soft IP. When specified, it overrides the tech
+                stack for the project the IP is being downloaded for.  Defaults to 'all' if
+                --foundry or --tech-node is specified.
+--uniquify      Apply uniquifying prefix/suffix to the IP.
+
+EXAMPLES:
+   Download the default revision (or latest revision of Trunk if no default is set) of an IP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   The same as above, while also adding notification subscriptions to the specified users:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid --subscription-user user1,user2,user3
+
+   Download the latest revision of a specified branch of an IP:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download the latest revision of an IP irrespective of the branch:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag Latest -i ipid
+
+   Download a specific revision (ML1.0.0.0) of a branch (B1) of an IP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag B1/ML1.0.0.0 -i ipid
+
+   Download the recommended revision of the main branch Trunk of an IP:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download the recommeneded revision of a specified branch of an IP:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of the branch B1 of an IP from IMP into a specific
+   directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag B1/ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP, applying the previously
+   registered unique prefix/suffix before making it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP into a specific
+   directory, applying the previously registered unique prefix/suffix before making
+   it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP, applying a newly
+   generated unique prefix/suffix before making it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid --force-new-prefix
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP into a specific
+   directory, applying a newly generated unique prefix/suffix before making it
+   available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid --force-new-prefix
+
+   Download specified files from revision ML1.0.0.0 of an IP's main branch from IMP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag ML1.0.0.0 -i ipid some/file/path some/other/file/path
+
+   Download specified files from revision ML1.0.0.0 of an IP's main branch from IMP
+   into a specific directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the latest revision of the speicified branch of an IP:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the recommended revision of the main branch of an IP:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the recommended revision of the speicified branch of an IP:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+[lk075732@accvda5490 ~]$
+
+
+
+/tools/bin/imp download -i ipid -I ipid-download-1.1.3
+
+
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp --help
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp [ -V | --version ] | [ -h | --help | ] | [ -H | --help-all ] | <command> <command options>
+
+Help for sub commands is available with: imp <sub command> --help
+
+activate-user  Activate the IMP account of the user running the command
+check-bom      Check the IP's BOM against what's needed/required
+diff           Show the differences between two revisions of an IP
+download       Download the IP from IMP
+dtree-spec     Manage directory tree specifications
+export-bom     Export the IP's BOM in YAML format
+info           Print information about the staging area
+ls             List the contents of a revision of an IP
+make-branch    Make a new branch from an existing tag
+prepare-sa     Prepare - Create or update - the IMP staging area for the IP
+publish        Publish the IP in IMP
+query          Query IMP for various pieces of information
+switch-branch  Switch the staging area to the specified branch to start publishing into it
+verify-ip      Verify the IP used in the specicied GDS file for a project
+
+Log files for various sub-commands will be saved in ~/.imp/log and will be of the form
+<sub-command>-<YYYYMMDD>-<HHMMSS>.log.
+
+Specification of an output file that is not writable, or that cannot be created, is an
+imp error.
+
+Futhermore, the output file must not be created in the imp directory at the top level of
+the staging area.
+
+A verbose level of 0-3 can be specified for all commands; if not specified, the default
+value of 1 is used.
+
+Please refer to
+
+https://sites.google.com/broadcom.com/imp-community/welcome
+
+for IMP related information, and specifically to
+
+https://drive.google.com/file/d/1-6NPFRul0kRvkztbDMZN_0H0WzK4LC-Q/view
+
+for various workflows supported by IMP.
+
+For details about IPICA, the QA tool used by the command line interface, please take a look at
+
+http://ipds.broadcom.net/ipica/user-guide/imp-settings/
+
+And, for information about the uniquification tool, bcm_uniquify_ip, please take a look at
+
+https://sites.google.com/a/broadcom.com/bcm_uniquify_ip/help-documents
+
+
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp query -h
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp query <options>
+
+Query IMP for information.
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+One of the following must be used:
+--consumed-ips          list the IP with revisions used (declared and detected) in a project
+--consumer-projects     list the projects (SoCs and HIPs) that have declared the use of the specified
+                        IP, or that have the IP detected to be in use using verify-ip
+--id                    list the IP's unique id in IMP for use with imp
+--ip-info               print information about the specified IP
+--ip-revision           list the IP revision identified by the specified watermark
+--get-ip-revisions      list the published revisions of an IP
+--list-dtree-specs      list all directory tree specifications in the system
+--list-tech-stacks      list all possible tech stack values in the system
+--qa-status             list the qa status for a version of an IP
+--pre-approved-projects list the revisions with the SoCs/Hierarchical IPs they are pre-approved for
+--project-info          print information about the specified project
+--soc-fabrication-report|-sfr Generate two lists: SoCs in Fabrication state that did not run
+                        verify-ip and SoCs in Fabrication state that did not obtain all IP
+                        approvals for use. The output is made up of two csv files with names of
+                        the form <output-file>_-_missing-ip-approvals_-_<from-date>_To_<to-date>.csv
+                        and <output-file>_-_no-verify-ip-runs_-_<from-date>_To_<to-date>.csv.
+                        Note that for this query, no yaml output is created.
+--unique-prefix         list the unique prefix for the IP
+--watermark-string      print the watermark string for a revision of an IP
+
+options for --id:
+Use one or more these to get more specific results:
+--ip-name            IP name
+--ip-source          IP source: one of 3pip, internal, or all, defaulting to all
+--bu                 Business Unit. Only valid when --ip-source is internal or all.
+--foundry            Foundry (eg. TSMC, GF)
+--metal-stack        Metal stack
+--vendor             IP Vendor. Only valid when --ip-source is 3pip or all.
+                     Use '//' as separator to specify multiple vendors.
+--tech-node          Technology process node (eg. 20nm, 16nm, etc.)
+--tech-sub-process   Technology sub proceess (eg. low-power, high-power, graphics)
+
+options for --ip-revision:
+--watermark          The watermark string for the revision to be detected
+
+options for --soc-fabrication-report|-sfr:
+--from-date          The starting date for the SoC fabrication report
+--to-date            The ending date for the SoC fabrication report
+
+options for --unique-prefix, --consumer-projects, --get-ip-revisions, --ip-info, --qa-status, --pre-approved-projects,
+and --watermark-string:
+-i | --ip-id ipid   IP's ID in IMP - generated at IP create time. Optional, if executed from the staging
+                    area of an IP.
+
+options for --watermark-string:
+-t | --tag tag  The revision tag to get the watermarking string for. Required.
+
+options for --project-info:
+-P | --project-name project-name  Project's name. Required.
+
+options for --consumed-ips
+-P | --project-name as explained above
+or
+-i | --ip-id ipid (for HIPs) as explained above, AND, optionally, -t | --tag tag, also explained
+                    above. When a tag is specified for an HIP's ipid, the keyword Latest can be
+                    used to specify the latest tag in Trunk.
+
+EXAMPLES:
+   Get the revisions of an IP in the system:
+
+      imp query --get-ip-revisions --ip-id ipid
+
+   Get the revisions of an IP in the system in YAML:
+
+      imp query --get-ip-revisions --ip-id ipid -o ip-revisions.yaml
+
+   Get an IP's id in IMP for the specified IP Name, BU, foundry, tech node, sub process and metal stack:
+
+      imp query --id --tech-node 16nm --foundry TSMC --bu DCD --ip-name SuperDuperIP --tech-sub-process low-power --metal-stack 12M_1x2xa2xy2y2yy1z1r
+
+   Get the IP IDs of all the IP's in a BU:
+
+      imp query --id --bu DCD
+
+   Get the IP IDs of all the IP's with the specified IP Name:
+
+      imp query --id --ip-name SuperDuperIP
+
+   Get the IP IDs of all the IP's in a BU for the specified foundry:
+
+      imp query --id --foundry TSMC --bu DCD
+
+   Print information about the specified ipid:
+
+      imp query --ip-info --ip-id ipid
+
+   Print information about the specified ipid and save it in the specified output file:
+
+      imp query --ip-info --ip-id ipid -o ipid-info.yaml
+
+   Get information about the ip ids that match the specified values:
+
+      imp query --ip-info --tech-node 16nm --foundry TSMC --bu DCD --ip-name SuperDuperIP --tech-sub-process low-power --metal-stack 12M_1x2xa2xy2y2yy1z1r
+
+   Get information about all the IP's in a BU:
+
+      imp query --ip-info --bu DCD
+
+   Get information about all the IP's with the specified IP Name:
+
+      imp query --ip-info --ip-name SuperDuperIP
+
+   Get information about all the IP's in a BU for the specified foundry:
+
+      imp query --ip-info --foundry TSMC --bu DCD
+
+   Get the list of pre-approved SoCs/Hierarchical IPs for an IP in the system:
+
+      imp query --pre-approved-projects --ip-id ipid
+
+   Print information about the project zzzSoC:
+
+      imp query --project-info --project-name zzzSoC
+
+   Print information about the project zzzSoC and save it in the specified output file:
+
+      imp query --project-info --project-name zzzSoC -o zzzSoC-info.yaml
+
+   Get the list of IPs consumed by a project:
+
+      imp query --consumed-ips --project-name project-name
+      imp query --consumed-ips -i hip-id
+      imp query --consumed-ips -i hip-id -t Latest
+      imp query --consumed-ips -i hip-id -t R-1.0.0.1
+
+   Get the list of SoCs using an IP:
+
+      imp query --consumer-projects --ip-id ipid
+
+   Get the QA status of the specified tag of an IP:
+
+      imp query --qa-status --ip-id ipid --tag published-ip-tag
+
+   Get the unique prefix for an IP:
+
+      imp query --unique-prefix --ip-id ipid
+
+   Get the watermarking string for a revision of an IP:
+
+      imp query --watermark-string --ip-id ipid --tag tag
+
+   Get the list of all tech stacks in IMP:
+
+      imp query --list-tech-stacks
+
+   Get the list of all tech stacks in IMPin YAML format:
+
+      imp query --list-tech-stacks -o imp-tech-stacks.yaml
+
+   Generate the SoC fabrication reports:
+
+      imp query --soc-fabrication-report --from-date 2025/02/01 --to-date 2024/02/28 --ofile sfr
+      imp query -sfr --from-date 2025/02/01 --to-date 2024/02/28 --o Feb_sfr
+
+   Get the list of all directory tree specifications in IMP:
+
+      imp query --list-dtree-specs
+
+   Get the IP revision with the watermark 90b70b61afbbbda70916
+
+      imp query --ip-revision --watermark 90b70b61afbbbda70916
+
+   For IPX watermarks, the specified watermark consistes of multiple words; for example, for the
+   IPX watermark
+
+      "$Created: @(#) IPX_WATERMARK avs_remote_roscs_16ff tsmc16ff_M1_2Mxa_1Mxd_3Mxe_2My_1Mz_1Mr_1UTRDL A5_patch2 asalem,ashok,rajbh 05/02/2016 16:53:03 PDT dNuZW5 BCM _BLOCK iraj $"
+
+   the imp query is
+
+      imp query --ip-revision --watermark "avs_remote_roscs_16ff tsmc16ff_M1_2Mxa_1Mxd_3Mxe_2My_1Mz_1Mr_1UTRDL A5_patch2"
+
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp download -h
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp download [ -h | --help ] [ -o | --ofile output-file ] [ -v | --verbose v-level ]
+   [ --branch branch-name ] [ --comment download-comment ] [ -D | --dry-run ]
+   [ --force-new-prefix ] [ --force-watermark-cells ] [ --foundry foundry ]
+   [ --include-derived-watermarks ] [ -I | --ip-dir ipdir ] [ --recommended ]
+   [ --skip-ip-subscription ] [ --subscription-user user-list ] [ -t | --tag tag ]
+   [ --tech-node tech-node ] [ --tech-sub-process ] [ --uniquify ] --for-project project-name
+   --ip-id ipid [ file-list ]
+
+Download the IP from IMP for consumption in a project. All IP downloaded by the command will be
+guaranteed to contain the appropriate watermarks. The contents of the download directory at
+the end of the command will match the contents of the IP in the system, except
+for any watermark and uniquification modifications. For complete downloads, any additional files
+that previously existed in the download will be deleted.
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+--comment comment-string Comment associated with this download.
+--branch branch-name Used with the --recommended option, this option specifies the branch for the
+                recommended revision that should be downloaded. If --recommended is not specified, the
+                latest revision of the specified branch is downloaded.
+-D | --dry-run  Do everything that download would do, but not actually download the IP from the
+                system. Because no data is downloaded, this option makes imp skip the watermarking step;
+                furthermore, such a download command is not logged for audit purposes.
+--force-new-prefix Force the use of a new unique prefix/suffix to support the use of multiple
+                revisions of the same IP in the design. When specified, this newly generated
+                prefix/suffix will be registered in the system and added to the pool of previously
+                used strings to prevent it from being used again.
+--force-watermark-cells Force the generation of watermark cells.
+--for-project project-name The project-name (SoC or Hierarchical IP) the download is for. Required.
+--foundry foundry Foundry (eg. TSMC, GF). Optional, to be used when download soft IP. When specified,
+                it overrides the tech stack for the project the IP is being downloaded for. Defaults to
+                'all' if --tech-node or --tech-sub-process is specified.
+-I | --ip-dir ipdir  The directory to download the IP into. Defaults to the current working directory (CWD).
+-i | --ip-id ipid    IP's ID in IMP - generated at IP create time
+--include-derived-watermarks Include derived views of watermark cells (eg. Milkyway). By default,
+                these are not generated.
+--recommended   Download the recommended revision of the specified branch, or Trunk, if no branch is
+                specified. If no recommended revision exists for the branch, an error is issued.
+--skip-ip-subscription Do not add IP subscriptions for this download. By default, a subscription to the
+                IP is added to the SoC this IP is being downloaded for, along with an entry to the
+                My Notifications tab for the user issuing the command, as well as for any additional
+                users specified via --subscription-user.
+--subscription-user <user-list> A comma-separated list of users who should have notifications added to
+                their IMP account for the IP being downloaded.
+-t | --tag tag  The revision of the IP to download. The latest revision in Trunk is downloaded if this
+                option is not used. A special value of 'Latest' can be used to specify the latest
+                revision tag of the IPID, irrespective of the branch. Cannot be used with --branch or
+                --recommended.
+--tech-node tech-node Technology process node (eg. 20nm, 16nm, etc.). Optional, to be used when
+                download soft IP. When specified, it overrides the tech stack for the project
+                the IP is being downloaded for.  Defaults to 'all' if --foundry or --tech-sub-process
+                is specified.
+--tech-sub-process tech-sub-process Technology sub proceess (eg. low-power, high-power, graphics).
+                Optional, to be used when download soft IP. When specified, it overrides the tech
+                stack for the project the IP is being downloaded for.  Defaults to 'all' if
+                --foundry or --tech-node is specified.
+--uniquify      Apply uniquifying prefix/suffix to the IP.
+
+EXAMPLES:
+   Download the default revision (or latest revision of Trunk if no default is set) of an IP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   The same as above, while also adding notification subscriptions to the specified users:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid --subscription-user user1,user2,user3
+
+   Download the latest revision of a specified branch of an IP:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download the latest revision of an IP irrespective of the branch:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag Latest -i ipid
+
+   Download a specific revision (ML1.0.0.0) of a branch (B1) of an IP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag B1/ML1.0.0.0 -i ipid
+
+   Download the recommended revision of the main branch Trunk of an IP:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download the recommeneded revision of a specified branch of an IP:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid
+
+   The same as above, but into a specified directory:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of the branch B1 of an IP from IMP into a specific
+   directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag B1/ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP, applying the previously
+   registered unique prefix/suffix before making it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP into a specific
+   directory, applying the previously registered unique prefix/suffix before making
+   it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP, applying a newly
+   generated unique prefix/suffix before making it available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid --force-new-prefix
+
+   Download revision ML1.0.0.0 of an IP's main branch from IMP into a specific
+   directory, applying a newly generated unique prefix/suffix before making it
+   available for consumption:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --uniquify --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid --force-new-prefix
+
+   Download specified files from revision ML1.0.0.0 of an IP's main branch from IMP:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag ML1.0.0.0 -i ipid some/file/path some/other/file/path
+
+   Download specified files from revision ML1.0.0.0 of an IP's main branch from IMP
+   into a specific directory:
+
+      imp download --for-project <project-name> --comment 'Comment explaining the download event' --tag ML1.0.0.0 -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the latest revision of the speicified branch of an IP:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the recommended revision of the main branch of an IP:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --recommended --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+   Download specified files from the recommended revision of the speicified branch of an IP:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid some/file/path some/other/file/path
+
+   Same as above but into a specific directory:
+
+      imp download --for-project <project-name> --recommended --branch B1 --comment 'Comment explaining the download event' -i ipid -I /path/to/ip/downloads.d/ipid some/file/path some/other/file/path
+
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp publish -h
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp publish [ -h | --help ] [ --alert ] [ --default ] [ -D | --dry-run ] [ --force ]
+   [ --force-unlock ] [ --gds-version gds-version ] [ -I | --ip-dir ipdir ] [ --is-uniquified ]
+   [ -o | --ofile output-file ] [ -p | --pre-approved project-list ] [ --queue-name queue-name ]
+   [ --recommended ] [ --skip-check-layers ] [ --skip-tag-validation ] [ -v | --verbose v-level ]
+   -c | --comment comment-string -q | --quality-class quality-class -t | --tag tag
+
+Publish the IP into IMP from the IMP/DesignSync staging area. This means updating information about
+the IP in IMP and updating the design data in the associated DM with the new version's files,
+running QA, and, pushing it to the published state if QA passes, adding/removing any new/deleted
+files since the last module version and then checking in the module with --tag, if supplied.
+
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+--alert alert-string Specify an alert to be associated with the revision being published. This
+                alert string is shown to the consumers when the revision is downloaded, is also
+                shown in the IMP UI, and also shown during the IP verfication part of the flow.
+-c | --comment comment-string Comment associated with the release.
+--default       Make this the default revision for this IP (not branch). Optional. When set,
+                this is the revision that's downloaded by the download command when a specific
+                tag is not specified.
+-D | --dry-run  Do everything that publish would do, but not actually publish the IP in the
+                system.
+--force         Publish the IP even in case of QA (using IPICA) or checklayer (for hard 3PIPs) failures.
+                Such publish failure events will be noted for the revision being checked in and
+                consumers of these revisions will be notified of the publish-time failures on
+                download.
+
+--force-unlock  Release the publish lock on the IPID before publishing. This option should be
+                used for stale publish locks for previously killed publish processes.
+--gds-version gds-version Specify the GDS file version associated with the GDS file being published.
+                If specified, this is stored as an attribute in IMP for the revision being published
+                and is available via a query for QA purposes.
+-I | --ip-dir ipdir  The directory containing the staging area for the IP created using prepare-sa.
+                Defaults to the current working directory (CWD).
+--is-uniquified The IP being published has already been uniquified.
+-p | --pre-approved project-list  Optional. List of comma-separated project names that this revision is
+                pre-approved for. The word 'all' can be used to specify pre-approved for all projects.
+                By default, the revision is not pre-approved for any project. The projects can be
+                SoCs or Hierarchical IPs.
+-q | --quality-class    Revision's quality classification. ML0.5, ML1.0, etc. This option is required
+                when invoked on a staging area for an IP that a. has set Require Quality Class set to
+                true; or b. Uses a DTree Spec that uses the variable quality_class AND no default
+                value has been set for the variable in the DTree Spec.
+--queue-name queue-name When pubilshing hierarchical IPs, run the component-IP information extraction
+                process in a queue that supports the required memory footprint instead of running it
+                in the local VDI. This is recommended for GDS/OASIS files that are larger than about
+                one-eighth to one-tenth the size of the memory available in the VDI.
+--recommended   Make this the recommended revision for this branch (not IP). Optional.
+--skip-check-layers Skip check-layers invocation for the hard 3PIP being published.
+--skip-tag-validation Skip tag validation if the DTree Spec used by the IP being published specifies a
+                regular expression for the tag. By default, if such a regular expression is specified in
+                the DTree Spec, the revision tag used must match that regular expression.
+-t | --tag tag  The tag name to check in the files under. Must start with a letter. Multiple tags
+                can be issued for the same quality class, but they should use a naming convention
+                to reflect the quality class. For example, a quality class of ML1.5 may have multiple
+                tags like ML1.5.0.1, ML1.5.0.2, etc. When publishing from a branch, the command
+                will ensure that the tag begins with '<branch-name/', automatically prepending it
+                if needed. Note that this means that the tag can contain all DesignSync specific
+                valid characters except for '/'. When the quality-class value is of the form ML<num>,
+                the tag must be of the form ML<num>.*.
+
+EXAMPLES:
+   Publish a uniquified IP for ML 1.0 and a revision of ML1.0.0.0 from a specified directory,
+   making this the recommended revision for this branch and the default version of the IP:
+
+      imp publish --recommended --default --is-uniquified --comment 'Finally! Revision ML1.0.0.0!' --tag ML1.0.0.0 --quality-class ML1.0 --ip-dir /path/to/the/ips/imp/sa
+
+   Same as above, but this time, --default is not used so the new revision is the recommended
+   revision for the branch but the previous default revision of the IP, if any, stays the same:
+
+      imp publish --recommended --is-uniquified --comment 'Finally! Revision ML1.0.0.0!' --tag ML1.0.0.0 --quality-class ML1.0 --ip-dir /path/to/the/ips/imp/sa
+
+   Publish an IPID after removing a stale publish lock:
+
+      imp publish --comment 'Partial fix for thingamajimmy' --tag ML1.5.0.1 --quality-class ML1.5 --force-unlock
+
+   Publish ML 1.5 / revision of ML1.5.0.1 of an IP from the staging area, forcing a publish even if
+   QA fails, with an alert about the QA failure issue:
+
+      imp publish --comment 'Partial fix for thingamajimmy' --tag ML1.5.0.1 --quality-class ML1.5 --force --alert 'Known QA issue, safe to use'
+
+   Specify the GDS version as stored in the GDS file being published:
+
+      imp publish --is-uniquified --comment 'Rev 1.0.0.2' --tag ML1.0.0.2 --quality-class ML1.0 --ip-dir /path/to/the/ips/imp/sa --gds-version 1.0
+
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp preparesa -h
+[ERROR] "preparesa" is not a valid value for "subcommand"
+[lk075732@accvda5490 ~]$ /tools/imp/qa2025x/bin/imp prepare-sa -h
+[INFO ] hostname = accvda1363
+hostfqdn = accvda1363.acc.broadcom.net
+
+imp prepare-sa [ -h | --help ] [ -o | --ofile output-file ] [ -v | --verbose v-level ] [--branch branch-name ] [ -D | --dry-run ] [ -I | --ip-dir ipdir ] [ -i | --ip-id ipid ]
+
+Create and populate, or update, the DesignSync staging area for the IP producers for publishing IP
+into IMP - this is NOT the local DM being used by IP producers.
+
+Usually issued at the top level directory of the staging area. Can only be issued by the IP
+publisher. Design data is updated into the staging area as-is from the vault, without any
+modifications.
+
+Any unmanaged files that may exist at the time of issuing this command when updating a staging
+area will remain untouched.
+
+If the staging area doesn't already exist:
+   The command will create a staging area named ipid, or the name specified
+   using -I, and populate it with the latest revision of the main branch, Trunk.
+
+Otherwise, if the staging area already exists:
+   If an ipid is specified, make sure that it matches the ipid the staging area is linked to in
+   the design sync metadata.
+
+   The command will update the staging area to the latest tag of the branch the staging area
+   points to.
+
+The staging area specified via -I (--ip-dir) must point to the top (root) directory of the IP's
+staging area.
+
+-h | --help     Print this message.
+-o | --ofile output-file  A unix path name to a file where structured results data will be placed.
+-v | --verbose v-level  Use 0-3 as the verbosity value for additional messaging.
+
+--branch branch-name Prepare the staging area for publishing into the specified branch.
+-D | --dry-run  Do everything that prepare-sa would do, but not actually make or populate the staging area.
+-I | --ip-dir ipdir  The directory to create the staging area in. Defaults to the current woring directory (CWD).
+-i | --ip-id ipid    IP's ID in IMP - generated at IP create time. Required when the staging area
+                does not already exist.
+
+EXAMPLES:
+   If no staging area currently exists:
+
+      Create and populate the staging area in the current working directory to publish
+      into Trunk:
+
+         imp prepare-sa -i ipid
+
+      This will create a directory with the name that's the specified ipid and that
+      contains the staging area of the specified ipid
+
+      Create and populate the staging area in a specific directory to publish into Trunk:
+
+         imp prepare-sa -i ipid -I ipdir
+
+      This will create a directory with the specified name that contains the staging
+      area of the specified ipid
+
+      Create and populate the staging area in the current working directory to publish
+      into a specified branch:
+
+         imp prepare-sa -i ipid --branch B1
+
+      This will create a directory with the name that's the specified ipid and that
+      contains the staging area of the specified ipid
+
+      Create and populate the staging area in a specific directory to publish into a
+      specified branch:
+
+         imp prepare-sa -i ipid -I ipdir --branch B1
+
+      This will create a directory with the specified name that contains the staging
+      area of the specified ipid
+
+   Update the specified staging area with the latest revision in IMP:
+
+      imp prepare-sa -I ipdir
+
+   When issued from within a staging area without specifying an ipid or a tag, update
+   the staging area with the latest revision in IMP:
+
+      imp prepare-sa
+
+   When issued from within a staging area without specifying a tag and for a specified ipid,
+   make sure the specified ipid matches the ipid of the staging area and update the staging
+   area with the latest revision in IMP:
+
+      imp prepare-sa -i ipid
+
+[lk075732@accvda5490 ~]$
+

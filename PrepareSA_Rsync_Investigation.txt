@@ -1,0 +1,93 @@
+[lk075732@accvda5490 ~]$ less /home/lk075732/.imp/log/prepare-sa-20250929042458260.log
+[lk075732@accvda5490 ~]$ ls
+Apollo_Crypto_Ext-001                                             new_imp_query_ip_public_test5-001  SWIMP-827
+CLI                                                               prepare-sa_dump                    SWIMP-834_Dev_Testing
+CLI-Download_Testing                                              PrepareSA_PreProd25X               Test
+CLI.zip                                                           PrepareSA_Prod25X                  test-005
+DesignSync                                                        PrepareSA_QA22X                    TEST01-001
+dev2025xTesting                                                   PrepareSA_QA25X                    Test0110-001
+DEV25X                                                            PROD25X                            Test1234-001
+DEV25XTest                                                        QA2025X                            Test_3PIP_CadenceVendor-001
+Dev_CLI_Dump                                                      QA22X                              Test_3PIP_Notifications-001
+devGoLive_sfr0                                                    QABackup                           Test-834-001
+DEVTest                                                           QA_CLI_Dump                        Test-834-001_bkp
+Download_Aug5_Dump                                                QAClone                            Test-834-001-download-1.1.1
+download_dump                                                     QADownload                         Test-834-001-download-1.1.3
+dss_09112025_121404.log                                           QAPublish                          Test-834-001-download-1.1.5
+FTS_4thTest01-001                                                 QATest                             Test-834-001-preparesa-1.1.4
+FTS_Testing01-001                                                 QA_Test-834-001-Download           Test-834-001-preparesa-1.1.6
+GoLive01                                                          sample33                           Test_Ashburn_IP-001
+HIP_Test_00-001                                                   sample34                           Testing_Prepare_SA_IP-001
+HIP_testing_7th_Nov-001                                           sampleqa0                          Testin_ip_feb_2025-001.zip
+HIP_testing_7th_Nov-001-download-5.5.5                            sampleqa00                         TestIP-01-001
+IBM_90nm_CLID_Test_01-001                                         sampleqa01                         Test_IP_25xCLI-001
+imp                                                               sampleqa02                         TestIP_J834_01-001.zip
+IMP2025x_CLI-001                                                  sampleqa03                         Test_Jan_16th-001
+IMPIPTest10-001                                                   sampleqa04                         Test_Nov_8th-001-download-0.5.4
+IMP_QUERY_TEST                                                    sampleqa06                         Test_Nov_8th-001-download-6.5.7
+IMP_QUERY_TEST_-_missing-ip-approvals_-_20250108_To_20250209.csv  sampleqa09                         Test_prepareSaBugFix-001
+IMP_QUERY_TEST_-_no-verify-ip-runs_-_20250108_To_20250209.csv     sampleqa090                        WM_Files
+IMPTest_20-001                                                    sfrQueryTest_270725                yaml
+IMPTestIP02-001                                                   sfrQueryTest_270725_1              zzzC2-001
+IPTest-01-001                                                     sfrQueryTest_270725_qa25_node_1    zzz_CIP_25x_Node2_Ban-002
+IPTest-01-001_cfg.yaml                                            sfrQueryTest_270725_qa25_node1_    zzz_IMPIP_DEV25x-001
+IPTest-01-001.log                                                 sfrQueryTest_270725_qa25_node_2    zzz_IMPIPTest50-001
+Mamba_vulcan_a0-001                                               sfrQueryTest_270725_qa25x          zzzTahoe-001
+ML1.1.3                                                           sfrQueryTest_node1                 zzz_Test01-001
+ML1.1.5                                                           sfrQueryTest_node1_node2           zzzTest01_123-001
+mxs_adcsar_va1-001                                                sfrQueryTestQA25_node1             zzz_Test_FC_IP-001
+New                                                               SPEC_1724162952883415
+[lk075732@accvda5490 ~]$ ls /home/lk075732/QA2025X/zzzTest100-001
+doc  imp  oasis  p1.txt
+[lk075732@accvda5490 ~]$ ls -slR /home/lk075732/QA2025X/Clone_IP_Publish_Site-001
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001:
+total 120
+32 drwxrwsr-x 3 lk075732 lk075732  84 Sep 29 07:15 doc
+32 drwxrwsr-x 4 lk075732 lk075732 241 Sep 29 07:15 imp
+32 drwxrwsr-x 4 lk075732 lk075732  48 Sep 29 07:15 oasis
+24 -rw-r--r-- 1 lk075732 lk075732 170 Sep 29 07:56 p1.txt
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/doc:
+total 24
+24 -rw-r--r-- 1 lk075732 lk075732 1 Feb 24  2025 Clone_IP_Publish_Site-001_release_notes.txt
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp:
+total 128
+24 -rw-r--r-- 1 lk075732 lk075732 1511 Sep 26 03:55 Clone_IP_Publish_Site-001_bom.yaml
+24 -rw-r--r-- 1 lk075732 lk075732  251 Jul  1 04:49 Clone_IP_Publish_Site-001_cfg.yaml
+24 -rw-r--r-- 1 lk075732 lk075732  391 Sep 26 03:55 Clone_IP_Publish_Site-001-manifest.yaml
+24 -rw-r--r-- 1 lk075732 lk075732 8596 Sep 26 03:55 ipinfo.log
+32 drwxrwsr-x 3 lk075732 lk075732  161 Sep 29 07:15 QA-Failures
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp/QA-Failures:
+total 408
+ 24 -rw-r--r-- 1 lk075732 lk075732   1206 Sep 26 03:55 Clone_IP_Publish_Site-001-20250926035507859_summary.txt
+384 -rw-r--r-- 1 lk075732 lk075732 115961 Sep 26 03:55 Clone_IP_Publish_Site-001-20250926035507859.tgz
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis:
+total 32
+32 drwxrwsr-x 4 lk075732 lk075732 48 Sep 29 07:15 generic
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/generic:
+total 32
+32 drwxrwsr-x 3 lk075732 lk075732 70 Sep 29 07:15 generic
+
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/generic/generic:
+total 848
+848 -rw-r--r-- 1 lk075732 lk075732 1250524 Sep 26 03:55 Clone_IP_Publish_Site-001.oas
+[lk075732@accvda5490 ~]$ ls -slR /home/lk075732/QA2025X/Clone_IP_Publish_Site-001 | grep .SYNC
+[lk075732@accvda5490 ~]$ ls -slRa /home/lk075732/QA2025X/Clone_IP_Publish_Site-001 | grep .SYNC
+32 drwxrwsr-x 2 lk075732 lk075732 305 Sep 29 07:57 .SYNC
+32 drwxrwsr-x 2 lk075732 lk075732  26 Sep 29 07:57 .SYNC
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/doc/.SYNC:
+32 drwxrwsr-x 2 lk075732 lk075732   26 Sep 29 07:57 .SYNC
+ 32 drwxrwsr-x 2 lk075732 lk075732     26 Sep 29 07:57 .SYNC
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp/QA-Failures/.SYNC:
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/imp/.SYNC:
+32 drwxrwsr-x 2 lk075732 lk075732  26 Sep 29 07:57 .SYNC
+32 drwxrwsr-x 2 lk075732 lk075732 26 Sep 29 07:57 .SYNC
+ 32 drwxrwsr-x 2 lk075732 lk075732      26 Sep 29 07:57 .SYNC
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/generic/generic/.SYNC:
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/generic/.SYNC:
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/oasis/.SYNC:
+/home/lk075732/QA2025X/Clone_IP_Publish_Site-001/.SYNC:

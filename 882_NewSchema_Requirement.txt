@@ -1,0 +1,5 @@
+New Schema:
+
+1.Type: IMP_IP_SSGQI_CFG (New)
+2.Relationship: IMP_PrivateDocuments (New)
+3.Policy: IMP_DirectoryTreeSpec,Version (Existing)

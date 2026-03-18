@@ -1,0 +1,50 @@
+Startup ideas (pick 1–2 to validate first)
+1) “Scam Shield” mobile app (consumer)
+
+What it does: Real-time call/SMS/WhatsApp link risk warnings; detects impersonation scripts (“KYC”, “customs”, “digital arrest”).
+Why it can win: Simple habit loop; clear value in seconds.
+Monetization: Freemium + family plan; referral fees for identity protection/insurance.
+
+2) UPI “pre-transaction risk check” SDK (B2B2C)
+
+What it does: Plugs into wallets/fintechs to score payee risk (new payee, mismatch signals, velocity anomalies) and adds “friction” only when risky.
+Customers: UPI apps, neobanks, merchant PSPs.
+Monetization: Per-1,000 checks / platform fee.
+
+3) “Fraud concierge” recovery service (consumer + SMB)
+
+What it does: Guided incident workflow: evidence capture, complaint filing, bank/NPCI escalation templates, timeline tracking.
+Why it can win: Victims don’t know what to do in the first hour.
+Monetization: Success fee + subscription for SMBs.
+
+4) Business invoice/payment fraud guard for SMEs
+
+What it does: Flags changed bank details, fake vendor emails, and account-takeover attempts; approval workflows on high-risk changes.
+Customers: SMEs using Tally/Zoho/ERP-lite.
+Monetization: SaaS per seat / per company.
+
+5) “Verified helpline directory” + deepfake/impersonation detector
+
+What it does: One-tap verification of “bank/police/courier” callers; warns on spoofed numbers and scripted intimidation.
+GTM: Partnerships with employers, colleges, RWAs (resident welfare associations).
+
+6) Community fraud early-warning network (city/district)
+
+What it does: Aggregates scam patterns by geography/language; pushes alerts (“new courier scam in Pune”).
+Monetization: B2G/B2B dashboards for banks, telecoms, and local admins.
+
+7) “SafePay” for senior citizens
+
+What it does: Optional second-approval from a trusted contact for high-value transfers; simplified “panic button” freeze guidance.
+Monetization: Family subscription; distribution via hospitals/pharmacies.
+
+8) Fraud risk training that actually changes behavior (for enterprises)
+
+What it does: Short, local-language simulations of current scams; tracks reduction in risky actions.
+Monetization: Per-employee per-year; HR/IT security budgets.
+
+Fast way to choose the best one
+
+If you want quick consumer adoption: #1 or #7
+If you want higher ARPU and stickiness: #2 or #4
+If you want service-led, revenue early: #3

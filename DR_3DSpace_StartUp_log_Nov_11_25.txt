@@ -1,0 +1,471 @@
+05-Nov-2025 02:03:35.511 INFO [main] java.lang.reflect.Method.invoke Starting ProtocolHandler ["http-nio-9050"]
+05-Nov-2025 02:03:35.520 INFO [main] java.lang.reflect.Method.invoke Server startup in [80873] milliseconds
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "replacement" is null
+        at java.base/java.lang.String.replace(String.java:3086)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer.requestKey(PassportRegistrationProducer.java:54)
+        at com.dassault_systemes.enovia.e6wv2.foundation.batch.auth.PassportRegistrationProducer$SecretCheckTimer$CheckTask.run(PassportRegistrationProducer.java:125)
+        at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+        at java.base/java.util.TimerThread.run(Timer.java:516)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+06-Nov-2025 00:39:02.390 INFO [http-nio-9050-exec-6] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+        java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xe00x010x000x060xdc0x030x030xe20x060xb1{0xcbZ0x7f0x8390xc80x0cV0xe680xee0x1cSQ0xb40xc20xf20xf9F0xe1}0x960xc20xff0xec0xacP0xd8 ]. HTTP method names must be tokens
+                at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+                at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+                at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+                at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+                at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+                at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+                at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+                at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+                at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+                at java.base/java.lang.Thread.run(Thread.java:1583)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+07-Nov-2025 01:56:24.427 INFO [http-nio-9050-exec-7] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+        java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x000x010x000x060xfc0x030x030xca0xf4v0xb30xc6f0x00N80xf040x9a0xff+g'0x9cY0x170xdfj0x150xc4'00xa3=0x8dk{~0x99 ]. HTTP method names must be tokens
+                at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+                at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+                at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+                at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+                at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+                at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+                at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+                at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+                at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+                at java.base/java.lang.Thread.run(Thread.java:1583)
+java.lang.NullPointerException

@@ -1,0 +1,29 @@
+1.Prepare-sa should be only populate with directories and not files.
+2.create marker in imp directory with file name: .requires_lightweight_publish will be created by prepare-sa.
+3.publish will check for this file, if it is present and -lw is not used, publish will issue warning: 
+  [WARN ] Publishing from a partial staging area; forcing a lightweight publish.
+4.This marker file should not be checked into designsync.
+
+
+Watermark:
+3. Associate the watermark string for the previous latest revision of the branch the user is publishing into with the new revision being published. That is, after this publish, it will not be possible to associate an IP revision with the previous revision. Note that the previous revision must be from the same branch that the user is publishing into (Trunk, A, B, etc.).
+  
+Add in the usecase that the watermarking is transferred from previous revision to published revision from partial staging area.
+check using mql query for old and new revision for both revisions of the ip should be captured.
+
+
+
+-lw
+skip all-
+check-bom, 
+IPICA,
+checklayers,
+new watermarks
+
+no lw and markfile exists
+skip all- 
+check-bom,
+IPICA,
+checklayers,
+new watermarks
+

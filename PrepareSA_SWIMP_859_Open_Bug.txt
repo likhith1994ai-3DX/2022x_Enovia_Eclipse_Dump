@@ -1,0 +1,36 @@
+1.run prepare-sa outside staging area after modifying the any file - fails with modifications.
+2.retain the changes in the same file.
+3.run verbose inside staging area - will update latest staging module.
+
+
+
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$ /tools/imp/qa/bin/imp prepare-sa -i Clone_IP_Publish_Site-001
+00:00:01:046 [INFO ] impversion: 20250922.0119-qa
+00:00:01:047 [INFO ] starttime: 2025-09-22 07:24:15 AM
+00:00:01:059 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250922072415374.log
+00:00:01:060 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:060 [INFO ] CWD: /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump
+00:00:05:045 [ERROR] Staging area modified; List of modified file(s):
+p1.txt
+00:00:05:045 [ERROR] Execution Failed
+00:00:05:045 [INFO ] endtime: 2025-09-22 07:24:19 AM
+00:00:05:045 [INFO ] elapsedtime: 4secs
+00:00:05:045 [INFO ] exitstatus:  2
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$
+[lk075732@accvda5490 QA_PrepareSA_OutOfDate_Dump]$ cd Clone_IP_Publish_Site-001
+[lk075732@accvda5490 Clone_IP_Publish_Site-001]$
+[lk075732@accvda5490 Clone_IP_Publish_Site-001]$
+[lk075732@accvda5490 Clone_IP_Publish_Site-001]$ /tools/imp/qa/bin/imp prepare-sa -v 1
+00:00:01:036 [INFO ] impversion: 20250922.0119-qa
+00:00:01:037 [INFO ] starttime: 2025-09-22 07:25:02 AM
+00:00:01:039 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250922072502725.log
+00:00:01:039 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:039 [INFO ] CWD: /home/lk075732/QA2025X/QA_PrepareSA_OutOfDate_Dump/Clone_IP_Publish_Site-001
+00:00:07:035 [INFO ] Execution Successful
+00:00:07:036 [INFO ] endtime: 2025-09-22 07:25:08 AM
+00:00:07:036 [INFO ] elapsedtime: 6secs
+00:00:07:036 [INFO ] exitstatus:  0
+[lk075732@accvda5490 Clone_IP_Publish_Site-001]$

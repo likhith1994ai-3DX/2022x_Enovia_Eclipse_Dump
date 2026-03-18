@@ -1,0 +1,1374 @@
+07-Nov-2025 02:54:25.764 INFO [main] java.lang.reflect.Method.invoke Server version name:   Apache Tomcat (TomEE)/10.0.27 (9.1.3)
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke Server built:          Oct 3 2022 14:18:31 UTC
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke Server version number: 10.0.27.0
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke OS Name:               Linux
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke OS Version:            5.15.0-307.178.5.el9uek.x86_64
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke Architecture:          amd64
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke Java Home:             /IMPJAVA/2025x_PROD/jdk-21.0.6
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke JVM Version:           21.0.6+8-LTS-188
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke JVM Vendor:            Oracle Corporation
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke CATALINA_BASE:         /opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:25.765 INFO [main] java.lang.reflect.Method.invoke CATALINA_HOME:         /opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djava.util.logging.config.file=/opt/app/3DPassportBase/tomee_3dpass/conf/logging.properties
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Nov-2025 02:54:25.773 INFO [main] java.lang.reflect.Method.invoke Command line argument: -javaagent:/opt/app/3DPassportBase/tomee_3dpass/lib/openejb-javaagent.jar
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dfile.encoding=UTF-8
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djdk.tls.client.protocols=TLSv1.2
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dfile.encoding=UTF-8
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djava.awt.headless=true
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -XX:+AlwaysPreTouch
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -XX:+UseG1GC
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -XX:+ScavengeBeforeFullGC
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -XX:+DisableExplicitGC
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dignore.endorsed.dirs=
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dcatalina.base=/opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Dcatalina.home=/opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:25.774 INFO [main] java.lang.reflect.Method.invoke Command line argument: -Djava.io.tmpdir=/opt/app/3DPassportBase/tomee_3dpass/temp
+07-Nov-2025 02:54:25.775 INFO [main] java.lang.reflect.Method.invoke The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [:/opt/app/3DPassportBase/3DPassport/linux_a64/code/bin:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+07-Nov-2025 02:54:26.040 INFO [main] java.lang.reflect.Method.invoke Initializing ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 02:54:26.051 SEVERE [main] java.lang.reflect.Method.invoke Failed to initialize component [Connector[HTTP/1.1-8090]]
+        org.apache.catalina.LifecycleException: Protocol handler initialization failed
+                at org.apache.catalina.connector.Connector.initInternal(Connector.java:1055)
+                at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+                at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+                at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+                at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+                at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+                at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+                at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+        Caused by: java.net.BindException: Address already in use
+                at java.base/sun.nio.ch.Net.bind0(Native Method)
+                at java.base/sun.nio.ch.Net.bind(Net.java:565)
+                at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+                at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+                at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:246)
+                at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:201)
+                at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1192)
+                at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1205)
+                at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:583)
+                at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:79)
+                at org.apache.catalina.connector.Connector.initInternal(Connector.java:1052)
+                ... 11 more
+07-Nov-2025 02:54:26.240 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Fri Nov 07 02:54:26 PST 2025
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2021 (C) Apache TomEE Project, All Rights Reserved.
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 9.1.3
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20240408
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 11:09
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = /opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:26.303 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = /opt/app/3DPassportBase/tomee_3dpass
+07-Nov-2025 02:54:26.304 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@41d426b5
+07-Nov-2025 02:54:26.305 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+07-Nov-2025 02:54:26.322 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is '/opt/app/3DPassportBase/tomee_3dpass/conf/tomee.xml'
+07-Nov-2025 02:54:26.342 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+07-Nov-2025 02:54:26.343 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+07-Nov-2025 02:54:26.344 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+07-Nov-2025 02:54:26.357 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+07-Nov-2025 02:54:26.391 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+07-Nov-2025 02:54:26.438 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+07-Nov-2025 02:54:26.583 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+07-Nov-2025 02:54:26.621 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+07-Nov-2025 02:54:26.622 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT
+07-Nov-2025 02:54:26.622 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+07-Nov-2025 02:54:26.622 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+07-Nov-2025 02:54:26.622 INFO [main] java.lang.reflect.Method.invoke Server initialization in [1008] milliseconds
+07-Nov-2025 02:54:26.641 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+07-Nov-2025 02:54:26.641 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+07-Nov-2025 02:54:26.649 INFO [main] java.lang.reflect.Method.invoke Starting service [Catalina]
+07-Nov-2025 02:54:26.650 INFO [main] java.lang.reflect.Method.invoke Starting Servlet engine: [Apache Tomcat (TomEE)/10.0.27 (9.1.3)]
+07-Nov-2025 02:54:26.664 INFO [main] java.lang.reflect.Method.invoke Deploying web application archive [/opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport.war]
+07-Nov-2025 02:54:26.668 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /3dpassport
+07-Nov-2025 02:54:28.075 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport
+07-Nov-2025 02:54:28.225 INFO [main] org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.buildPersistenceContext PersistenceUnit 'entityManager' is a RESOURCE_LOCAL one, you'll have to manage @PersistenceContext yourself.
+07-Nov-2025 02:54:28.226 INFO [main] org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.buildPersistenceContext PersistenceUnit 'entityManager' is a RESOURCE_LOCAL one, you'll have to manage @PersistenceContext yourself.
+07-Nov-2025 02:54:28.275 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+07-Nov-2025 02:54:28.276 INFO [main] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean 3dpassport.Comp119099227: Container(type=MANAGED, id=Default Managed Container)
+07-Nov-2025 02:54:28.276 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+07-Nov-2025 02:54:28.281 INFO [main] org.apache.openejb.core.managed.SimplePassivater.init Using directory /opt/app/3DPassportBase/tomee_3dpass/temp for stateful session passivation
+07-Nov-2025 02:54:28.287 INFO [main] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=entityManager, provider=org.hibernate.jpa.HibernatePersistenceProvider)
+07-Nov-2025 02:54:28.288 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+07-Nov-2025 02:54:28.289 INFO [main] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource' for 'entityManager'.
+07-Nov-2025 02:54:28.289 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+07-Nov-2025 02:54:38.709 SEVERE [main] org.apache.tomcat.jdbc.pool.ConnectionPool.init Unable to create initial connections of pool.
+        java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:347)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:228)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:769)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:697)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:496)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+                at org.apache.openejb.resource.jdbc.pool.PoolDataSourceCreator.poolManaged(PoolDataSourceCreator.java:73)
+                at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:213)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:1009)
+                at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:279)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+                at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3178)
+                at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:3013)
+                at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+                at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+                at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2212)
+                at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2087)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1823)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+                at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+                at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1033)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1318)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.error.Error.error(Unknown Source)
+                at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+                at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+                at org.hsqldb.persist.Logger.open(Unknown Source)
+                at org.hsqldb.Database.reopen(Unknown Source)
+                at org.hsqldb.Database.open(Unknown Source)
+                at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+                at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+                ... 73 more
+        Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.tryLock(Unknown Source)
+                ... 80 more
+07-Nov-2025 02:54:38.711 SEVERE [main] org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init> Can't create DataSource
+        java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:347)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:228)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:769)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:697)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:496)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+                at org.apache.openejb.resource.jdbc.pool.PoolDataSourceCreator.poolManaged(PoolDataSourceCreator.java:73)
+                at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:213)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:1009)
+                at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:279)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+                at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3178)
+                at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:3013)
+                at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+                at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+                at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2212)
+                at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2087)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1823)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+                at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+                at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1033)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1318)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.error.Error.error(Unknown Source)
+                at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+                at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+                at org.hsqldb.persist.Logger.open(Unknown Source)
+                at org.hsqldb.Database.reopen(Unknown Source)
+                at org.hsqldb.Database.open(Unknown Source)
+                at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+                at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+                ... 73 more
+        Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:37 heartbeat - read: -138 ms.
+                at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.tryLock(Unknown Source)
+                ... 80 more
+07-Nov-2025 02:54:38.715 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+07-Nov-2025 02:54:38.715 INFO [main] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource' for 'entityManager'.
+07-Nov-2025 02:54:38.715 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+07-Nov-2025 02:54:48.937 SEVERE [main] org.apache.tomcat.jdbc.pool.ConnectionPool.init Unable to create initial connections of pool.
+        java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:347)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:228)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:769)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:697)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:496)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+                at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:216)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:1009)
+                at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:279)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+                at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3178)
+                at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:3013)
+                at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+                at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+                at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2212)
+                at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2087)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1827)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+                at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+                at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1033)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1318)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.error.Error.error(Unknown Source)
+                at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+                at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+                at org.hsqldb.persist.Logger.open(Unknown Source)
+                at org.hsqldb.Database.reopen(Unknown Source)
+                at org.hsqldb.Database.open(Unknown Source)
+                at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+                at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+                ... 72 more
+        Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.tryLock(Unknown Source)
+                ... 79 more
+07-Nov-2025 02:54:48.938 SEVERE [main] org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init> Can't create DataSource
+        java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:347)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:228)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:769)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:697)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:496)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+                at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:216)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:1009)
+                at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:279)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+                at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+                at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3178)
+                at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:3013)
+                at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+                at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+                at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2212)
+                at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2087)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1827)
+                at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+                at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+                at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1033)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1318)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.error.Error.error(Unknown Source)
+                at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+                at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+                at org.hsqldb.persist.Logger.open(Unknown Source)
+                at org.hsqldb.Database.reopen(Unknown Source)
+                at org.hsqldb.Database.open(Unknown Source)
+                at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+                at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+                ... 72 more
+        Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:47 heartbeat - read: -370 ms.
+                at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.tryLock(Unknown Source)
+                ... 79 more
+07-Nov-2025 02:54:48.941 INFO [main] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit entityManager <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+07-Nov-2025 02:54:48.941 INFO [main] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit entityManager <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+07-Nov-2025 02:54:48.954 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport" loaded.
+07-Nov-2025 02:54:48.958 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport
+07-Nov-2025 02:54:48.991 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: entityManager]
+07-Nov-2025 02:54:49.063 INFO [main] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 6.1.7.Final
+07-Nov-2025 02:54:49.195 INFO [main] org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator.resolveBeanContainer HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+07-Nov-2025 02:54:59.552 SEVERE [main] org.apache.tomcat.jdbc.pool.ConnectionPool.init Unable to create initial connections of pool.
+        java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:58 heartbeat - read: -985 ms.
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+                at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+                at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:347)
+                at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:228)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:769)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:697)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:496)
+                at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+                at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+                at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:134)
+                at org.apache.openejb.resource.jdbc.managed.local.ManagedConnection.newConnection(ManagedConnection.java:218)
+                at org.apache.openejb.resource.jdbc.managed.local.ManagedConnection.invoke(ManagedConnection.java:122)
+                at jdk.proxy4/jdk.proxy4.$Proxy68.getMetaData(Unknown Source)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:179)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+                at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+                at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+                at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+                at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:142)
+                at org.apache.openejb.assembler.classic.EntityManagerFactoryCallable.call(EntityManagerFactoryCallable.java:112)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate(ReloadableEntityManagerFactory.java:134)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.<init>(ReloadableEntityManagerFactory.java:105)
+                at org.apache.openejb.assembler.classic.PersistenceBuilder.createEntityManagerFactory(PersistenceBuilder.java:157)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:927)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:58 heartbeat - read: -985 ms.
+                at org.hsqldb.error.Error.error(Unknown Source)
+                at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+                at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+                at org.hsqldb.persist.Logger.open(Unknown Source)
+                at org.hsqldb.Database.reopen(Unknown Source)
+                at org.hsqldb.Database.open(Unknown Source)
+                at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+                at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+                ... 76 more
+        Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:58 heartbeat - read: -985 ms.
+                at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source)
+                at org.hsqldb.persist.LockFile.tryLock(Unknown Source)
+                ... 83 more
+07-Nov-2025 02:54:59.552 WARN [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService HHH000339: Could not obtain connection metadata: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@18bc593f[file =/opt/app/3DPassportBase/tomee_3dpass/data/hsqldb/hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2025-11-07 10:54:58 heartbeat - read: -985 ms.
+07-Nov-2025 02:54:59.554 INFO [main] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=entityManager, provider=org.hibernate.jpa.HibernatePersistenceProvider) - provider time 10585ms
+07-Nov-2025 02:54:59.555 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport
+07-Nov-2025 02:54:59.556 SEVERE [main] java.lang.reflect.Method.invoke Error destroying child
+        org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/3dpassport]] in state [STARTING_PREP]
+                at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+                at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+                at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:826)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1688)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1668)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.undeployWebApps(TomcatWebAppBuilder.java:801)
+                at org.apache.openejb.assembler.classic.Assembler.destroyApplication(Assembler.java:2425)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:1103)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+07-Nov-2025 02:54:59.562 SEVERE [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication undeployException original cause
+        java.lang.Exception: deployment not found: 3dpassport.Comp119099227
+                at org.apache.openejb.assembler.classic.Assembler.destroyApplication(Assembler.java:2378)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:1103)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+07-Nov-2025 02:54:59.562 SEVERE [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication undeployException original cause
+        java.lang.Exception: persistence-unit: entityManager -394305757localhost: Name "openejb/PersistenceUnit/entityManager -394305757localhost" not found.
+                at org.apache.openejb.assembler.classic.Assembler.destroyApplication(Assembler.java:2537)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:1103)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: javax.naming.NameNotFoundException: Name "openejb/PersistenceUnit/entityManager -394305757localhost" not found.
+                at org.apache.openejb.core.ivm.naming.IvmContext.federate(IvmContext.java:211)
+                at org.apache.openejb.core.ivm.naming.IvmContext.lookup(IvmContext.java:159)
+                at org.apache.openejb.assembler.classic.Assembler.destroyApplication(Assembler.java:2528)
+                ... 44 more
+07-Nov-2025 02:54:59.562 SEVERE [main] org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal Unable to deploy collapsed ear in war StandardEngine[Catalina].StandardHost[localhost].StandardContext[/3dpassport]
+        org.apache.openejb.OpenEJBException: Creating application failed: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:1107)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.apache.openejb.OpenEJBException: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:933)
+                ... 43 more
+        Caused by: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate(ReloadableEntityManagerFactory.java:136)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.<init>(ReloadableEntityManagerFactory.java:105)
+                at org.apache.openejb.assembler.classic.PersistenceBuilder.createEntityManagerFactory(PersistenceBuilder.java:157)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:927)
+                ... 43 more
+        Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+                at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+                at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+                at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:142)
+                at org.apache.openejb.assembler.classic.EntityManagerFactoryCallable.call(EntityManagerFactoryCallable.java:112)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate(ReloadableEntityManagerFactory.java:134)
+                ... 46 more
+        Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+                at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+                at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+                at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+                ... 57 more
+07-Nov-2025 02:54:59.562 SEVERE [main] java.lang.reflect.Method.invoke Error deploying web application archive [/opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport.war]
+        java.lang.IllegalStateException: Error starting child
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+                at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+                at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+                at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1027)
+                at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2001)
+                at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+                at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:828)
+                at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:478)
+                at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1708)
+                at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+                at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+                at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+                at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+                at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+                at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+                at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+                at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+                at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+        Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/3dpassport]]
+                at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+                at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+                ... 35 more
+        Caused by: org.apache.tomee.catalina.TomEERuntimeException: org.apache.openejb.OpenEJBException: Creating application failed: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1352)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1162)
+                at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:134)
+                at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+                at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5085)
+                at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+                ... 36 more
+        Caused by: org.apache.openejb.OpenEJBException: Creating application failed: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:1107)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:762)
+                at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1340)
+                ... 41 more
+        Caused by: org.apache.openejb.OpenEJBException: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:933)
+                ... 43 more
+        Caused by: org.apache.openejb.OpenEJBRuntimeException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate(ReloadableEntityManagerFactory.java:136)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.<init>(ReloadableEntityManagerFactory.java:105)
+                at org.apache.openejb.assembler.classic.PersistenceBuilder.createEntityManagerFactory(PersistenceBuilder.java:157)
+                at org.apache.openejb.assembler.classic.Assembler.createApplication(Assembler.java:927)
+                ... 43 more
+        Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+                at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+                at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+                at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
+                at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
+                at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:142)
+                at org.apache.openejb.assembler.classic.EntityManagerFactoryCallable.call(EntityManagerFactoryCallable.java:112)
+                at org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate(ReloadableEntityManagerFactory.java:134)
+                ... 46 more
+        Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+                at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+                at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+                at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+                at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+                at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+                ... 57 more
+07-Nov-2025 02:54:59.563 INFO [main] java.lang.reflect.Method.invoke Deployment of web application archive [/opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport.war] has finished in [32,899] ms
+07-Nov-2025 02:54:59.563 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT]
+07-Nov-2025 02:54:59.563 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+07-Nov-2025 02:54:59.572 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 02:54:59.573 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT" loaded.
+07-Nov-2025 02:54:59.573 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 02:54:59.620 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 02:54:59.637 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 02:54:59.638 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT)
+07-Nov-2025 02:54:59.705 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 02:54:59.723 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application
+07-Nov-2025 02:54:59.742 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 02:54:59.888 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT] has finished in [324] ms
+07-Nov-2025 02:54:59.888 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/docs]
+07-Nov-2025 02:54:59.888 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+07-Nov-2025 02:54:59.897 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 02:54:59.899 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/docs" loaded.
+07-Nov-2025 02:54:59.899 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 02:54:59.902 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 02:54:59.904 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 02:54:59.904 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/docs)
+07-Nov-2025 02:54:59.916 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 02:54:59.922 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /docs
+07-Nov-2025 02:54:59.925 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 02:54:59.935 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/docs] has finished in [47] ms
+07-Nov-2025 02:54:59.936 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/manager]
+07-Nov-2025 02:54:59.936 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+07-Nov-2025 02:54:59.952 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 02:54:59.956 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/manager" loaded.
+07-Nov-2025 02:54:59.956 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 02:54:59.958 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 02:54:59.960 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /opt/app/3DPassportBase/tomee_3dpass/webapps/manager/META-INF/context.xml
+07-Nov-2025 02:54:59.960 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 02:54:59.960 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/manager)
+07-Nov-2025 02:54:59.974 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 02:54:59.981 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /manager
+07-Nov-2025 02:54:59.984 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 02:54:59.995 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/manager] has finished in [60] ms
+07-Nov-2025 02:54:59.996 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager]
+07-Nov-2025 02:54:59.997 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+07-Nov-2025 02:55:00.005 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 02:55:00.008 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager" loaded.
+07-Nov-2025 02:55:00.009 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 02:55:00.011 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 02:55:00.012 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager/META-INF/context.xml
+07-Nov-2025 02:55:00.012 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 02:55:00.013 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager)
+07-Nov-2025 02:55:00.024 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 02:55:00.030 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /host-manager
+07-Nov-2025 02:55:00.032 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 02:55:00.041 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager] has finished in [45] ms
+07-Nov-2025 02:55:00.044 INFO [main] java.lang.reflect.Method.invoke Server startup in [33421] milliseconds
+07-Nov-2025 02:55:00.045 SEVERE [main] java.lang.reflect.Method.invoke Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+        java.net.BindException: Address already in use
+                at java.base/sun.nio.ch.Net.bind0(Native Method)
+                at java.base/sun.nio.ch.Net.bind(Net.java:565)
+                at java.base/sun.nio.ch.Net.bind(Net.java:554)
+                at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+                at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+                at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+                at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+                at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
+                at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
+                at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+                at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+                at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+07-Nov-2025 02:55:00.045 INFO [main] java.lang.reflect.Method.invoke Pausing ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 02:55:00.046 INFO [main] java.lang.reflect.Method.invoke Stopping service [Catalina]
+07-Nov-2025 02:55:00.050 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 02:55:00.053 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 02:55:00.055 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 02:55:00.057 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 02:55:00.059 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+07-Nov-2025 02:55:00.063 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+07-Nov-2025 02:55:00.063 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+07-Nov-2025 02:55:00.065 INFO [main] java.lang.reflect.Method.invoke Stopping ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 02:55:00.065 INFO [main] java.lang.reflect.Method.invoke Destroying ProtocolHandler ["http-nio-8090"]
+
+
+
+
+
+
+
+
+
+-----------------------------
+
+
+
+07-Nov-2025 03:30:54.185 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: com.dassault_systemes.dspassport.iamweb.hibernate.CustomOracleDialect
+07-Nov-2025 03:30:54.206 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.457 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.458 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.466 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.467 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.468 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.469 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.474 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.474 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.475 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.475 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.476 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.477 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.477 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:54.489 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2025-11-07_03:30:55.262 [tenant=] [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> iam_admin_data_source, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1br71ucbeq3rxi315t0nxa|27d579b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@//prdf-scan.sgn.broadcom.net:1535/IMPPROD25, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 600, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2025-11-07_03:30:55.271 [tenant=] [main] WARN  c.m.v.resourcepool.BasicResourcePool - Bad pool size config, start 3 < min 5. Using 5 as start.
+07-Nov-2025 03:30:56.386 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-Nov-2025 03:30:56.988 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: com.dassault_systemes.dspassport.iamweb.hibernate.CustomOracleDialect
+07-Nov-2025 03:30:56.989 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.070 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.071 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.071 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.071 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.072 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.072 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.073 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.074 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.074 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.074 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.074 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.074 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.075 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.079 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2025-11-07_03:30:57.392 [tenant=] [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> iam_data_source, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1br71ucbeq3rxi315t0nxa|62b635fe, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@//prdf-scan.sgn.broadcom.net:1535/IMPPROD25, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 600, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2025-11-07_03:30:57.393 [tenant=] [main] WARN  c.m.v.resourcepool.BasicResourcePool - Bad pool size config, start 3 < min 5. Using 5 as start.
+07-Nov-2025 03:30:57.520 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-11-07_03:30:57.582 [tenant=] [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> cas_data_source, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1br71ucbeq3rxi315t0nxa|230a0eab, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@//prdf-scan.sgn.broadcom.net:1535/IMPPROD25, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 600, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2025-11-07_03:30:57.583 [tenant=] [main] WARN  c.m.v.resourcepool.BasicResourcePool - Bad pool size config, start 3 < min 5. Using 5 as start.
+07-Nov-2025 03:30:57.627 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: com.dassault_systemes.dspassport.iamweb.hibernate.CustomOracleDialect
+07-Nov-2025 03:30:57.636 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:57.667 WARN [main] org.hibernate.internal.util.config.ConfigurationHelper.getPreferredSqlTypeCodeForInstant HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+07-Nov-2025 03:30:58.678 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-11-07_03:31:00.212 [tenant=] [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-07_03:31:00.386 [tenant=] [main] INFO  o.j.c.s.DefaultServicesManagerImpl - Loaded 0 services.
+2025-11-07_03:31:02.514 [tenant=] [main] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [concurrentTaskScheduler, threadPoolExecutor]
+2025-11-07_03:31:02.543 [tenant=] [SimpleAsyncTaskExecutor-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync(java.lang.String,java.lang.String,java.util.List)
+java.lang.IllegalArgumentException: Missing registry url
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.lambda$4(RegistryUrlFetcher.java:97)
+        at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchUrlFromRegistry(RegistryUrlFetcher.java:97)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync_aroundBody0(RegistryUrlFetcher.java:73)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher$AjcClosure1.run(RegistryUrlFetcher.java:1)
+        at org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3eproceed(AbstractAsyncExecutionAspect.aj:65)
+        at org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(AbstractAsyncExecutionAspect.aj:70)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync(RegistryUrlFetcher.java:55)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+        at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+        at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:102)
+        at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:335)
+        at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:211)
+        at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:135)
+        at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:161)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+        at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-07_03:31:02.931 [tenant=] [SimpleAsyncTaskExecutor-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync(java.lang.String,java.lang.String,java.util.List)
+java.lang.IllegalArgumentException: Missing registry url
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.lambda$4(RegistryUrlFetcher.java:97)
+        at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchUrlFromRegistry(RegistryUrlFetcher.java:97)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync_aroundBody0(RegistryUrlFetcher.java:73)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher$AjcClosure1.run(RegistryUrlFetcher.java:1)
+        at org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3eproceed(AbstractAsyncExecutionAspect.aj:65)
+        at org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(AbstractAsyncExecutionAspect.aj:70)
+        at com.dassault_systemes.dspassport.core.services.impl.RegistryUrlFetcher.fetchAsync(RegistryUrlFetcher.java:55)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+        at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+        at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:102)
+        at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:335)
+        at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:211)
+        at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:135)
+        at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:161)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+        at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-07_03:31:03.099 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bcabafa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b12d57, org.springframework.security.web.context.SecurityContextHolderFilter@1059d4e0, org.springframework.security.web.authentication.logout.LogoutFilter@2ca59b2c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@13f660d2, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@424e8fcd, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@37d09479, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10bf0a28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@481c575f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31ca5a0e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@2f5ebff3, org.springframework.security.web.access.ExceptionTranslationFilter@43f2483b]
+2025-11-07_03:31:03.259 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer$$Lambda/0x00007f25791a1950@55a9d905 with [org.springframework.security.web.session.DisableEncodeUrlFilter@1088037, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3277798b, org.springframework.security.web.context.SecurityContextHolderFilter@6fcf0bf6, org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.AuthorizationServerContextFilter@6f13e99c, org.springframework.security.web.header.HeaderWriterFilter@7ade28be, org.springframework.security.web.csrf.CsrfFilter@1a81e0ab, org.springframework.security.oauth2.server.authorization.oidc.web.OidcLogoutEndpointFilter@254d9b7a, org.springframework.security.web.authentication.logout.LogoutFilter@4e05ba53, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationServerMetadataEndpointFilter@7af1edab, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationEndpointFilter@3bcd7431, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceVerificationEndpointFilter@1c1270be, org.springframework.security.oauth2.server.authorization.oidc.web.OidcProviderConfigurationEndpointFilter@90c139e, org.springframework.security.oauth2.server.authorization.web.NimbusJwkSetEndpointFilter@54d67f14, org.springframework.security.oauth2.server.authorization.web.OAuth2ClientAuthenticationFilter@6adf5d94, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2cf30d2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55ab1fff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5212d30a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d98896, org.springframework.security.web.access.ExceptionTranslationFilter@25a3ffb7, org.springframework.security.web.access.intercept.AuthorizationFilter@595cac43, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenEndpointFilter@4472815a, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenIntrospectionEndpointFilter@512a0db1, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenRevocationEndpointFilter@3c37f596, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceAuthorizationEndpointFilter@3f781d03, org.springframework.security.oauth2.server.authorization.oidc.web.OidcUserInfoEndpointFilter@219d24ba]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/login/**'] with [com.dassault_systemes.dspassport.iamweb.saml.IAMSAMLEntryPointDelegate@62223738]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/logout/**'] with [com.dassault_systemes.dspassport.iamweb.saml.MyLogoutFilterWrapper@1bd6c143]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/metadata/**'] with [org.springframework.security.saml.metadata.MetadataDisplayFilter@2ce959a]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/SSO/**'] with [org.springframework.security.saml.SAMLProcessingFilter@5140197f]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/SSOHoK/**'] with [org.springframework.security.saml.SAMLWebSSOHoKProcessingFilter@13bb8d0c]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/SingleLogout/**'] with [com.dassault_systemes.dspassport.iamweb.saml.MyLogoutFilterWrapper@74fb3f6b]
+2025-11-07_03:31:03.328 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/discovery/**'] with [org.springframework.security.saml.SAMLDiscovery@6a84ea96]
+2025-11-07_03:31:03.333 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/saml/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e0fd2ee, org.springframework.web.filter.CompositeFilter@237f99bc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25b4e1e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a7aaa92, org.springframework.security.web.header.HeaderWriterFilter@3cf63f13, org.springframework.security.web.authentication.logout.LogoutFilter@61833e21, FilterChainProxy[Filter Chains: [DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/login/**'], Filters=[com.dassault_systemes.dspassport.iamweb.saml.IAMSAMLEntryPointDelegate@62223738]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/logout/**'], Filters=[com.dassault_systemes.dspassport.iamweb.saml.MyLogoutFilterWrapper@1bd6c143]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/metadata/**'], Filters=[org.springframework.security.saml.metadata.MetadataDisplayFilter@2ce959a]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/SSO/**'], Filters=[org.springframework.security.saml.SAMLProcessingFilter@5140197f]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/SSOHoK/**'], Filters=[org.springframework.security.saml.SAMLWebSSOHoKProcessingFilter@13bb8d0c]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/SingleLogout/**'], Filters=[com.dassault_systemes.dspassport.iamweb.saml.MyLogoutFilterWrapper@74fb3f6b]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/discovery/**'], Filters=[org.springframework.security.saml.SAMLDiscovery@6a84ea96]]]], org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2732e836, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7486d7ec, org.springframework.security.web.session.SessionManagementFilter@5b3b6aee, org.springframework.security.web.access.ExceptionTranslationFilter@3cfa0a9a]
+2025-11-07_03:31:03.340 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/cas/authenticate/oauth2/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@fca345f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71b83532, org.springframework.security.web.context.SecurityContextPersistenceFilter@32a878ca, org.springframework.security.web.authentication.logout.LogoutFilter@30458fa0, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@13ee810d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e064070, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@774df237, org.springframework.security.web.session.SessionManagementFilter@3480443b, org.springframework.security.web.access.ExceptionTranslationFilter@3c3aa304, org.springframework.security.web.access.intercept.AuthorizationFilter@4a8c9f8]
+2025-11-07_03:31:03.351 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/api/private/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b9df21a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d12566c, org.springframework.security.web.context.SecurityContextPersistenceFilter@78e10a4a, org.springframework.security.web.authentication.logout.LogoutFilter@16c90c18, com.dassault_systemes.dspassport.iamweb.web.security.api.ApiPrivateAuthenticationFilter@7dc468f3, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@27a2300, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@790a10d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@667d4246, org.springframework.security.web.session.SessionManagementFilter@1af35090, org.springframework.security.web.access.ExceptionTranslationFilter@1880ed0b, org.springframework.security.web.access.intercept.AuthorizationFilter@330f4019]
+2025-11-07_03:31:03.358 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Ant [pattern='/api/v1/batch/**'], Ant [pattern='/api/v2/batch/**'], Ant [pattern='/api/batch/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e8bc50e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30ab39ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@51a3cbd2, org.springframework.security.web.authentication.logout.LogoutFilter@31c5ef77, com.dassault_systemes.dspassport.iamweb.web.security.api.ApiBatchAuthenticationFilter@32f00f18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@619b76b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df58999, org.springframework.security.web.session.SessionManagementFilter@400e67f0, org.springframework.security.web.access.ExceptionTranslationFilter@538ff9a9, org.springframework.security.web.access.intercept.AuthorizationFilter@6a09c8a9]
+2025-11-07_03:31:03.368 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/cas/oauth2/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@4805f4db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1610e1b1, org.springframework.security.web.context.SecurityContextHolderFilter@12c192ee, org.springframework.security.web.authentication.logout.LogoutFilter@3b39a348, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@3359a639, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3ab833ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b84508a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c48334b, org.springframework.security.web.access.ExceptionTranslationFilter@14566a2, org.springframework.security.web.access.intercept.AuthorizationFilter@7c92f086]
+2025-11-07_03:31:03.389 [tenant=] [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@14e38d83, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c9129ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b1ae9aa, org.springframework.security.web.authentication.logout.LogoutFilter@70cd04e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63fcd25b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a3875c, org.springframework.security.web.session.SessionManagementFilter@68f44379, org.springframework.security.web.access.ExceptionTranslationFilter@59c39b3b, org.springframework.security.web.access.intercept.AuthorizationFilter@4f858e3e]
+2025-11-07_03:31:03.448 [tenant=] [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext initialized in 12336 ms
+07-Nov-2025 03:31:03.856 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.856 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.868 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.868 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.888 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.888 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.892 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.892 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.895 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.895 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.899 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.899 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.902 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.902 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.906 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.906 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.909 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.909 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.912 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.912 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.916 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.916 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.919 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.919 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:03.923 WARN [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:03.923 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.036 INFO [main] org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator.resolveBeanContainer HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-11-07_03:31:04.047 [tenant=] [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1br71ucbeq3rxi315t0nxa|5ea31f7e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1br71ucbeq3rxi315t0nxa|5ea31f7e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@//prdf-scan.sgn.broadcom.net:1535/IMPPROD25, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 600, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2025-11-07_03:31:04.047 [tenant=] [main] WARN  c.m.v.resourcepool.BasicResourcePool - Bad pool size config, start 3 < min 5. Using 5 as start.
+07-Nov-2025 03:31:04.153 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: com.dassault_systemes.dspassport.iamweb.hibernate.CustomOracleDialect
+07-Nov-2025 03:31:04.530 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-11-07_03:31:04.632 [tenant=] [main] INFO  c.d.d.i.w.s.DSPassportServletContextListenerPostInit - Initializing Servlet 'iam'
+2025-11-07_03:31:04.644 [tenant=] [main] INFO  c.d.d.i.w.s.DSPassportServletContextListenerPostInit - Completed initialization in 12 ms
+2025-11-07_03:31:04.644 [tenant=] [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'saml'
+2025-11-07_03:31:04.658 [tenant=] [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+07-Nov-2025 03:31:04.659 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.660 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.669 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.669 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.673 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.673 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.676 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.676 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.680 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.680 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.684 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.684 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.688 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.688 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:04.692 WARN [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 955, SQLState: 42000
+07-Nov-2025 03:31:04.692 ERROR [wildcard-thread-4] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions ORA-00955: name is already used by an existing object
+
+07-Nov-2025 03:31:06.067 INFO [main] java.lang.reflect.Method.invoke Deployment of web application archive [/opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport.war] has finished in [17,548] ms
+07-Nov-2025 03:31:06.067 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT]
+07-Nov-2025 03:31:06.068 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+07-Nov-2025 03:31:06.077 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 03:31:06.078 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT" loaded.
+07-Nov-2025 03:31:06.078 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 03:31:06.080 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 03:31:06.081 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 03:31:06.082 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT)
+07-Nov-2025 03:31:06.093 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 03:31:06.104 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application
+07-Nov-2025 03:31:06.107 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 03:31:06.115 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT] has finished in [48] ms
+07-Nov-2025 03:31:06.115 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/docs]
+07-Nov-2025 03:31:06.115 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+07-Nov-2025 03:31:06.123 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 03:31:06.125 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/docs" loaded.
+07-Nov-2025 03:31:06.125 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 03:31:06.126 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 03:31:06.127 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 03:31:06.128 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/docs)
+07-Nov-2025 03:31:06.137 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 03:31:06.146 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /docs
+07-Nov-2025 03:31:06.149 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 03:31:06.156 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/docs] has finished in [41] ms
+07-Nov-2025 03:31:06.156 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/manager]
+07-Nov-2025 03:31:06.156 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+07-Nov-2025 03:31:06.168 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 03:31:06.172 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/manager" loaded.
+07-Nov-2025 03:31:06.172 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 03:31:06.173 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 03:31:06.174 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /opt/app/3DPassportBase/tomee_3dpass/webapps/manager/META-INF/context.xml
+07-Nov-2025 03:31:06.175 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 03:31:06.175 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/manager)
+07-Nov-2025 03:31:06.186 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 03:31:06.195 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /manager
+07-Nov-2025 03:31:06.197 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 03:31:06.206 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/manager] has finished in [50] ms
+07-Nov-2025 03:31:06.207 INFO [main] java.lang.reflect.Method.invoke Deploying web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager]
+07-Nov-2025 03:31:06.207 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+07-Nov-2025 03:31:06.213 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 03:31:06.215 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager" loaded.
+07-Nov-2025 03:31:06.216 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 03:31:06.217 INFO [main] org.apache.openejb.assembler.classic.ValidatorBuilder.getConfig Ignoring XML Configuration for validator org.apache.bval.jsr.ConfigurationImpl
+07-Nov-2025 03:31:06.218 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager/META-INF/context.xml
+07-Nov-2025 03:31:06.218 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+07-Nov-2025 03:31:06.219 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager)
+07-Nov-2025 03:31:06.228 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+07-Nov-2025 03:31:06.237 INFO [main] org.apache.tomee.microprofile.openapi.MicroProfileOpenApiRegistration.onStartup Registering OpenAPI servlet on /openapi for application /host-manager
+07-Nov-2025 03:31:06.249 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Nov-2025 03:31:06.257 INFO [main] java.lang.reflect.Method.invoke Deployment of web application directory [/opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager] has finished in [50] ms
+07-Nov-2025 03:31:06.259 INFO [main] java.lang.reflect.Method.invoke Starting ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 03:31:06.264 INFO [main] java.lang.reflect.Method.invoke Server startup in [17781] milliseconds
+07-Nov-2025 03:33:43.147 INFO [main] java.lang.reflect.Method.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Nov-2025 03:33:43.147 INFO [main] java.lang.reflect.Method.invoke Pausing ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 03:33:43.148 INFO [main] java.lang.reflect.Method.invoke Stopping service [Catalina]
+03:33:43,153 |-INFO in ch.qos.logback.classic.servlet.LogbackServletContextListener@726aaaf0 - About to stop ch.qos.logback.classic.LoggerContext [default]
+07-Nov-2025 03:33:44.186 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/3dpassport
+07-Nov-2025 03:33:44.191 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:366)
+ java.base/java.lang.Object.wait(Object.java:339)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:537)
+ java.base/java.util.TimerThread.run(Timer.java:516)
+07-Nov-2025 03:33:44.191 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:366)
+ oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+07-Nov-2025 03:33:44.191 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:366)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:563)
+ java.base/java.util.TimerThread.run(Timer.java:516)
+07-Nov-2025 03:33:44.191 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [logWriting-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.191 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [wildcard-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [wildcard-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [wildcard-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [wildcard-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [logWriting-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [logWriting-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [logWriting-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.192 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [3dpassport] appears to have started a thread named [logWriting-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+ java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3778)
+ java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3723)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+ java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+07-Nov-2025 03:33:44.193 SEVERE [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [3dpassport] created a ThreadLocal with key of type [com.sun.jna.Structure$2] (value [com.sun.jna.Structure$2@496411df]) and a value of type [com.sun.jna.Structure.StructureSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+07-Nov-2025 03:33:44.197 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/ROOT
+07-Nov-2025 03:33:44.200 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/docs
+07-Nov-2025 03:33:44.202 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/manager
+07-Nov-2025 03:33:44.204 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /opt/app/3DPassportBase/tomee_3dpass/webapps/host-manager
+07-Nov-2025 03:33:44.206 INFO [main] java.lang.reflect.Method.invoke Stopping ProtocolHandler ["http-nio-8090"]
+07-Nov-2025 03:33:44.207 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+07-Nov-2025 03:33:44.212 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+07-Nov-2025 03:33:44.217 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+07-Nov-2025 03:33:44.222 INFO [main] java.lang.reflect.Method.invoke Destroying ProtocolHandler ["http-nio-8090"]
+

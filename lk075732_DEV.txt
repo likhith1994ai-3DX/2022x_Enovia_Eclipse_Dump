@@ -1,0 +1,32 @@
+MQL<10>print person lk075732 !history;
+person lk075732
+  email likhith.kommoju@broadcom.com
+  fullname Likhith Kommoju
+  phone +91 (79810) 64990
+  fax
+  address N/A
+  comment
+  password <NONE>
+  lattice eService Production
+  access all
+  type application,full
+  admin none
+  enable email
+  enable iconmail
+  assign role ctx::VPLMProjectLeader.Broadcom Ltd.IMP_IPSpace
+  assign role Basic User
+  assign role ctx::VPLMProjectLeader.Broadcom Ltd.Default
+  assign role VPLMProjectAdministrator
+  assign role ctx::VPLMProjectLeader.Broadcom Ltd.lk075732_PRJ_ACCESS
+  assign role Grant.Broadcom Ltd.lk075732_PRJ
+  assign role ctx::Basic User.Broadcom Ltd.GLOBAL
+  assign role Employee
+  assign role ctx::Basic User.GTO.GLOBAL
+  nothidden
+  property Company Key value 00000000000000000001
+  property MX_TABLEMENU_SELECTION value {"tableMenu":[],"selectedProgram":[]}
+  property preference_Currency value Dollar
+  property preference_DefaultSecurityContext value VPLMProjectLeader.Broadcom Ltd.lk075732_PRJ_ACCESS
+  property preference_VPLMIntegVPLMContext value VPLMProjectLeader.Broadcom Ltd.lk075732_PRJ_ACCESS
+  created 11/15/2024 6:09:44 AM
+  modified 7/8/2025 12:58:21 AM

@@ -1,0 +1,71 @@
+IBM_90nm_CLID_Test_01-001 
+IP Download Testing - lk075732 
+
+GTO_CLI_Dowload_Test01
+
+VISTARA_7nm_DDR4-001 (X)
+
+Mamba_vulcan_a0-001
+Vistara-FE
+
+/tools/imp/dev2025x/bin/imp -h
+
+/tools/imp/dev2025x/bin/imp download -h
+
+/tools/imp/dev2025x/bin/imp query -h
+
+/tools/imp/qa/bin/imp download --for-project Test_APD_3PIP_CadenceVendor --comment 'MQL Query Test' --tag vDS4_wmkn -i hx5_ddrctrl_cadence-001
+
+
+imp download --for-project <project-name> --comment 'Comment explaining the download event' -i ipid
+
+/tools/imp/dev2025x/bin/imp download -i IBM_90nm_CLID_Test_01-001 --for-project GTO_CLI_Dowload_Test01 --comment 'Public IP'
+
+/tools/imp/dev2025x/bin/imp prepare-sa -i IBM_90nm_CLID_Test_01-001
+/tools/imp/dev2025x/bin/imp publish --comment 'CLI-Download Public IP:IBM_90nm_CLID_Test_01-001' --tag ML1.1.0 --force
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'Public IP'
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'unix path testing' -o /home/lk075732/imp/test/Mamba_vulcan_a0-001.log
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'verbosity testing' --verbose 3 
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE --comment 'Adding comments for download testing'
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --branch Trunk/ --comment 'testing latest revision of the branch RTL_2009_MAY_04' -i Mamba_vulcan_a0-001
+
+
+
+imp download -i IPID  --for-project  --comment 'test' -o imp/test/
+
+
+/tools/imp/dev2025x/bin/imp download --for-project  Vistara-FE --comment 'testing to skip ip subscription' -i zzzTahoe-001  --skip-ip-subscription
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001 --for-project Vistara-FE  --comment 'testing for subscription-user for Notification Tab' --subscription-user lk075732
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE  --comment 'testing without watermark cells' -i Mamba_vulcan_a0-001  --no-watermark-cells
+
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE  --comment 'testing with force watermark cells' -i Mamba_vulcan_a0-001 --force-watermark-cells
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE  --comment 'testing DryRun' -i Mamba_vulcan_a0-001 --dry-run
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing to only download specified process node 65nm' -i Mamba_vulcan_a0-001 --tech-node 65nm
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE  --comment 'testing to only download specified tech subprocess node 65G' -i Mamba_vulcan_a0-001 --tech-sub-process 65G
+
+/tools/imp/dev2025x/bin/imp download -i Mamba_vulcan_a0-001  --for-project Vistara-FE --comment 'testing uniquifying prefix/suffix to the ip' --uniquify
+
+
+/tools/imp/dev2025x/bin/imp download -i zzzTahoe-001 --for-project Vistara-FE --comment 'testing uniquifying prefix/suffix to the ip' --uniquify
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing for downloading with the specified Foundary:IBM' -i Apollo_Crypto_Ext-001 --foundary IBM
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing force new prefix' -i Apollo_Crypto_Ext-001 --force-new-prefix
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing force new prefix' --uniquify --tag RTL_2009_MAY_19 -i Mamba_vulcan_a0-001 --force-new-prefix
+
+/tools/imp/dev2025x/bin/imp download --for-project Vistara-FE --comment 'testing Including derived views of watermark cells' -i Mamba_vulcan_a0-001 --include-derived-watermarks
+
+
+

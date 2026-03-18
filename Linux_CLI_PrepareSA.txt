@@ -1,0 +1,302 @@
+[lk075732@accvda5490 ~]$ rm -rf IPTest-01-001
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:077 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:078 [INFO ] starttime: 2025-07-31 01:35:22 AM
+00:00:01:081 [INFO ] Purged old log files
+00:00:01:081 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731013522687.log
+00:00:01:081 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:081 [INFO ] CWD: /home/lk075732
+00:00:10:063 [INFO ] Execution Successful
+00:00:10:063 [INFO ] endtime: 2025-07-31 01:35:31 AM
+00:00:10:063 [INFO ] elapsedtime: 8secs
+00:00:10:063 [INFO ] exitstatus:  0
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ ls -a IPTest-01-001
+.  ..  doc  imp  oasis  p1.txt  .SYNC
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ ls -l IPTest-01-001
+total 120
+drwxrwsr-x 3 lk075732 lk075732  72 Jul 31 01:35 doc
+drwxrwsr-x 4 lk075732 lk075732 205 Jul 31 01:35 imp
+drwxrwsr-x 4 lk075732 lk075732  48 Jul 31 01:35 oasis
+-rw-r--r-- 1 lk075732 lk075732 272 Jul 29 08:56 p1.txt
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cd IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ cat p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+[lk075732@accvda5490 ~/IPTest-01-001]$ cd ~
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ ls -a IPTest-01-001 | while read file; do realpath "IPTest-01-001/$file"; done
+while: Expression Syntax.
+file: Undefined variable.
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ pwd
+/home/lk075732
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cd IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ pwd
+/home/lk075732/IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ find /home/lk075732/IPTest-01-001 -mindepth 1 -maxdepth 1
+/home/lk075732/IPTest-01-001/oasis
+/home/lk075732/IPTest-01-001/imp
+/home/lk075732/IPTest-01-001/doc
+/home/lk075732/IPTest-01-001/p1.txt
+/home/lk075732/IPTest-01-001/.SYNC
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ ls -a
+.  ..  doc  imp  oasis  p1.txt  .SYNC
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ echo "devtest" | tee -a /home/lk075732/IPTest-01-001/p1.txt
+devtest
+[lk075732@accvda5490 ~/IPTest-01-001]$ cat p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+devtest
+[lk075732@accvda5490 ~/IPTest-01-001]$ cd ~
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:013 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:013 [INFO ] starttime: 2025-07-31 01:44:30 AM
+00:00:01:015 [INFO ] Purged old log files
+00:00:01:015 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731014430037.log
+00:00:01:015 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:015 [INFO ] CWD: /home/lk075732
+00:00:06:006 [ERROR] Staging area modified; List of modified file(s):
+p1.txt
+00:00:06:006 [ERROR] Execution Failed
+00:00:06:006 [INFO ] endtime: 2025-07-31 01:44:34 AM
+00:00:06:006 [INFO ] elapsedtime: 4secs
+00:00:06:006 [INFO ] exitstatus:  2
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:012 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:012 [INFO ] starttime: 2025-07-31 01:44:41 AM
+00:00:01:014 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731014442002.log
+00:00:01:014 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:014 [INFO ] CWD: /home/lk075732
+00:00:05:009 [ERROR] Staging area modified; List of modified file(s):
+p1.txt
+00:00:05:009 [ERROR] Execution Failed
+00:00:05:009 [INFO ] endtime: 2025-07-31 01:44:45 AM
+00:00:05:010 [INFO ] elapsedtime: 4secs
+00:00:05:010 [INFO ] exitstatus:  2
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cd IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ sed -i '/devtest\./d' p1.txt
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ cat p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+devtest
+[lk075732@accvda5490 ~/IPTest-01-001]$ cd ~
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:011 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:011 [INFO ] starttime: 2025-07-31 01:50:06 AM
+00:00:01:013 [INFO ] Purged old log files
+00:00:01:014 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731015006628.log
+00:00:01:014 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:014 [INFO ] CWD: /home/lk075732
+00:00:07:062 [INFO ] Execution Successful
+00:00:07:062 [INFO ] endtime: 2025-07-31 01:50:13 AM
+00:00:07:062 [INFO ] elapsedtime: 6secs
+00:00:07:062 [INFO ] exitstatus:  0
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ ls -a IPTest-01-001
+.  ..  doc  imp  oasis  p1.txt  .SYNC
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cd IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ -mindepth 1 -maxdepth 1
+-mindepth: Command not found.
+[lk075732@accvda5490 ~/IPTest-01-001]$ find -mindepth 1 -maxdepth 1
+./oasis
+./imp
+./doc
+./p1.txt
+./.SYNC
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ find pwd -mindepth 1 -maxdepth 1
+find: ‘pwd’: No such file or directory
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ pwd
+/home/lk075732/IPTest-01-001
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$
+[lk075732@accvda5490 ~/IPTest-01-001]$ cd ~
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ find /home/lk075732/IPTest-01-001 -mindepth 1 -maxdepth 1
+/home/lk075732/IPTest-01-001/oasis
+/home/lk075732/IPTest-01-001/imp
+/home/lk075732/IPTest-01-001/doc
+/home/lk075732/IPTest-01-001/p1.txt
+/home/lk075732/IPTest-01-001/.SYNC
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cat p1.txt
+cat: p1.txt: No such file or directory
+[lk075732@accvda5490 ~]$ cat /home/lk075732/IPTest-01-001/p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+[lk075732@accvda5490 ~]$ cp /home/lk075732/IPTest-01-001/p1.txt /home/lk075732/Test/p1.txt
+cp: cannot create regular file '/home/lk075732/Test/p1.txt': No such file or directory
+[lk075732@accvda5490 ~]$ mkdir Test
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cp /home/lk075732/IPTest-01-001/p1.txt /home/lk075732/Test/p1.txt
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ echo "dev25x" /home/lk075732/IPTest-01-001/p1.txt
+dev25x /home/lk075732/IPTest-01-001/p1.txt
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ cat /home/lk075732/IPTest-01-001/p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+[lk075732@accvda5490 ~]$ echo "dev25x" >> /home/lk075732/IPTest-01-001/p1.txt
+[lk075732@accvda5490 ~]$ cat /home/lk075732/IPTest-01-001/p1.txt
+uuuIPTest-01-001
+Likhith::::::::::::July 7th 2025
+Raghu::::::::::::July 7th 2025
+Likhith:::::::::::July 7th 25
+Raghu:::::::::::July 7th 25
+Likhith:::::::::July 15th 2025
+Raghunath:::::::::July 15th 2025
+Likhith::::::::::::July 21st 2025
+1
+Raghunath:::::::::July 29th 2025
+dev25x
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:009 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:010 [INFO ] starttime: 2025-07-31 01:56:08 AM
+00:00:01:012 [INFO ] Purged old log files
+00:00:01:012 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731015608577.log
+00:00:01:012 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:012 [INFO ] CWD: /home/lk075732
+00:00:08:033 [ERROR] Staging area modified; List of modified file(s):
+p1.txt
+00:00:08:033 [ERROR] Execution Failed
+00:00:08:034 [INFO ] endtime: 2025-07-31 01:56:15 AM
+00:00:08:034 [INFO ] elapsedtime: 7secs
+00:00:08:034 [INFO ] exitstatus:  2
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:002 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:003 [INFO ] starttime: 2025-07-31 01:56:20 AM
+00:00:01:004 [INFO ] Purged old log files
+00:00:01:004 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731015620381.log
+00:00:01:004 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:004 [INFO ] CWD: /home/lk075732
+00:00:07:061 [ERROR] Staging area modified; List of modified file(s):
+p1.txt
+00:00:07:061 [ERROR] Execution Failed
+00:00:07:061 [INFO ] endtime: 2025-07-31 01:56:26 AM
+00:00:07:061 [INFO ] elapsedtime: 6secs
+00:00:07:061 [INFO ] exitstatus:  2
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ mv /home/lk075732/Test/p1.txt /home/lk075732/IPTest-01-001/p1.txt
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$ /home/lk075732/CLI/bin/imp prepare-sa -i IPTest-01-001
+00:00:01:014 [INFO ] impversion: 20250731.0037-dev2025x
+00:00:01:015 [INFO ] starttime: 2025-07-31 01:57:06 AM
+00:00:01:016 [INFO ] logfile: /home/lk075732/.imp/log/prepare-sa-20250731015706842.log
+00:00:01:016 [INFO ] userlogin@hostname: lk075732@accvda5490.acc.broadcom.net
+00:00:01:016 [INFO ] CWD: /home/lk075732
+00:00:06:013 [INFO ] Execution Successful
+00:00:06:013 [INFO ] endtime: 2025-07-31 01:57:11 AM
+00:00:06:013 [INFO ] elapsedtime: 5secs
+00:00:06:013 [INFO ] exitstatus:  0
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$
+[lk075732@accvda5490 ~]$

@@ -1,0 +1,43 @@
+IMP publish will run /projects/analog/bin/ssgqi for INTERNAL HARD IPs and generate the .xslx file using the cfg file like so:
+
+/projects/analog/bin/ssgqi -impId <ipid> --report .../imp/SSGQI_report.xslx
+/projects/analog/bin/ssgqi -impId <ipid> --extra-file .../imp/ssgqi-cfg.txt --report .../imp/SSGQI_report.xslx
+
+If .../imp/ssgqi-cfg.txt is missing, imp will issue a warning and provide a link to a document that explains how to generate this file.
+
+The alternative would be for the cfg and the generated report to reside outside of the imp directory, as per the DTree Spec. This would make it possible to make it optional or required at different timelines.
+
+There is also the question of the SoC-level SSGQI report. Should that be run by the chip-lead and the resulting file supplied to imp when running verify-ip, or, should the verify-ip command run it?
+
+If the file is in .../imp directory, it would be possible to generate the SoC-level SSGQI file easily - it would be easy to get the SSGQI-cfg.txt file for all detected IPs and use them for this task. If it is specified via the DTree Spec, generating the SoC-level SSGQI file will be very difficult since it would first need to know what Spec is used, then parse the Spec to see where the file is, and then, finally, download these files for all the detected IPs.
+
+Thanks and regards
+
+Vivek
+
+Thank you, Vivek. The information you provided today is vastly helpful. I will add the meeting recording link when it is available.
+
+Thess are meeting notes from Agnes taken during the meeting. Please refer to Vivek’s notes below for more concise IMP implementation.
+
+SSGQI reporting tool Confluence page: https://confluence.broadcom.net/spaces/AnalogCAD/pages/977353727/SSGQI+reporting+tool
+For IP publish, we are looking for 2 slots in the IMP directory:
+An ASCII file
+The SSGQI report in excel format
+ssgqi tool needs to generate correct return code for IMP handling (TK)
+IMP can run the ssgqi tool generate the SSGQI report (It will check if the ASCII file exists or not)
+If ASCII file is missing, issue warning with a link on how to generate the ASCII file. Stopping publish is not the intent
+ssgqi tool should give warning if ASCII input format is wrong (TK)
+ssgqi-cfg.txt in the IMP directory will be used to store the ASCII file (This needs to be discussed in the CCB meeting)
+Vivek also proposed using dtreespec storage so each BU could control when they would make the report or config files mandatory. Issue will needing dtreespec structure before the ASCII file can be located à it will be much easier of the file is in the IMP directory
+IMP download command can download one file from IMP
+SoC level ssgqi report can be run by chip lead or by verify-ip. May need to be decided after the IP level data structure is approved by CCB first. Let CCB decide.
+There is a -consumed-ips command in IMP to get to the actually used IPs. Look for detected_ips.
+This command could also report children and descendants in the macros
+Agnes to submit requests to CCB
+Meeting recording is available below for 180 days.
+Share link: https://broadcom.zoom.us/rec/share/tygYmnbRdsl37g64axPcrXRR4ImPk8_O1SaxBN5yUrbY2U8lM9zkEsdEjni3xtvr.QrpOhYQfN6g07bhd
+Passcode: #@.rD0x7
+
+Regards,
+–
+TTK

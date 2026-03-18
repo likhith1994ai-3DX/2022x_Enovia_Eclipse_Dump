@@ -1,0 +1,11 @@
+questions:
+  ams_spec_url: https://test.broadcom.net
+  pass_Aging: NO
+  pass_DLC: waived
+  pass_DSC: y
+  pass_LLC: y
+  spice_model_version: '1.4'
+  worst_case_HiR_dTemp_EMIR_wSHE: '-40'
+  worst_case_dTemp_PVT_wSHE: '105'
+  worst_case_metal_Joule_heating_EMIR_wSHE: '125'
+version: '1.0'

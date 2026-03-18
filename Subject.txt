@@ -1,0 +1,27 @@
+The Publish command will run /projects/analog/bin/ssgqi for INTERNAL HARD IPs and generate the .xslx file using the cfg file, if present.
+
+1. create the .../imp/ssgqi-spec.yaml file and include the following information: IPID, IP owner, IP BU, and all the tech stacks (foundry, process, sub-process and metal-stack).
+
+2. Check for the ssgqi cfg file in the DTree Spec: the path to the cfg file will be specified in the DTree Spec using the attribute is_ssgqi_cfg.
+
+If this file is specified in the DTree Spec:
+
+a. if the specified file is present, invoke ssgqi like this
+/projects/analog/bin/ssgqi -impId <ipid> --extra-file <ssgqi-cfg-file> --spec-file .../imp/ssgqi-spec.yaml --report .../imp/SSGQI_report
+
+which will generate .../imp/SSGQI_report.xlsx.
+
+b. if the specified file is NOT present:
+i. issue a warning and provide a link to a document that explains how to generate this file.
+ii. invoke ssgqi like this:
+/projects/analog/bin/ssgqi -impId <ipid> --spec-file .../imp/sgqi-spec.yaml --report .../imp/SSGQI_report
+
+3. Save this cfg file in IMP naming it as <ipid>-<ip-revision>-cfg.yaml associating it with the IPID's revision. This will be used to pass to the invocation of the ssgqi tool for SoCs.
+
+which will also generate .../imp/SSGQI_report.xlsx.
+
+If this file is not specified in the DTree Spec, invoke ssgqi like in b.ii above.
+
+The resulting report file will be created/moved to the top level imp directory before checking into DesignSync.
+
+The resulting file .../imp/SSGQI_report.xslx will also be marked as a public document.
